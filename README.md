@@ -73,9 +73,9 @@ Missile equipped interceptors can attack in group. However, they also can attack
 
 | armament | cost | range | 1B | 2B | 3B | 4B | 1M |
 | ---- | ---- | ----:| ---- | ---- | ---- | ---- | ---- |
-| Gas Cannon | near zero | 10 | Cruiser | H.Cruiser | Hunter | Predator | Hunter |
-| Gauss Cannon | low | 20 | H.Cruiser | Predator | Battleship | Dreadnaught | Dreadnaught |
-| Sonic Oscillator | high | 30 | Hunter | F.S.Cruiser | Dreadnaught |  | Dreadnaught |
+| Gas Can | near zero | 10 | Cruiser | H.Cruiser | Hunter | Predator | Hunter |
+| Gauss Can | low | 20 | H.Cruiser | Predator | Battleship | Dreadnaught | Dreadnaught |
+| Sonic Osc | high | 30 | Hunter | F.S.Cruiser | Dreadnaught |  | Dreadnaught |
 | AJAX | average | 40 | H.Cruiser | Hunter | Predator | Battleship | Hunter |
 | D.U.P. | very high | 50 | H.Cruiser | Predator | F.S.Cruiser | Dreadnaught | Hunter |
 | P.W.T. | immensive | 60 | Hunter | Predator | Battleship | Dreadnaught | Hunter |
