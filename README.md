@@ -71,14 +71,14 @@ Missile equipped interceptors can attack in group. However, they also can attack
 
 1B, 2B, 3B, 4B, 1M - toughest USO that can be sunk by simultaneous attack of so many interceptors (Barracuda or Matha). Losses may occur.
 
-| armament | cost | range | 1B | 2B | 3B | 4B | 1M | tactical advice |
+| armament | cost | range | 1B | 2B | 3B | 4B | 1M |
 | ---- | ---- | ----:| ---- | ---- | ---- | ---- | ---- | ---- |
-| Gas Cannon | near zero | 10 | Cruiser | H.Cruiser | Hunter | Predator | Hunter | Best initial armament for money saving. |
-| Gauss Cannon | low | 20 | H.Cruiser | Predator | Battleship | Dreadnaught | Dreadnaught | Better projectile armament. Switch to it early game. |
-| Sonic Oscillator | high | 30 | Hunter | F.S.Cruiser | Dreadnaught |  | Dreadnaught | Best projectile armament. Effectively fights largest USOs to the end of the game. |
-| AJAX | average | 40 | H.Cruiser | Hunter | Predator | Battleship | Hunter | Best early game missile against light-mid targets to reduce interceptor repair time. |
-| D.U.P. | very high | 50 | H.Cruiser | Predator | F.S.Cruiser | Dreadnaught | Hunter | Ultimate conventional missile capable sinking largest USOs. Very expensive for the early game, though. |
-| P.W.T. | immensive | 60 | Hunter | Predator | Battleship | Dreadnaught | Hunter | Safest armament but also immensely expensive. Good for late game to keep fighting increasing frequency of largest USOs. |
+| Gas Cannon | near zero | 10 | Cruiser | H.Cruiser | Hunter | Predator | Hunter |
+| Gauss Cannon | low | 20 | H.Cruiser | Predator | Battleship | Dreadnaught | Dreadnaught |
+| Sonic Oscillator | high | 30 | Hunter | F.S.Cruiser | Dreadnaught |  | Dreadnaught |
+| AJAX | average | 40 | H.Cruiser | Hunter | Predator | Battleship | Hunter |
+| D.U.P. | very high | 50 | H.Cruiser | Predator | F.S.Cruiser | Dreadnaught | Hunter |
+| P.W.T. | immensive | 60 | Hunter | Predator | Battleship | Dreadnaught | Hunter |
 
 ## Tactics
 
