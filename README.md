@@ -1,6 +1,11 @@
 # TFTD Rework: Evolution by Alpha Centauri Bear
 
+Main thread
+
+https://openxcom.org/forum/index.php/topic,8661.0.html
+
 Based on TFTD Rework by R Kallisti (aka Orz, Illamasqua)
+
 https://openxcom.org/forum/index.php/topic,4265.0.html
 
 
