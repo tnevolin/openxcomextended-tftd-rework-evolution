@@ -1,0 +1,616 @@
+armors: 
+#  - delete: STR_NONE_UC
+#  - type: STR_NONE_UC # cuz needed for Crafts where "NONE" is assigned
+  - type: STR_DIVING_SUIT_UC
+    spriteSheet: TDXCOM_0.PCK
+#   spriteInv: MAN_0
+    spriteInv: MAN_4
+    storeItem: STR_NONE
+    corpseItem: STR_CORPSE
+    frontArmor: 12
+    sideArmor: 8
+    rearArmor: 5
+    underArmor: 2
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.2 # Melee
+      - 1.6 # Electr
+      - 1.0
+    loftemps: 3
+    drawingRoutine: 13
+    spriteFaceGroup: 14
+#   spriteFaceColor: [160, 160, 64, 160, 160, 64, 160, 160] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteFaceColor: [160, 160, 64, 160, 160, 160, 160, 64] #M0 F1 M2 F3 M3 F0 M1 F2
+    spriteHairGroup: 4
+#   spriteHairColor: [130, 160, 201, 130, 64, 198, 160, 64] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairColor: [130, 160, 201, 64, 160, 130, 64, 198] #M0 F1 M2 F3 M3 F0 M1 F2
+  - type: STR_PLASTIC_AQUA_ARMOR_UC
+    spriteSheet: PLASTICBLUE.PCK
+#   spriteInv: MAN_1
+    spriteInv: MAN_5
+    frontArmor: 60
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 30
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0 # Freeze
+      - 1.0 # Melee
+      - 1.0 # Electr
+      - 1.0
+    loftemps: 3
+    drawingRoutine: 13
+    spriteFaceGroup: 14
+#   spriteFaceColor: [160, 160, 64, 160, 160, 64, 160, 160] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteFaceColor: [160, 160, 64, 160, 160, 160, 160, 64] #M0 F1 M2 F3 M3 F0 M1 F2
+    spriteHairGroup: 4
+#   spriteHairColor: [130, 160, 201, 130, 64, 198, 160, 64] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairColor: [130, 160, 201, 64, 160, 130, 64, 198] #M0 F1 M2 F3 M3 F0 M1 F2
+  - type: STR_ION_ARMOR_UC
+#   spriteInv: MAN_2
+    spriteInv: MAN_6
+    frontArmor: 80
+    sideArmor: 65
+    rearArmor: 50
+    underArmor: 40
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0 # Freeze
+      - 1.0 # Melee
+      - 1.0
+      - 0.0
+    spriteFaceGroup: 14
+#   spriteFaceColor: [160, 160, 64, 160, 160, 64, 160, 160] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteFaceColor: [160, 160, 64, 160, 160, 160, 160, 64] #M0 F1 M2 F3 M3 F0 M1 F2
+    spriteHairGroup: 4
+#   spriteHairColor: [130, 160, 201, 130, 64, 198, 160, 64] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairColor: [130, 160, 201, 64, 160, 130, 64, 198] #M0 F1 M2 F3 M3 F0 M1 F2
+  - type: STR_MAGNETIC_ION_ARMOR_UC
+#   spriteInv: MAN_3
+    spriteInv: MAN_7
+    spriteSheet: TDXCOM_3.PCK
+    frontArmor: 100
+    sideArmor: 80
+    rearArmor: 60
+    underArmor: 50
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0 # Freeze
+      - 1.0 # Melee
+      - 1.0
+      - 0.0
+    spriteFaceGroup: 14
+#   spriteFaceColor: [160, 160, 64, 160, 160, 64, 160, 160] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteFaceColor: [160, 160, 64, 160, 160, 160, 160, 64] #M0 F1 M2 F3 M3 F0 M1 F2
+    spriteHairGroup: 4
+#   spriteHairColor: [130, 160, 201, 130, 64, 198, 160, 64] #M0 F0 M1 F1 M2 F2 M3 F3
+    spriteHairColor: [130, 160, 201, 64, 160, 130, 64, 198] #M0 F1 M2 F3 M3 F0 M1 F2
+  - type: AQUATOID_ARMOR0
+    spriteSheet: AQUA.PCK
+    corpseItem: STR_AQUATOID_CORPSE
+    frontArmor: 10
+    sideArmor: 8
+    rearArmor: 6
+    underArmor: 6
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0 # Fire
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0 # Melee
+      - 1.0 # Electr
+      - 1.0 # Smoke
+    loftemps: 2
+    drawingRoutine: 15
+  - type: AQUATOID_ARMOR1
+    spriteSheet: AQUA.PCK
+    corpseItem: STR_AQUATOID_CORPSE
+    frontArmor: 20
+    sideArmor: 16
+    rearArmor: 12
+    underArmor: 12
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0 # Fire
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0 # Melee
+      - 1.0 # Electr
+      - 1.0 # Smoke
+    loftemps: 2
+    drawingRoutine: 15
+  - type: AQUATOID_ARMOR2
+    spriteSheet: AQUA.PCK
+    corpseItem: STR_AQUATOID_CORPSE
+    frontArmor: 30
+    sideArmor: 24
+    rearArmor: 18
+    underArmor: 18
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0 # Fire
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0 # Melee
+      - 1.0 # Electr
+      - 1.0 # Smoke
+    loftemps: 2
+    drawingRoutine: 15
+  - type: DEEP_ONE_ARMOR0
+    spriteSheet: DEEPONEBLUE.PCK
+    allowInv: false
+    corpseItem: STR_DEEP_ONE_CORPSE
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 16
+    damageModifier:
+      - 1.0
+      - 1.0 
+      - 1.0
+      - 1.0
+      - 1.0 # Gauss
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.3 # Electr
+      - 1.0
+    loftemps: 3
+    drawingRoutine: 14
+  - type: GILLMAN_ARMOR0
+    spriteSheet: GILLMAN.PCK
+    corpseItem: STR_GILLMAN_CORPSE
+    frontArmor: 20
+    sideArmor: 16
+    rearArmor: 12
+    underArmor: 12
+    damageModifier:
+      - 1.0
+      - 1.0 
+      - 2.0 # Fire
+      - 1.0
+      - 1.0
+      - 1.0 # Sonic
+      - 1.0
+      - 1.0
+      - 0.6 # Electr
+      - 1.0
+    loftemps: 3
+    drawingRoutine: 14
+  - type: GILLMAN_ARMOR1
+    spriteSheet: GILLMAN.PCK
+    corpseItem: STR_GILLMAN_CORPSE
+    frontArmor: 30
+    sideArmor: 24
+    rearArmor: 18
+    underArmor: 18
+    damageModifier:
+      - 1.0
+      - 1.0 
+      - 2.0 # Fire
+      - 1.0
+      - 1.0
+      - 1.0 # Sonic
+      - 1.0
+      - 1.0
+      - 0.6 # Electr
+      - 1.0
+    loftemps: 3
+    drawingRoutine: 14
+  - type: GILLMAN_ARMOR2
+    spriteSheet: GILLMAN.PCK
+    corpseItem: STR_GILLMAN_CORPSE
+    frontArmor: 40
+    sideArmor: 32
+    rearArmor: 24
+    underArmor: 24
+    damageModifier:
+      - 1.0
+      - 1.0 
+      - 2.0 # Fire
+      - 1.0
+      - 1.0
+      - 1.0 # Sonic
+      - 1.0
+      - 1.0
+      - 0.6 # Electr
+      - 1.0
+    loftemps: 3
+    drawingRoutine: 14
+  - type: TASOTH_ARMOR0
+    spriteSheet: TASOTH_ALT.PCK
+    corpseItem: STR_TASOTH_CORPSE
+    frontArmor: 30
+    sideArmor: 30
+    rearArmor: 30
+    underArmor: 20
+    damageModifier:
+      - 1.0
+      - 1.0 # AP
+      - 2.0 # Fire
+      - 1.0 # HE
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 1.0 # Stun
+      - 1.0 # Melee
+      - 0.6 # Electr
+      - 1.0 # Smoke
+    loftemps: 3
+    drawingRoutine: 14
+  - type: TASOTH_ARMOR1
+    spriteSheet: TASOTH_ALT.PCK
+    corpseItem: STR_TASOTH_CORPSE
+    frontArmor: 40
+    sideArmor: 40
+    rearArmor: 40
+    underArmor: 30
+    damageModifier:
+      - 1.0
+      - 1.0 # AP
+      - 2.0 # Fire
+      - 1.0 # HE
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 1.0 # Stun
+      - 1.0 # Melee
+      - 0.6 # Electr
+      - 1.0 # Smoke
+    loftemps: 3
+    drawingRoutine: 14
+  - type: TASOTH_ARMOR2
+    spriteSheet: TASOTH_ALT.PCK
+    corpseItem: STR_TASOTH_CORPSE
+    frontArmor: 50
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 40
+    damageModifier:
+      - 1.0
+      - 1.0 # AP
+      - 2.0 # Fire
+      - 1.0 # HE
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 1.0 # Stun
+      - 1.0 # Melee
+      - 0.6 # Electr
+      - 1.0 # Smoke
+    loftemps: 3
+    drawingRoutine: 14
+  - type: CALCINITE_ARMOR0
+#   spriteSheet: CALCIN.PCK
+    allowInv: false
+    corpseItem: STR_CALCINITE_CORPSE
+    frontArmor: 25
+    sideArmor: 25
+    rearArmor: 25
+    underArmor: 15
+    damageModifier:
+      - 1.0
+      - 1.0 # AP
+      - 1.0 # Fire
+      - 1.0 # HE
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 1.0 # Stun
+      - 1.0 # Melee
+      - 0.0 # Electr
+      - 0.0 # Smoke
+    loftemps: 3
+    drawingRoutine: 14
+  - type: TENTACULAT_ARMOR0
+    spriteSheet: TENTAC.PCK
+    allowInv: false
+    corpseItem: STR_TENTACULAT_CORPSE
+    frontArmor: 45
+    sideArmor: 25
+    rearArmor: 15
+    underArmor: 15
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 2.0 # Phs
+      - 1.5 # HE
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 1.0 # Freeze
+      - 1.0 # Melee
+      - 0.7 # Electr
+      - 1.0 # Smoke
+    loftemps: 2
+    drawingRoutine: 19
+  - type: LOBSTERMAN_ARMOR0
+    spriteSheet: LOBSTER.PCK
+    corpseItem: STR_LOBSTERMAN_CORPSE
+    frontArmor: 60
+    sideArmor: 60
+    rearArmor: 60
+    underArmor: 40
+    damageModifier:
+      - 1.0
+      - 0.5 # Ap
+      - 2.0 # Phs
+      - 0.5 # HE
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 1.0 # Freeze
+      - 2.0 # Melee
+      - 0.3 # Electr
+      - 1.0 # Smoke
+    loftemps: 4
+    drawingRoutine: 14
+  - type: LOBSTERMAN_ARMOR1
+    spriteSheet: LOBSTER.PCK
+    corpseItem: STR_LOBSTERMAN_CORPSE
+    frontArmor: 70
+    sideArmor: 70
+    rearArmor: 70
+    underArmor: 50
+    damageModifier:
+      - 1.0
+      - 0.5 # Ap
+      - 2.0 # Phs
+      - 0.5 # HE
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 1.0 # Freeze
+      - 2.0 # Melee
+      - 0.3 # Electr
+      - 1.0 # Smoke
+    loftemps: 4
+    drawingRoutine: 14
+  - type: LOBSTERMAN_ARMOR2
+    spriteSheet: LOBSTERCOMM.PCK
+    corpseItem: STR_LOBSTERMAN_CORPSE_2
+    frontArmor: 80
+    sideArmor: 80
+    rearArmor: 80
+    underArmor: 60
+    damageModifier:
+      - 1.0
+      - 0.5 # Ap
+      - 2.0 # Phs
+      - 0.5 # HE
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 1.0 # Freeze
+      - 2.0 # Melee
+      - 0.3 # Electr
+      - 1.0 # Smoke
+    loftemps: 4
+    drawingRoutine: 14
+  - type: LOBSTERMAN_ARMOR_GUARD
+    spriteSheet: LOBSTERGUARD.PCK
+    corpseItem: STR_LOBSTERMAN_CORPSE_3
+    frontArmor: 90
+    sideArmor: 90
+    rearArmor: 90
+    underArmor: 70
+    damageModifier:
+      - 1.0
+      - 0.5 # Ap
+      - 2.0 # Phs
+      - 0.5 # HE
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 1.0 # Freeze
+      - 2.0 # Melee
+      - 0.1 # Electr
+      - 1.0 # Smoke
+    loftemps: 4
+    drawingRoutine: 14
+  - type: XARQUID_ARMOR0
+    spriteSheet: XARQUID.PCK
+    allowInv: false
+    corpseGeo: STR_XARQUID_CORPSE
+    corpseBattle:
+      - XARQUID_CORPSE_1
+      - XARQUID_CORPSE_2
+      - XARQUID_CORPSE_3
+      - XARQUID_CORPSE_4
+    frontArmor: 35
+    sideArmor: 50
+    rearArmor: 50
+    underArmor: 50
+    movementType: 1
+    size: 2
+    damageModifier:
+      - 1.0
+      - 1.0 # AP
+      - 1.0 # Fire
+      - 0.5 # HE
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 1.0 # Stun
+      - 1.5 # Melee
+      - 0.3 # Electr
+      - 0.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 21
+    constantAnimation: true
+  - type: BIODRONE_ARMOR0
+    spriteSheet: BIODRON.PCK
+    allowInv: false
+    corpseItem: STR_BIODRONE_CORPSE
+    frontArmor: 20
+    sideArmor: 20
+    rearArmor: 20
+    underArmor: 20
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 1.0 # AP
+      - 1.0 # Fire
+      - 0.5 # HE
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 0.5 # Stun
+      - 1.5 # Melee
+      - 0.7 # Electr
+      - 1.0 # Smoke
+    loftemps: 2
+    drawingRoutine: 16
+    constantAnimation: true
+  - type: HALLUCINOID_ARMOR0
+    spriteSheet: HALLUCIN.PCK
+    allowInv: false
+    corpseGeo: STR_HALLUCINOID_CORPSE
+    corpseBattle:
+      - HALLUCINOID_CORPSE_1
+      - HALLUCINOID_CORPSE_2
+      - HALLUCINOID_CORPSE_3
+      - HALLUCINOID_CORPSE_4
+    frontArmor: 35
+    sideArmor: 35
+    rearArmor: 35
+    underArmor: 25
+    size: 2
+    movementType: 1
+    damageModifier:
+      - 1.0
+      - 0.5 # AP
+      - 2.0 # Fire
+      - 0.5 # HE
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 0.5 # Freeze
+      - 0.5 # Melee
+      - 0.0 # Electr
+      - 1.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 12
+    constantAnimation: true
+  - type: TRISCENE_ARMOR0
+    spriteSheet: TRISCEN.PCK
+    allowInv: false
+    corpseGeo: STR_TRISCENE_CORPSE
+    corpseBattle:
+      - TRISCENE_CORPSE_1
+      - TRISCENE_CORPSE_2
+      - TRISCENE_CORPSE_3
+      - TRISCENE_CORPSE_4
+    frontArmor: 90
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 40
+    size: 2
+    damageModifier:
+      - 1.0
+      - 1.0 # AP
+      - 1.0 # Fire
+      - 1.0 # HE
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 1.0 # Stun
+      - 1.0 # Melee
+      - 0.6 # Electr
+      - 1.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 20
+  - type: COELACANTH_ARMOR # changed for new Coela/Gauss YELLOW recolor
+#   spriteSheet: TANK01.PCK
+    spriteSheet: COELAGAUSS.PCK
+    allowInv: false
+    corpseBattle:
+      - COELACANTH_CORPSE_1
+      - COELACANTH_CORPSE_2
+      - COELACANTH_CORPSE_3
+      - COELACANTH_CORPSE_4
+    frontArmor: 70
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 60
+    size: 2
+    damageModifier:
+      - 1.0 
+      - 1.0 # AP
+      - 0.5 # Fire
+      - 1.0 # HE
+      - 0.5 # Gauss
+      - 1.0 # Sonic
+      - 0.5 # Stun
+      - 1.0 # Melee
+      - 1.0 # Electr
+      - 0.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 11
+  - type: DISPLACER_ARMOR
+    spriteSheet: TANK01.PCK
+    allowInv: false
+    corpseBattle:
+      - DISPLACER_CORPSE_1
+      - DISPLACER_CORPSE_2
+      - DISPLACER_CORPSE_3
+      - DISPLACER_CORPSE_4
+    frontArmor: 110
+    sideArmor: 110
+    rearArmor: 110
+    underArmor: 80
+    movementType: 1
+    size: 2
+    damageModifier:
+      - 1.0
+      - 1.0 # AP
+      - 0.5 # Fire
+      - 1.0 # HE
+      - 0.5 # Gauss
+      - 1.0 # Sonic
+      - 0.5 # Stun
+      - 1.0 # Melee
+      - 1.0 # Electr
+      - 0.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 11
+    constantAnimation: true
+  - type: ZOMBIE_ARMOR
+    spriteSheet: ZOMBIE.PCK
+    allowInv: false
+    corpseItem: STR_TENTACULAT_CORPSE
+    frontArmor: 4
+    sideArmor: 4
+    rearArmor: 4
+    underArmor: 4
+    damageModifier:
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 1.0
+      - 0.0
+      - 1.0
+    loftemps: 2
+    drawingRoutine: 17

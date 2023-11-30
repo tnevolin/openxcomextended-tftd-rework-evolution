@@ -1,0 +1,7 @@
+name: "TFTD Rework: Evolution"
+version: 1.12
+description: "TFTD Rework + improved weapon progression."
+author: Alpha Centauri Bear
+id: TFTDRework-Evolution
+isMaster: false
+master: xcom2

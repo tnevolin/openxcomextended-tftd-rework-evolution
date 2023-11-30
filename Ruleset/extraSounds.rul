@@ -1,0 +1,15 @@
+extraSounds: # not implemented yet
+  - type: BATTLE.CAT
+    files:
+#     95: Resources/GaussWeaponsNewSounds/HeavyRailgun.wav
+#     96: Resources/GaussWeaponsNewSounds/lashit.wav
+#     97: Resources/GaussWeaponsNewSounds/RailRifle.wav
+#     98: Resources/GaussWeaponsNewSounds/RailPistol.wav
+#     94: Resources/GaussWeaponsNewSounds/HeavyGauss.wav
+# alt sounds
+#     100: Resources/HQSoundsTFTD/Weapons/Dartgun_fire.ogg
+#     101: Resources/HQSoundsTFTD/Weapons/GaussPistol_fire.ogg
+#     102: Resources/HQSoundsTFTD/Weapons/GaussRifle_fire.ogg
+#     103: Resources/HQSoundsTFTD/Weapons/GaussHeavy_fire.ogg
+#     104: Resources/HQSoundsTFTD/Weapons/GaussSniper_fire.ogg
+      116: Resources/Tris_Bite/attack_reaper.ogg

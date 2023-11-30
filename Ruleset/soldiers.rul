@@ -1,0 +1,47 @@
+soldiers: 
+  - type: STR_SOLDIER
+    minStats:
+      tu: 50
+      stamina: 40
+      health: 30
+      bravery: 10
+      reactions: 30
+      firing: 40
+      throwing: 50
+      strength: 20
+      psiStrength: 10 # increased from 0
+      psiSkill: 0
+      melee: 40
+    maxStats:
+      tu: 60
+      stamina: 70
+      health: 50
+      bravery: 60
+      reactions: 60
+      firing: 70
+      throwing: 70 # reduced from 80
+      strength: 40
+      psiStrength: 60 # reduced from 100
+      psiSkill: 16
+      melee: 70
+    statCaps:
+      tu: 80
+      stamina: 100
+      health: 80
+      bravery: 100
+      reactions: 100 
+      firing: 100 # reduced from 120
+      throwing: 100 # reduced from 120
+      strength: 60 # reduced from 70 because Ion/Mag-Ion Armor adds +10
+      psiStrength: 80 # reduced from 100
+      psiSkill: 80 # reduced from 100
+      melee: 80 # reduced from 120
+    armor: STR_DIVING_SUIT_UC
+    standHeight: 22
+    kneelHeight: 14
+    femaleFrequency: 25    
+    soldierNames:
+#     - delete	
+      - SoldierName/
+    deathMale: 48
+    deathFemale: 48

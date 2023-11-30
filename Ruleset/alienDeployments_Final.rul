@@ -1,0 +1,588 @@
+alienDeployments: 
+  - type: STR_TLETH_P1 
+    cheatTurn: 30
+    data:
+      - alienRank: 6 # swapped with 1 so that 4x4 terror units don't spawn "trapped" in those little rooms
+        lowQty: 2
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: 
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 7 # swapped with 0 so that 4x4 terror units don't spawn "trapped" in those little rooms
+        lowQty: 1
+        highQty: 2
+        dQty: 0
+        percentageOutsideUfo: 100
+        itemSets: 
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 5
+        lowQty: 4
+        highQty: 6
+        dQty: 3
+        percentageOutsideUfo: 60
+        itemSets: 
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_BLASTA_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_BLASTA_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 4
+        lowQty: 3
+        highQty: 4
+        dQty: 2
+        percentageOutsideUfo: 60
+        itemSets: 
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_BLASTA_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_THERMIC_LANCE
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER		
+      - alienRank: 3
+        lowQty: 2
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 35
+        itemSets: 
+          -
+            - STR_THERMAL_SHOK_LAUNCHER
+            - STR_THERMAL_SHOK_BOMB
+            - STR_THERMAL_SHOK_BOMB
+            - STR_THERMAL_SHOK_BOMB
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_BLASTA_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_THERMAL_SHOK_LAUNCHER
+            - STR_THERMAL_SHOK_BOMB
+            - STR_THERMAL_SHOK_BOMB
+            - STR_THERMAL_SHOK_BOMB
+            - STR_THERMAL_SHOK_BOMB
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 2
+        lowQty: 2
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 35
+        itemSets: 
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_BLASTA_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_THERMIC_LANCE
+            - STR_DISRUPTOR_PULSE_LAUNCHER
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 1
+        lowQty: 2
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_BLASTA_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_THERMIC_LANCE
+            - STR_DISRUPTOR_PULSE_LAUNCHER
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 0
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            - STR_THERMIC_LANCE
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER	
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_DISRUPTOR_PULSE_LAUNCHER
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+    width: 60
+    length: 60
+    height: 2
+    terrains: 
+      - ALSHIP
+    shade: 15
+    depth: [3, 3]
+    race: STR_TLETH_SIGSBEE # (CUSTOM) *******************************
+    nextStage: STR_TLETH_P2
+    finalDestination: true
+    script: TLETH_P1
+    loseCutscene: loseGame
+    briefing:
+      palette: 5
+      music: GMBIGMAR
+      background: BACK05.SCR
+      showTarget: false
+      cutscene: tleth
+  - type: STR_TLETH_P2 
+    cheatTurn: 30
+    data:
+      - alienRank: 4
+        lowQty: 2
+        highQty: 4
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_BLASTA_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_THERMIC_LANCE
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 5
+        lowQty: 4
+        highQty: 6
+        dQty: 3
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_BLASTA_POWER_CLIP
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_BLASTA_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 7 # left rank order as vanilla for spawning reasons
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 2
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_BLASTA_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_THERMIC_LANCE
+            - STR_DISRUPTOR_PULSE_LAUNCHER
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 3
+        lowQty: 2
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_THERMAL_SHOK_LAUNCHER
+            - STR_THERMAL_SHOK_BOMB
+            - STR_THERMAL_SHOK_BOMB
+            - STR_THERMAL_SHOK_BOMB
+            - STR_THERMAL_SHOK_BOMB
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_DISRUPTOR_PULSE_LAUNCHER
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 1 # swapped with 4 so Commander doesn't spawn near the entrance
+        lowQty: 2
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_THERMIC_LANCE
+            - STR_DISRUPTOR_PULSE_LAUNCHER
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 0 # swapped with 5 so Commander doesn't spawn near the entrance
+        lowQty: 1
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            - STR_DISRUPTOR_PULSE_LAUNCHER
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_DISRUPTOR_PULSE_LAUNCHER
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 6
+        lowQty: 3
+        highQty: 4
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 60
+    length: 60
+    height: 2
+    terrains: 
+      - LEVEL
+    shade: 15
+    depth: [3, 3]
+    race: STR_TLETH_CITY # (CUSTOM) *******************************
+    nextStage: STR_TLETH_P3
+    script: TLETH_P2_P3
+    loseCutscene: loseGame
+    briefing:
+      palette: 4
+      music: GMBIGMAR
+      background: BACK01.SCR
+      showTarget: false
+  - type: STR_TLETH_P3 
+    cheatTurn: 40
+    data:
+      - alienRank: 0
+        lowQty: 3
+        highQty: 5
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_THERMIC_LANCE
+            - STR_DISRUPTOR_PULSE_LAUNCHER
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 1
+        lowQty: 2
+        highQty: 3
+        dQty: 0
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            - STR_DISRUPTOR_PULSE_LAUNCHER
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_DISRUPTOR_PULSE_LAUNCHER
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 7 # left rank order as vanilla for spawning reasons
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            []
+          -
+            []
+          -
+            []
+      - alienRank: 2
+        lowQty: 1
+        highQty: 3
+        dQty: 1
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_BLASTA_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_THERMIC_LANCE
+            - STR_DISRUPTOR_PULSE_LAUNCHER
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 3
+        lowQty: 1
+        highQty: 3
+        dQty: 2
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_THERMAL_SHOK_LAUNCHER
+            - STR_THERMAL_SHOK_BOMB
+            - STR_THERMAL_SHOK_BOMB
+            - STR_THERMAL_SHOK_BOMB
+            - STR_THERMAL_SHOK_BOMB
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_DISRUPTOR_PULSE_LAUNCHER
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_DISRUPTOR_AMMO
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 4
+        lowQty: 2
+        highQty: 4
+        dQty: 3
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_BLASTA_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_THERMIC_LANCE
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 5
+        lowQty: 3
+        highQty: 6
+        dQty: 4
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_BLASTA_POWER_CLIP
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_BLASTA_RIFLE
+            - STR_BLASTA_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+          -
+            - STR_SONIC_CANNON
+            - STR_CANNON_POWER_CLIP
+            - STR_SONIC_PULSER
+            - STR_SONIC_PULSER
+      - alienRank: 6
+        lowQty: 3
+        highQty: 4
+        dQty: 3
+        percentageOutsideUfo: 0
+        itemSets: 
+          -
+            []
+          -
+            []
+          -
+            []
+    width: 60
+    length: 60
+    height: 2
+    terrains:
+      - CRYPT
+    shade: 15
+    depth: [3, 3]
+    race: STR_TLETH_CRYPT # (CUSTOM) *******************************
+    script: TLETH_P2_P3
+    winCutscene: winGame
+    loseCutscene: loseGame
+    briefing:
+      palette: 4
+      music: GMBIGMAR
+      background: BACK01.SCR
+      showTarget: false
+    objectiveType: 14
+    objectivesRequired: 8

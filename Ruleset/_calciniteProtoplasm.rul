@@ -1,0 +1,126 @@
+items:
+  - type: STR_CALCINITE_PROTOFORM_CORPSE
+    listOrder: 7750
+    size: 0.4
+    costSell: 10000
+    weight: 25
+    bigSprite: 251
+    floorSprite: 252
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 3
+    battleType: 11
+    armor: 26
+  - type: PLASMICIDE_WEAPON
+    bigSprite: { mod: xcom2, index: 69 }
+    bulletSprite: 8
+    fireSound: 40
+    hitSound: 41
+    power: 110
+    damageType: 8
+    accuracyAuto: 0
+    accuracySnap: 75
+    accuracyAimed: 110
+    tuAuto: 0
+    tuSnap: 30
+    tuAimed: 55
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+    arcingShot: true
+    hitAnimation: -1
+  - type: STR_CALCINITE_PROTOFORM_TERRORIST
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 10000
+armors:
+  - type: CALCINITE_ARMOR0
+    spriteSheet: pCALCIN.PCK
+#   deathFrames: 8
+    deathFrames: 11
+  - type: CALCINITE_PROTO_ARMOR # ---------------------- PROXY (future idea to spawn Calcinite's formless mass of entrails upon death!)
+    spriteSheet: PROTOPLASM.PCK
+    allowInv: false
+    corpseBattle:
+      - STR_CALCINITE_PROTOFORM_CORPSE
+    frontArmor: 12
+    sideArmor: 12
+    rearArmor: 12
+    underArmor: 12
+    drawingRoutine: 8
+    constantAnimation: true
+    damageModifier:
+      - 1.0
+      - 0.7 # AP
+      - 0.9 # Fire
+      - 0.8 # HE
+      - 1.0 # Gauss
+      - 1.1 # Sonic
+      - 0.6 # Stun
+      - 0.8 # Drill
+      - 0.0 # Electr
+      - 0.0 # Smoke
+    loftempsSet: [ 5 ]
+units:
+  - type: STR_CALCINITE_TERRORIST
+    spawnUnit: STR_CALCINITE_PROTOFORM_TERRORIST
+  - type: STR_CALCINITE_PROTOFORM_TERRORIST
+    race: STR_PLASMICIDE
+    rank: STR_LIVE_TERRORIST
+    stats:
+      tu: 54
+      stamina: 96
+      health: 60
+      bravery: 90
+      reactions: 75
+      firing: 74
+      throwing: 80
+      strength: 110
+      psiStrength: 90
+      psiSkill: 0
+      melee: 85
+    armor: CALCINITE_PROTO_ARMOR
+    standHeight: 10
+    kneelHeight: 10
+    value: 20
+    deathSound: 52 # Tentaculat
+    moveSound: 65 # Xarquid
+    intelligence: 7
+    aggression: 2
+    energyRecovery: 40
+    livingWeapon: true
+extraSprites:
+# Calcinite Protoplasm ----------------------------------------------
+  - type: PROTOPLASM.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 80
+    files:
+      0: Resources/AliensRecolor/PLASMICIDE1.png
+  - type: BIGOBS.PCK
+    files:
+      251: Resources/AliensRecolor/bigOb_Plasmicide1.png
+  - type: FLOOROB.PCK
+    files:
+      252: Resources/AliensRecolor/floorOb_Plasmicide1.png
+# Calcinite Dying Animation Transition ----------------------------------------------
+  - type: pCALCIN.PCK
+    subX: 32
+    subY: 40
+    width: 256
+#   height: 1320
+    height: 1360
+    files:
+      0: Resources/AliensRecolor/pCALCIN+.png
+extraStrings:
+  - type: en-US
+    strings:
+      STR_CALCINITE_PROTOFORM: Calcinite (Protoform) # display for Soldier Diares to differentiate from regular Calcinite?
+      STR_PLASMICIDE: Calcinite (Protoform) # display for Soldier Diares to differentiate from regular Calcinite?
+      STR_CALCINITE_PROTOFORM_TERRORIST: Calcinite Terrorist # live capture & research
+      STR_CALCINITE_PROTOFORM_CORPSE: Calcinite Corpse # (Protoform) << doesn't matter since you can't get regular Calcinite Corpse anymore

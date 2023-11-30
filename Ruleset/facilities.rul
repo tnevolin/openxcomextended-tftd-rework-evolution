@@ -1,0 +1,191 @@
+facilities: 
+  - type: STR_AIR_LOCK
+    listOrder: 100
+    spriteShape: 2
+    spriteFacility: 17
+    lift: true
+    buildCost: 300000
+    buildTime: 1
+    monthlyCost: 4000
+    mapName: XBASES00
+  - type: STR_SUB_PEN
+    listOrder: 200
+    spriteShape: 9
+    spriteFacility: 9
+    size: 2
+    buildCost: 200000
+    buildTime: 24
+    monthlyCost: 25000
+    crafts: 1
+    mapName: XBASES16
+  - type: STR_GENERAL_STORES
+    listOrder: 300
+    spriteShape: 1
+    spriteFacility: 24
+    buildCost: 150000
+    buildTime: 10
+    monthlyCost: 5000
+    storage: 50
+    mapName: XBASES07
+  - type: STR_LIVING_QUARTERS
+    listOrder: 400
+    spriteShape: 1
+    spriteFacility: 18
+    buildCost: 400000
+    buildTime: 16
+    monthlyCost: 10000
+    personnel: 50
+    mapName: XBASES01
+  - type: STR_WORKSHOP
+    listOrder: 500
+    spriteShape: 1
+    spriteFacility: 20
+    buildCost: 800000
+    buildTime: 28
+    monthlyCost: 35000
+    workshops: 50
+    mapName: XBASES03
+  - type: STR_LABORATORY
+    listOrder: 600
+    spriteShape: 1
+    spriteFacility: 19
+    buildCost: 750000
+    buildTime: 26
+    monthlyCost: 30000
+    labs: 50
+    mapName: XBASES02
+  - type: STR_ALIEN_CONTAINMENT
+    listOrder: 700
+    requires:
+      - STR_ALIEN_CONTAINMENT
+    spriteShape: 1
+    spriteFacility: 25
+#   buildCost: 400000
+    buildCost: 600000
+    buildTime: 18
+    monthlyCost: 15000
+    aliens: 15
+    mapName: XBASES08
+  - type: STR_MC_LAB
+    listOrder: 800
+    requires:
+      - STR_MC_LAB
+    spriteShape: 1
+    spriteFacility: 31
+    buildCost: 750000
+    buildTime: 24
+    monthlyCost: 16000
+    psiLabs: 15
+    mapName: XBASES14
+  - type: STR_STANDARD_SONAR
+    listOrder: 900
+    spriteShape: 2
+    spriteFacility: 21
+    buildCost: 300000
+    buildTime: 8
+    monthlyCost: 5000
+#   radarRange: 1500
+    radarRange: 1695
+    radarChance: 10
+    mapName: XBASES04
+  - type: STR_WIDE_ARRAY_SONAR
+    listOrder: 1000
+    spriteShape: 1
+    spriteFacility: 22
+    buildCost: 700000
+    buildTime: 18
+    monthlyCost: 15000
+#   radarRange: 2250
+    radarRange: 2577
+    radarChance: 20
+    mapName: XBASES05
+  - type: STR_TRANSMISSION_RESOLVER
+    listOrder: 1100
+    requires:
+      - STR_TRANSMISSION_RESOLVER
+    hyper: true
+    spriteShape: 2
+    spriteFacility: 32
+    buildCost: 1400000
+    buildTime: 26
+    monthlyCost: 30000
+#   radarRange: 2400
+    radarRange: 2759
+    radarChance: 100
+    mapName: XBASES15
+  - type: STR_TORPEDO_DEFENSES
+    listOrder: 1200
+    spriteShape: 2
+    spriteFacility: 23
+    buildCost: 500000
+    buildTime: 10
+    monthlyCost: 750000
+    defense: 8000
+    hitRatio: 100
+    fireSound: 12
+    hitSound: 10
+    mapName: XBASES06
+  - type: STR_GAUSS_DEFENSES
+    listOrder: 1300
+    requires:
+      - STR_GAUSS_DEFENSES
+    spriteShape: 3
+    spriteFacility: 26
+    buildCost: 1000000
+    buildTime: 15
+    monthlyCost: 500000
+    defense: 8000
+    hitRatio: 100
+    fireSound: 13
+    hitSound: 10
+    mapName: XBASES09
+  - type: STR_SONIC_DEFENSES
+    listOrder: 1400
+    requires:
+      - STR_SONIC_DEFENSES
+    spriteShape: 3
+    spriteFacility: 27
+    buildCost: 1500000
+    buildTime: 20
+    monthlyCost: 250000
+    defense: 8000
+    hitRatio: 100
+    fireSound: 14
+    hitSound: 10
+    mapName: XBASES10
+  - type: STR_PWT_DEFENSES
+    listOrder: 1500
+    requires:
+      - STR_PWT_DEFENSES
+    spriteShape: 3
+    spriteFacility: 28
+    buildCost: 2000000
+    buildTime: 25
+    monthlyCost: 0
+    defense: 8000
+    hitRatio: 100
+    fireSound: 15
+    hitSound: 10
+    mapName: XBASES11
+  - type: STR_BOMBARDMENT_SHIELD
+    listOrder: 1600
+    requires:
+      - STR_BOMBARDMENT_SHIELD
+    grav: true
+    spriteShape: 2
+    spriteFacility: 29
+    buildCost: 2000000
+    buildTime: 20
+    monthlyCost: 0
+    mapName: XBASES12
+  - type: STR_MC_GENERATOR
+    listOrder: 1700
+    requires:
+      - STR_MC_GENERATOR
+    mind: true
+    spriteShape: 2
+    spriteFacility: 30
+    buildCost: 1300000
+    buildTime: 32
+    monthlyCost: 5000
+    mapName: XBASES13

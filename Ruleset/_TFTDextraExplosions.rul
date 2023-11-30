@@ -1,0 +1,40 @@
+items:
+#STUN
+  - type: STR_THERMAL_SHOK_BOMB
+    hitAnimation: 88
+  - type: STR_HALLUCINOID_STUN_WEAPON
+    hitAnimation: 88
+#SMOKE
+  - type: STR_DYE_GRENADE
+    hitAnimation: 108
+#HE
+  - type: STR_HWP_DISPLACER_PWT
+    hitAnimation: 128
+  - type: STR_GC_HE_AMMO
+    hitAnimation: 128
+  - type: STR_HJC_HE_AMMO
+    hitAnimation: 128
+  - type: STR_SMALL_TORPEDO
+    hitAnimation: 128
+  - type: STR_LARGE_TORPEDO
+    hitAnimation: 128
+  - type: STR_MAGNA_BLAST_GRENADE
+    hitAnimation: 128
+  - type: STR_PARTICLE_DISTURBANCE_GRENADE
+    hitAnimation: 128
+  - type: STR_MAGNA_PACK_EXPLOSIVE
+    hitAnimation: 128
+  - type: STR_DISRUPTOR_AMMO
+    hitAnimation: 128
+  - type: STR_SONIC_PULSER
+    hitAnimation: 128
+extraSprites:
+  - type: X1.PCK
+    width: 1024
+    height: 128
+    subX: 128
+    subY: 64
+    files:
+      80: Resources/Extra_Explosions/X1_Stun.png
+      100: Resources/Extra_Explosions/X1_Smoke2.png
+      120: Resources/Extra_Explosions/X1_HE.png

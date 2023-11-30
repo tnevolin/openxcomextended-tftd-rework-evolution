@@ -1,0 +1,64 @@
+ufos:
+  - type: STR_BATTLESTAR
+    listOrder: 100
+    size: STR_LARGE
+    modSprite: InterceptionBattlestar
+    damageMax: 3000
+    speedMax: 4000
+    accel: 6
+    power: 60
+    range: 60
+    score: 600
+    reload: 32
+    breakOffTime: 2500
+    battlescapeTerrainData:
+      name: UFO13
+      mapDataSets:
+        - BLANKS
+        - UEXT2
+        - UEXT3
+        - UINT1
+        - UINT2
+        - UINT3
+        - UINT_R
+      mapBlocks: # ------------------------------------- for more variants apply Add-On mod
+        - name: UFO13bl1
+          width: 30
+          length: 30
+          items:
+            STR_ZRBITE:
+              - [17, 18, 1]
+              - [18, 17, 1]
+              - [5, 7, 1]
+              - [7, 5, 1]
+# alienDeployments: # done in main ruleset 
+# alienMissions: # done in main ruleset 
+# rest of research (getOneFree's) on main ruleset
+ufopaedia:
+  - id: STR_BATTLESTAR
+    listOrder: 13050 # listed after Hunter
+    type_id: 17
+    section: STR_UFOS
+    requires:
+    - STR_BATTLESTAR
+    text: STR_BATTLESTAR_UFOPEDIA
+    image_id: UP_USO_Battlestar.SPK
+extraSprites:
+#Interception images for new USO
+  - type: InterceptionBattlestar
+    singleImage: true
+    width: 160
+    height: 58
+    files:
+      0: Resources/Interception/USO_Battlestar_Int.png
+#UFOpedia backgrounds for new USO
+  - type: UP_USO_Battlestar.SPK
+    singleImage: true
+    files:
+      0: Resources/ufopaedia/UP_USO_Battlestar.png
+extraStrings:
+#labels and ufopaedia flavour test for the new subs
+  - type: en-US
+    strings:
+      STR_BATTLESTAR: Predator
+      STR_BATTLESTAR_UFOPEDIA: "The Predator is a large multi-purpose vessel primarily used for scouring large quantities of resources from the depths of the ocean floor as well as capturing live human subjects for experimentation."

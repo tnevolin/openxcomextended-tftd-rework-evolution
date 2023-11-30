@@ -1,0 +1,144 @@
+missionScripts: 
+  - type: gameStart
+    missionWeights:
+      0:
+        STR_ALIEN_PROBE_MISSION: 100
+    lastMonth: 0
+    targetBaseOdds: 100
+    raceWeights:
+      0:
+        STR_AQUATOID: 100
+    startDelay: 120
+    
+    
+  - type: artifacts # begins month 6 (July) 50%
+    label: 1
+    missionWeights:
+      # 0 is just for safety
+      0:
+        STR_ALIEN_ARTIFACT: 100
+    regionWeights:
+      0:
+        ARTIFACT_SITES: 100
+    avoidRepeats: 12
+    maxRuns: 12
+    varName: artifacts
+    useTable: false
+    firstMonth: 6
+    executionOdds: 50
+    startDelay: 0
+    
+    
+    
+  - type: shipTerror # begins month 3 (April) 30%
+    conditionals: [-1]
+    label: 2
+    missionWeights:
+      # 0 is just for safety
+      0:
+        STR_ALIEN_SHIP_ATTACK: 100
+    regionWeights:
+      0:
+        SHIPPING_LANES: 100
+    avoidRepeats: 5
+    varName: shippingLanes
+    useTable: false
+    firstMonth: 3
+#   executionOdds: 60
+    executionOdds: 30
+    startDelay: 0
+    
+    
+  - type: recurringTerror
+    conditionals: [-1, -2]
+    missionWeights:
+      0:
+        STR_ALIEN_SURFACE_ATTACK: 100
+    regionWeights:
+      0:
+        STR_NORTH_ATLANTIC: 10
+        STR_SOUTH_ATLANTIC: 10
+        STR_NORTH_PACIFIC: 10
+        STR_SOUTH_PACIFIC: 10
+        STR_MEDITERRANEAN: 10
+        STR_SOUTH_CHINA_SEA: 10
+        STR_INDIAN_OCEAN: 10
+        STR_THE_EAST_SEA: 10
+        STR_NORTH_SEA: 10
+        STR_CARRIBEAN: 10
+    useTable: false
+    startDelay: 150
+    
+    
+    
+    
+
+
+  - type: recon
+    firstMonth: 1
+  - type: invasion # begins month 6 (July)
+    firstMonth: 6
+  - type: researchRetaliation
+    missionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
+    researchTriggers:
+      STR_THE_ULTIMATE_THREAT: true
+    startDelay: 150
+    targetBaseOdds: 100
+    useTable: false
+    label: 3
+  - type: beginnerRetaliation # first month 14 (Mar)
+    missionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
+    firstMonth: 14
+    targetBaseOdds: 100
+    useTable: false
+    conditionals: [-3]
+    label: 4
+    startDelay: 150
+  - type: experiencedRetaliation # first month 13 (Feb)
+    minDifficulty: 1
+    missionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
+    firstMonth: 13
+    targetBaseOdds: 100
+    useTable: false
+    conditionals: [-3, -4]
+    label: 5
+    startDelay: 150
+  - type: veteranRetaliation # first month 12 (Jan)
+    minDifficulty: 2
+    missionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
+    firstMonth: 12
+    targetBaseOdds: 100
+    useTable: false
+    conditionals: [-3, -4, -5]
+    label: 6
+    startDelay: 150
+  - type: geniusRetaliation # first month 10 (Nov)
+    minDifficulty: 3
+    missionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
+    firstMonth: 10
+    targetBaseOdds: 100
+    useTable: false
+    conditionals: [-3, -4, -5, -6]
+    label: 7
+    startDelay: 150
+  - type: superhumanRetaliation # first month 8 (Sept)
+    minDifficulty: 4
+    missionWeights:
+      0:
+        STR_ALIEN_RETALIATION: 100
+    firstMonth: 8
+    targetBaseOdds: 100
+    useTable: false
+    conditionals: [-3, -4, -5, -6, -7]
+    startDelay: 150
+    

@@ -1,0 +1,479 @@
+alienMissions: 
+# As vanilla UFO/EU can attest, HVY CRUISR (here HARVSTR) was suppossed to be used for Alien Interdiction (UFO's Alien Harvest)
+# and HUNTR (ABDUCTR) for Resource Raid (UFO's Alien Abduction), so they were swapped here
+  - type: STR_ALIEN_PROBE_MISSION
+    points: 0
+    raceWeights:
+      0:
+          STR_AQUATOID: 70
+          STR_GILLMAN: 30
+      1: # replaced Lobster 10 with Taso 10
+          STR_AQUATOID: 60
+          STR_GILLMAN: 30
+          STR_TASOTH: 10
+          STR_LOBSTERMAN: 0
+      3: # dropped Lobster 30 to 10 -- dropped Gill 30 to 40 -- added Taso 30
+          STR_AQUATOID: 30
+          STR_GILLMAN: 30
+          STR_TASOTH: 30
+          STR_LOBSTERMAN: 10
+      5:
+          STR_AQUATOID: 20
+          STR_GILLMAN: 10
+          STR_LOBSTERMAN: 40
+          STR_TASOTH: 30
+      7: # dropped Taso 40 to 30 -- added Squid 10
+          STR_AQUATOID: 20
+          STR_GILLMAN: 20
+          STR_LOBSTERMAN: 20
+          STR_TASOTH: 30
+          STR_SQUIDFACE: 10
+      9: # NEW
+          STR_AQUATOID: 10
+          STR_GILLMAN: 5
+          STR_LOBSTERMAN: 5
+          STR_TASOTH: 5
+          STR_SQUIDFACE: 10
+          STR_MIXED_CREW: 10 # Aqua/Gill
+          STR_MIXED_CREW_2: 10 # Aqua/Tasoth
+          STR_MIXED_CREW_4: 20 # Lobster/Aqua
+          STR_MIXED_CREW_6: 25 # Ceph/Aqua
+    waves: # 3 waves (last one: 2 counts)
+      - ufo: STR_SURVEY_SHIP
+        count: 1
+        trajectory: P0
+        timer: 9000
+      - ufo: STR_ESCORT
+        count: 1
+        trajectory: P2
+        timer: 7800
+      - ufo: STR_CRUISER
+        count: 2
+        trajectory: P4
+        timer: 9000
+  - type: STR_ALIEN_INTERDICTION # because Alien Intrdiction has so many waves, you hardly see HVY CRUISR
+    points: 30
+    raceWeights:
+      0: 
+          STR_AQUATOID: 50
+          STR_GILLMAN: 50
+      1: # dropped Aqua 50 to 20 -- added Taso 20
+          STR_AQUATOID: 30
+          STR_GILLMAN: 50
+          STR_TASOTH: 20
+      3: # dropped Gill 50 to 40 -- added Taso 10
+          STR_AQUATOID: 30
+          STR_GILLMAN: 40
+          STR_TASOTH: 10
+          STR_LOBSTERMAN: 20
+      5: # 
+          STR_AQUATOID: 10
+          STR_LOBSTERMAN: 40
+          STR_TASOTH: 50
+      7: # dropped Aqua 30 to 20-- added Squid 10
+          STR_AQUATOID: 20
+          STR_LOBSTERMAN: 30
+          STR_TASOTH: 40
+          STR_SQUIDFACE: 10
+      9: # NEW
+          STR_LOBSTERMAN: 10
+          STR_TASOTH: 10
+          STR_SQUIDFACE: 10
+          STR_MIXED_CREW: 10 # Aqua/Gill
+          STR_MIXED_CREW_3: 10 # Gill/Tasoth
+          STR_MIXED_CREW_4: 20 # Lobster/Aqua
+          STR_MIXED_CREW_5: 20 # Lobster/Cepha
+          STR_MIXED_CREW_6: 10 # Ceph/Aqua
+    waves: # 8 waves (all: 1 count)
+      - ufo: STR_SURVEY_SHIP
+        count: 1
+        trajectory: P0
+        timer: 7800
+      - ufo: STR_ESCORT # swapped 2nd SURVY SHIP for ESCRT
+        count: 1
+        trajectory: P2
+        timer: 7800
+      - ufo: STR_ESCORT
+        count: 1
+        trajectory: P2
+        timer: 6000
+      - ufo: STR_CRUISER
+        count: 1
+        trajectory: P0
+        timer: 7800
+      - ufo: STR_HEAVY_CRUISER # swapped 3rd CRUISR for HVY CRUISR
+        count: 1
+        trajectory: P3
+        timer: 9000
+      - ufo: STR_HEAVY_CRUISER
+        count: 1
+        trajectory: P4
+        timer: 3000
+      - ufo: STR_HEAVY_CRUISER
+        count: 1
+        trajectory: P4
+        timer: 750
+      - ufo: STR_DREADNOUGHT
+        count: 1
+        trajectory: P2
+        timer: 1500
+  - type: STR_ALIEN_RESOURCE_RAID # no Lobsters
+    points: 50
+    raceWeights:
+      0:
+          STR_AQUATOID: 60
+          STR_GILLMAN: 40
+      1: # dropped Gill 60 to 50 -- added Taso 10
+          STR_AQUATOID: 40
+          STR_GILLMAN: 50
+          STR_TASOTH: 10
+      3: # dropped Aqua 50 to 20 -- added Taso 30
+          STR_AQUATOID: 20
+          STR_GILLMAN: 50
+          STR_TASOTH: 30
+      5: # dropped Aqua 30 to 10 -- dropped Tas 70 to 50 -- added mix
+          STR_AQUATOID: 10
+          STR_TASOTH: 50
+          STR_MIXED_CREW: 20 # Aqua/Gill
+          STR_MIXED_CREW_3: 20 # Gill/Tasoth
+      7: # dropped both Aqua & Taso 50 to 30 each -- added mix
+          STR_AQUATOID: 20
+          STR_TASOTH: 20
+          STR_MIXED_CREW: 20 # Aqua/Gill
+          STR_MIXED_CREW_2: 20 # Aqua/Tasoth
+          STR_MIXED_CREW_3: 20 # Gill/Tasoth
+      9: # NEW
+          STR_AQUATOID: 10
+          STR_TASOTH: 20
+          STR_GILLMAN: 10
+          STR_SQUIDFACE: 10
+          STR_MIXED_CREW: 10 # Aqua/Gill
+          STR_MIXED_CREW_2: 10 # Aqua/Tasoth
+          STR_MIXED_CREW_3: 30 # Gill/Tasoth
+    waves: # 5 waves (last one: 2 counts)  + 2 *NEW* PREDATR at the end
+      - ufo: STR_SURVEY_SHIP
+        count: 1
+        trajectory: P0
+        timer: 15000
+      - ufo: STR_ESCORT
+        count: 1
+        trajectory: P1
+        timer: 18000
+      - ufo: STR_CRUISER
+        count: 1
+        trajectory: P3
+        timer: 9000
+      - ufo: STR_HUNTER 
+        count: 1
+        trajectory: P3
+        timer: 9000
+      - ufo: STR_HUNTER
+        count: 2
+        trajectory: P4
+        timer: 60
+      - ufo: STR_PREDATOR # -------------------------------------------------------- ADDED *NEW* 
+        count: 1
+        trajectory: P4
+        timer: 1500
+      - ufo: STR_PREDATOR # -------------------------------------------------------- + *NEW* WAVE 
+        count: 1
+        trajectory: P4
+        timer: 750
+  - type: STR_ALIEN_INFILTRATION
+    points: 0
+    objective: 1
+    spawnZone: 4 #Mission zone for alien bases
+    raceWeights:
+      0:
+          STR_AQUATOID: 60
+          STR_GILLMAN: 40
+      1: # swapped Lobster for Tas
+          STR_AQUATOID: 50
+          STR_GILLMAN: 30
+          STR_TASOTH: 20
+          STR_LOBSTERMAN: 0
+      3: # dropped Lobster 30 to 20 -- added Tasoth 10
+          STR_AQUATOID: 20
+          STR_GILLMAN: 50
+          STR_LOBSTERMAN: 20
+          STR_TASOTH: 10
+      5: # dropped Gill 30 to 10 -- dropped Taso 40 to 20 -- added Ceph + mix
+          STR_AQUATOID: 10
+          STR_GILLMAN: 10
+          STR_LOBSTERMAN: 20
+          STR_TASOTH: 20
+          STR_SQUIDFACE: 10
+          STR_MIXED_CREW_2: 10 # Aqua/Tasoth
+          STR_MIXED_CREW_3: 10 # Gill/Tasoth
+          STR_MIXED_CREW_5: 10 # Lobster/Cepha
+      7: # dropped Aqua 30 to 10 -- dropped Lobster 50 to 30 -- added Ceph + mix
+          STR_AQUATOID: 10
+          STR_GILLMAN: 10
+          STR_LOBSTERMAN: 30
+          STR_TASOTH: 10
+          STR_SQUIDFACE: 20
+          STR_MIXED_CREW_3: 10 # Gill/Tasoth
+          STR_MIXED_CREW_5: 10 # Lobster/Cepha
+      9: # NEW
+          STR_LOBSTERMAN: 30
+          STR_SQUIDFACE: 20	
+          STR_MIXED_CREW_4: 10 # Lobster/Aqua
+          STR_MIXED_CREW_5: 20 # Lobster/Cepha
+          STR_MIXED_CREW_6: 20 # Ceph/Aqua
+    waves: # 8 waves (last one: 2 counts)
+      - ufo: STR_SURVEY_SHIP
+        count: 1
+        trajectory: P0
+        timer: 16500
+      - ufo: STR_ESCORT
+        count: 1
+        trajectory: P1
+        timer: 15000
+      - ufo: STR_CRUISER # swapped 2nd ESCRT for CRUISR
+        count: 1
+        trajectory: P6
+        timer: 13800
+      - ufo: STR_HEAVY_CRUISER  # swapped 1st CRUISR for HEAVY CRUISR
+        count: 1
+        trajectory: P7
+        timer: 9000
+      - ufo: STR_HUNTER # swapped # swapped 2nd CRUISR for HUNTR
+        count: 1
+        trajectory: P7
+        timer: 60
+      - ufo: STR_BATTLESHIP
+        count: 1
+        trajectory: P7
+        timer: 60
+      - ufo: STR_FLEET_SUPPLY_CRUISER
+        count: 1
+        trajectory: P7
+        timer: 60
+      - ufo: STR_DREADNOUGHT
+        count: 2
+        trajectory: P7
+        timer: 60
+  - type: STR_ALIEN_BASE
+    points: 50
+    objective: 2
+    spawnZone: 4 #Mission zone for alien bases
+    raceWeights:
+      0:
+        STR_AQUATOID: 30
+        STR_GILLMAN: 70
+      1: # swapped Lobster for Taso
+        STR_AQUATOID: 40
+        STR_GILLMAN: 40
+        STR_TASOTH: 20
+        STR_LOBSTERMAN: 0
+      3: # dropped Lobster 60 to 40 -- added Taso 20
+        STR_AQUATOID: 10
+        STR_GILLMAN: 30
+        STR_TASOTH: 20
+        STR_LOBSTERMAN: 30
+      5: # dropped Gill from 40 to 10 -- added Ceph + mix
+        STR_AQUATOID: 10
+        STR_GILLMAN: 10
+        STR_LOBSTERMAN: 30
+        STR_TASOTH: 20
+        STR_SQUIDFACE: 10
+        STR_MIXED_CREW: 10 # Aqua/Gill
+        STR_MIXED_CREW_2: 10 # Aqua/Tasoth
+      7: # dropped Lobster from 60 to 30 - added Ceph + mix
+        STR_AQUATOID: 10
+        STR_GILLMAN: 20
+        STR_LOBSTERMAN: 30
+        STR_TASOTH: 10
+        STR_SQUIDFACE: 10
+        STR_MIXED_CREW_3: 10 # Gill/Tasoth
+        STR_MIXED_CREW_4: 10 # Lobster/Aqua
+      9: # NEW
+        STR_LOBSTERMAN: 30
+        STR_SQUIDFACE: 25
+        STR_MIXED_CREW: 5 # Aqua/Gill
+        STR_MIXED_CREW_2: 5 # Aqua/Tasoth
+        STR_MIXED_CREW_3: 5 # Gill/Tasoth
+        STR_MIXED_CREW_4: 10 # Lobster/Aqua
+        STR_MIXED_CREW_5: 10 # Lobster/Cepha
+        STR_MIXED_CREW_6: 10 # Ceph/Aqua
+    waves: # 5 waves (second to last one: 2 counts)
+      - ufo: STR_SURVEY_SHIP
+        count: 1
+        trajectory: P1
+        timer: 13500
+      - ufo: STR_ESCORT
+        count: 1
+        trajectory: P5
+        timer: 15000
+      - ufo: STR_CRUISER
+        count: 1
+        trajectory: P5
+        timer: 60
+      - ufo: STR_FLEET_SUPPLY_CRUISER
+        count: 2
+        trajectory: P5
+        timer: 60
+      - ufo: STR_DREADNOUGHT
+        count: 1
+        trajectory: P6
+        timer: 60
+  - type: STR_ALIEN_SURFACE_ATTACK
+    points: 10
+    objective: 3
+    spawnZone: 3 #Mission zone for terror missions
+    raceWeights:
+      0:
+          STR_GILLMAN: 100
+      1: # dropped Gill 80 to 70 -- added Taso
+          STR_AQUATOID: 20
+          STR_GILLMAN: 70
+          STR_TASOTH: 10
+      3: # swapped Lobster for Taso
+          STR_AQUATOID: 20
+          STR_GILLMAN: 30
+          STR_TASOTH: 50
+          STR_LOBSTERMAN: 0
+      5: # dropped mix 1 from 20 to 10 -- added mix 2 with 10 -- dropped Gill 30 to 0 -- added Squid
+          STR_AQUATOID: 10
+          STR_GILLMAN: 0
+          STR_LOBSTERMAN: 20
+          STR_TASOTH: 20
+          STR_SQUIDFACE: 30
+          STR_MIXED_CREW: 10 # Aqua/Gill
+          STR_MIXED_CREW_2: 10 # Aqua/Tasoth
+      7: # split mix 1 with 30 into mixes 1-thru-6 -- dropped both Gill & Aqua 20 to 0 -- added Ceph
+          STR_AQUATOID: 0
+          STR_GILLMAN: 0
+          STR_LOBSTERMAN: 20
+          STR_TASOTH: 10
+          STR_SQUIDFACE: 10
+          STR_MIXED_CREW: 10 # Aqua/Gill
+          STR_MIXED_CREW_2: 10 # Aqua/Tasoth
+          STR_MIXED_CREW_3: 10 # Gill/Tasoth
+          STR_MIXED_CREW_4: 10 # Lobster/Aqua
+          STR_MIXED_CREW_5: 10 # Lobster/Cepha
+          STR_MIXED_CREW_6: 10 # Ceph/Aqua
+      9: # NEW
+          STR_MIXED_CREW: 10 # Aqua/Gill
+          STR_MIXED_CREW_2: 10 # Aqua/Tasoth
+          STR_MIXED_CREW_3: 10 # Gill/Tasoth
+          STR_MIXED_CREW_4: 20 # Lobster/Aqua
+          STR_MIXED_CREW_5: 30 # Lobster/Cepha
+          STR_MIXED_CREW_6: 20 # Ceph/Aqua
+    waves: # 4 waves (all: 1 count)
+      - ufo: STR_ESCORT
+        count: 1
+        trajectory: P1
+        timer: 15000
+      - ufo: STR_CRUISER
+        count: 1
+        trajectory: P1
+        timer: 9600
+      - ufo: STR_BATTLESHIP
+        count: 1
+        trajectory: P0
+        timer: 12000
+      - ufo: STR_BATTLESHIP
+        count: 1
+        trajectory: P7
+        timer: 9000
+        objective: true
+  - type: STR_ALIEN_SHIP_ATTACK # begins on month 3
+    points: 0
+    objective: 3
+    spawnZone: 0 #Mission zone for terror missions
+    raceWeights:
+      0: # dropped Gill 30 to 20 -- added 3 mixes -- remember ship Attacks begin with 3rd month anyway
+        STR_AQUATOID: 10
+        STR_GILLMAN: 20
+        STR_LOBSTERMAN: 20
+        STR_TASOTH: 20
+        STR_MIXED_CREW: 10 # Aqua/Gill
+        STR_MIXED_CREW_2: 10 # Aqua/Tasoth
+        STR_MIXED_CREW_4: 10 # Gill/Tasoth
+      5: # NEW
+        STR_GILLMAN: 10
+        STR_LOBSTERMAN: 20
+        STR_TASOTH: 10		
+        STR_MIXED_CREW: 10 # Aqua/Gill
+        STR_MIXED_CREW_2: 10 # Aqua/Tasoth
+        STR_MIXED_CREW_3: 10 # Gill/Tasoth
+        STR_MIXED_CREW_4: 10 # Lobster/Aqua
+        STR_MIXED_CREW_5: 10 # Lobster/Cepha
+        STR_MIXED_CREW_6: 10 # Ceph/Aqua
+      7: # more NEW
+        STR_MIXED_CREW: 10 # Aqua/Gill
+        STR_MIXED_CREW_2: 10 # Aqua/Tasoth
+        STR_MIXED_CREW_3: 20 # Gill/Tasoth
+        STR_MIXED_CREW_4: 30 # Lobster/Aqua
+        STR_MIXED_CREW_5: 20 # Lobster/Cepha
+        STR_MIXED_CREW_6: 10 # Ceph/Aqua
+  - type: STR_ALIEN_RETALIATION # begins after month 14-8 dep on difficulty
+    raceWeights:
+      0: # redistributed -- but shouldn't matter since alien retaliation begins after month 8
+        STR_AQUATOID: 10
+        STR_GILLMAN: 20
+        STR_TASOTH: 20
+        STR_LOBSTERMAN: 30
+        STR_SQUIDFACE: 20
+      7: # NEW
+        STR_AQUATOID: 5
+        STR_GILLMAN: 5
+        STR_LOBSTERMAN: 10
+        STR_TASOTH: 10
+        STR_SQUIDFACE: 10
+        STR_MIXED_CREW: 10 # Aqua/Gill
+        STR_MIXED_CREW_2: 10 # Aqua/Tasoth
+        STR_MIXED_CREW_3: 10 # Gill/Tasoth
+        STR_MIXED_CREW_4: 10 # Lobster/Aqua
+        STR_MIXED_CREW_5: 20 # Lobster/Cepha
+        STR_MIXED_CREW_6: 20 # Ceph/Aqua
+    waves: # 4 waves (1 count, 2 counts, 3 counts, 2 counts)
+      - ufo: STR_CRUISER # swapped SURVY SHIP for CRUISR
+        count: 1
+        trajectory: P8
+        timer: 3000
+      - ufo: STR_HUNTER # swapped ESCRT for HUNTR
+        count: 2
+        trajectory: P8
+        timer: 3000
+      - ufo: STR_BATTLESHIP # swapped CRUISR for BATTLESHP
+        count: 3
+        trajectory: P8
+        timer: 3000
+      - ufo: STR_DREADNOUGHT
+        count: 2
+        trajectory: P8
+        timer: 3000
+  - type: STR_ALIEN_SUPPLY
+    points: 0
+    objective: 5
+    raceWeights: {} #Special case, race comes from base.
+    waves: # 1 wave
+      - ufo: STR_FLEET_SUPPLY_CRUISER
+        count: 1
+        trajectory: P9
+        timer: 6000
+        objective: true
+  - type: STR_ALIEN_ARTIFACT # begins on month 6
+    points: 0
+    objective: 3
+    spawnZone: 0 #Mission zone for terror missions
+    raceWeights:
+      0: # split mix 1 into 1-thru-3 -- but shouldn't matter since artefact sites begins on month 6
+        STR_MIXED_CREW: 10 # Aqua/Gill
+        STR_MIXED_CREW_2: 10 # Aqua/Tasoth
+        STR_MIXED_CREW_3: 10 # Gill/Tasoth
+      7: # NEW
+        STR_MIXED_CREW: 10 # Aqua/Gill
+        STR_MIXED_CREW_2: 10 # Aqua/Tasoth
+        STR_MIXED_CREW_3: 10 # Gill/Tasoth
+        STR_MIXED_CREW_4: 10 # Lobster/Aqua
+        STR_MIXED_CREW_5: 10 # Lobster/Cepha
+        STR_MIXED_CREW_6: 10 # Ceph/Aqua		
+    waves: # 1 wave
+      - ufo: STR_ARTIFACT_SITE_P1 # spawn this site directly
+        count: 1
+        trajectory: P10
+        timer: 0
+        objective: true

@@ -1,0 +1,119 @@
+globe: 
+# Increased frequencies as some terrains are rarely ever seen. 
+# all except Seabed & Coral are 50/25/25 where 25/25 is Seabed/Coral.
+# Also, all except Crashed Plane, Atlantis & Galeon have 2 iterations. 
+  textures:
+    - id: 0 # SEABED
+      terrain:
+        - name: SEABED
+          weight: 75
+        - name: CORAL
+          weight: 25
+    - id: 1 # RESEARCH FACILITY -- changed to 60/20/20
+      terrain:
+        - name: PIPES
+          weight: 60
+        - name: SEABED
+          weight: 20
+        - name: CORAL
+          weight: 20
+    - id: 2 # CRASHED PLANE -- changed to 70/15/15
+      terrain:
+        - name: PLANE
+          weight: 70
+        - name: SEABED
+          weight: 15
+        - name: CORAL
+          weight: 15
+    - id: 3 # ATLANTIS -- changed to 70/15/15
+      terrain:
+        - name: ATLAN
+          weight: 70
+        - name: SEABED
+          weight: 15
+        - name: CORAL
+          weight: 15
+    - id: 4 # MU/MAYAN TEMPLE -- changed to 60/20/20
+      terrain:
+        - name: MU
+          weight: 60
+        - name: SEABED
+          weight: 20
+        - name: CORAL
+          weight: 20
+    - id: 5 # GALEON -- changed to 70/15/15
+      terrain:
+        - name: GAL
+          weight: 70
+        - name: SEABED
+          weight: 15
+        - name: CORAL
+          weight: 15
+    - id: 6 # SUNKEN LINER -- changed to 60/20/20
+      terrain:
+        - name: MSUNK
+          weight: 60
+        - name: SEABED
+          weight: 20
+        - name: CORAL
+          weight: 20
+    - id: 7 # VOLCANIC -- changed to 60/20/20
+      terrain:
+        - name: VOLC
+          weight: 60
+        - name: SEABED
+          weight: 20
+        - name: CORAL
+          weight: 20
+    - id: 8 # CORAL
+      terrain:
+        - name: CORAL
+          weight: 75
+        - name: SEABED
+          weight: 25
+    - id: 9 # VOLCANIC #2 -- changed to 60/20/20
+      terrain:
+        - name: VOLC
+          weight: 60
+        - name: SEABED
+          weight: 20
+        - name: CORAL
+          weight: 20
+    - id: 10 # SUNKEN LINER #2 -- changed to 60/20/20
+      terrain:
+        - name: MSUNK
+          weight: 60
+        - name: SEABED
+          weight: 20
+        - name: CORAL
+          weight: 20
+    - id: 11 # RESEARCH FACILITY #2 -- changed to 60/20/20
+      terrain:
+        - name: PIPES
+          weight: 60
+        - name: SEABED
+          weight: 20
+        - name: CORAL
+          weight: 20
+    - id: 12 # MU/MAYAN TEMPLE #2 -- changed to 60/20/20
+      terrain:
+        - name: MU
+          weight: 60
+        - name: SEABED
+          weight: 20
+        - name: CORAL
+          weight: 20
+# unchanged
+    - id: -1
+      deployments:
+        STR_PORT_TERROR: 100
+    - id: -2
+      deployments:
+        STR_ISLAND_TERROR: 100
+    - id: -3
+      deployments:
+        STR_ARTIFACT_SITE_P1: 100
+    - id: -4
+      deployments:
+        STR_CARGO_SHIP_P1: 50
+        STR_CRUISE_SHIP_P1: 50

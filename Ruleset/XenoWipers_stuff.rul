@@ -1,0 +1,151 @@
+ufopaedia:
+  - id: STR_HYDRO_JET_CANNON
+    image_id: UP037.BDY
+# - id: STR_TORPEDO_LAUNCHER
+#   image_id: UP038.BDY
+items:
+  - type: STR_HARPOON_POD
+    floorSprite: 2
+  - type: STR_GC_AP_AMMO
+    floorSprite: 8
+  - type: STR_GC_HE_AMMO
+    floorSprite: 9
+  - type: STR_GC_P_AMMO
+    floorSprite: 10
+  - type: STR_HJC_AP_AMMO
+    floorSprite: 13
+  - type: STR_HJC_HE_AMMO
+    floorSprite: 14
+  - type: STR_HJC_P_AMMO
+    bigSprite: 10
+    floorSprite: 12
+# - type: STR_SMALL_TORPEDO
+#   bigSprite: 16
+#   floorSprite: 16
+#   handSprite: 304
+#   invWidth: 1
+#   invHeight: 2
+# - type: STR_PHOSPHOROUS_TORPEDO
+#   bigSprite: 18
+#   floorSprite: 18
+#   handSprite: 320
+  - type: STR_THERMAL_SHOK_BOMB
+    floorSprite: 81
+  - type: STR_PISTOL_POWER_CLIP
+    floorSprite: 33
+  - type: STR_BLASTA_POWER_CLIP
+    floorSprite: 85
+  - type: STR_CANNON_POWER_CLIP
+    floorSprite: 86
+# ----------------------------------------------------------------- GENERAL EQUIPMENT
+# - type: STR_MC_DISRUPTOR
+#   floorSprite: 28
+#   handSprite: 384
+# - type: STR_MC_READER
+#   floorSprite: 77
+#   handSprite: 376
+# ----------------------------------------------------------------- GRENADES
+  - type: STR_MAGNA_BLAST_GRENADE
+#   floorSprite: 83
+#   handSprite: 440
+  - type: STR_DYE_GRENADE
+#   floorSprite: 84
+#   handSprite: 120
+  - type: STR_PARTICLE_DISTURBANCE_GRENADE
+#   handSprite: 448
+extraSprites:
+  - type: UP037.BDY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/X/hidro_jet/ufopaedia/hj.gif
+  - type: BIGOBS.PCK
+    files:
+      10: Resources/X/hidro_jet/inc/bigobs/hj_inc_ammo.gif
+#     16: Resources/X/torpedo/small/bigobs/rly_small_torpedo.gif
+#     18: Resources/X/torpedo/inc/bigobs/inc_torpedo.gif
+  - type: FLOOROB.PCK
+    files:
+      2: Resources/X/jet_harpoon_clip/floorobs/jh_clip.gif
+      8: Resources/X/gas_cannon_ammo/ap/floorobs/gc_ap_ammo.gif
+      9: Resources/X/gas_cannon_ammo/he/floorobs/gc_he_ammo.gif
+      10: Resources/X/gas_cannon_ammo/inc/floorobs/gc_inc_ammo.gif
+      12: Resources/X/hidro_jet/inc/floorobs/hj_inc_ammo.gif
+      13: Resources/X/hidro_jet/ap/floorobs/hj_ap_ammo.gif
+      14: Resources/X/hidro_jet/he/floorobs/hj_he_ammo.gif
+#     16: Resources/X/torpedo/small/floorobs/rly_small_torpedo.gif
+#     18: Resources/X/torpedo/inc/floorobs/inc_torpedo.gif
+      33: Resources/X/sonic_pistol/clip/floorobs/sp_clip.gif
+      81: Resources/X/thermal_shok_bomb/floorobs/ts_bomb.gif
+      85: Resources/X/sonic_blasta/clip/floorobs/sb_clip.gif
+      86: Resources/X/sonic_cannon/clip/floorobs/sc_clip.gif
+# ----------------------------------------------------------------- GENERAL EQUIPMENT
+#     28: Resources/X/MC_disruptor/floorobs/MC_disruptor.gif
+#     77: Resources/X/MC_reader/floorobs/MC_reader.gif
+# ----------------------------------------------------------------- GRENADES
+#     83: Resources/X/mb_grenade/floorobs/mb_grenade.gif
+#     84: Resources/X/dye_grenade/floorobs/dye_grenade.gif
+  - type: HANDOB.PCK
+    width: 128
+    height: 80
+    subX: 32
+    subY: 40
+    files:
+#     304: Resources/X/torpedo/small/handobs/rly_small_torpedo.gif
+#     320: Resources/X/torpedo/inc/handobs/inc_torpedo.gif
+# ----------------------------------------------------------------- GENERAL EQUIPMENT
+#     376: Resources/X/MC_reader/handobs/MC_reader.gif
+#     384: Resources/X/MC_disruptor/handobs/MC_disruptor.gif
+# ----------------------------------------------------------------- GRENADES
+#     120: Resources/X/dye_grenade/handobs/dye_grenade.gif
+#     440: Resources/X/mb_grenade/handobs/mb_grenade.gif
+#     448: Resources/X/pd_grenade/handobs/pd_grenade.gif
+MCDPatches:
+  - type: GRUNGE1
+    data:
+      - MCDIndex: 28
+        specialType: 15
+      - MCDIndex: 29
+        specialType: 15
+      - MCDIndex: 32
+        specialType: 15
+      - MCDIndex: 33
+        specialType: 15
+  - type: UINT2
+    data:
+      - MCDIndex: 0
+        specialType: 15
+  - type: ORGANIC2
+    data:
+      - MCDIndex: 6
+        specialType: 15
+items:
+  - type: STR_EXAMINATION_ROOM
+    specialType: 15
+# INTERFACE --------------------------------
+interfaces: 
+  - type: allocatePsi
+    palette: PAL_GEOSCAPE
+    elements:
+      - id: list
+        color: 239   # blue
+        color2: 1    # white
+        border: 1    # blue
+  - type: soldierInfo
+    elements:
+      - id: barReactions
+        color: 29
+        color2: 39
+        border: 47
+      - id: barStrength
+        color: 144
+        color2: 148
+        border: 151
+  - type: stats
+    elements:
+      - id: barReactions
+        color: 36
+      - id: barStrength
+        color: 160
+        border: 176

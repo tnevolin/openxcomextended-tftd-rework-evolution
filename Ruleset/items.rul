@@ -1,0 +1,1302 @@
+items: #
+# Craft Weapons ********************************************
+# - type: STR_AJAX_LAUNCHER
+# - type: STR_AJAX_TORPEDOES
+  - type: STR_AJAX_LAUNCHER
+    size: 0.4
+    costBuy: 16000
+    costSell: 10000
+  - type: STR_AJAX_TORPEDOES
+    size: 0.2
+    costBuy: 6000
+    costSell: 4000
+  - type: STR_DUP_HEAD_LAUNCHER
+    size: 0.5
+    costBuy: 17000
+    costSell: 10000
+  - type: STR_DUP_HEAD_TORPEDOES
+    size: 0.7
+    costBuy: 30000
+    costSell: 20000
+  - type: STR_CRAFT_GAS_CANNON
+    listOrder: 001
+    size: 0.6
+    costBuy: 12000
+    costSell: 9000
+  - type: STR_CRAFT_GAS_CANNON_ROUNDS_X50
+    listOrder: 050
+    transferTime: 48
+# this is only for craft now (see Coela/Gauss for its own ammo)
+  - type: STR_GAUSS_CANNON
+    size: 1.0
+    costSell: 20000
+  - type: STR_GAUSS_CANNON_AMMO 
+    listOrder: 950
+    size: 0.01
+    clipSize: 1
+    costSell: 50
+    transferTime: 48
+    battleType: 0
+  - type: STR_SONIC_OSCILLATOR
+    size: 0.6
+    costSell: 100000
+  - type: STR_SONIC_OSCILLATOR_AMMO 
+    size: 0.01
+    listOrder: 1050
+    clipSize: 1
+    costSell: 2000
+    transferTime: 48
+#  - type: STR_PWT_CANNON
+  - type: STR_PULSE_WAVE_TORPEDOES
+    size: 0.6
+    costSell: 30000
+# ************************************ TANKS **************************
+  - type: STR_COELACANTH_GAS_CANNON 
+    size: 3
+    bulletSpeed: 3
+    transferTime: 72
+    accuracyAuto: 40
+    accuracySnap: 60
+    accuracyAimed: 100
+    tuAuto: 40
+    tuSnap: 30 
+    tuAimed: 60
+#   turretType: 0
+    turretType: 1
+    costBuy: 200000
+    costSell: 150000
+    clipSize: 30
+    autoRange: 7
+    snapRange: 15
+  - type: STR_HWP_SOLID_HARPOON_BOLTS
+    recover: true
+    size: 0.02
+    power: 60
+    clipSize: 1
+  - type: STR_COELACANTH_AQUA_JET 
+    transferTime: 72
+    costBuy: 380000
+    costSell: 260000
+    accuracySnap: 70
+    accuracyAimed: 125
+    tuSnap: 40
+    tuAimed: 80
+    underwaterOnly: false
+#   turretType: 1
+    turretType: 0
+    autoRange: 7
+    snapRange: 15
+  - type: STR_HWP_AQUA_JET_MISSILES
+    recover: true
+    size: 0.2
+    transferTime: 36
+    power: 100
+    clipSize: 15
+  - type: STR_COELACANTH_GAUSS 
+    fireSound: 34
+    transferTime: 72
+    accuracyAuto: 50
+    accuracySnap: 70
+    accuracyAimed: 110
+    tuAuto: 50
+    tuSnap: 40
+    tuAimed: 70
+    turretType: 2
+    # special behaviour here: for a HWP with compatible ammo, setting a clipsize
+    # defines the max ammo for the HWP, and the clipsize on the weapon dictates
+    # how many rounds it adds.
+    compatibleAmmo:
+      - STR_GAUSS_CANNON_AMMO_SWS
+    clipSize: 30
+    costSell: 494000
+    autoRange: 7
+    snapRange: 15
+# this one was created so that Craft and Coelacanth/Gauss don't share the same ammo -- changed transfer time to 36 from 48 (as with the rest of SWS ammo) -- also placed list order right under Coelacanth/Gauss in items (UFO's Tank/Laser is 1500, so hopefully it's the same here) -- also dropped power to 100 (from 110--which was the same as Displacer/Sonic)
+  - type: STR_GAUSS_CANNON_AMMO_SWS
+    recover: true
+    listOrder: 1650
+    size: 0
+    clipSize: 1
+    costSell: 200
+    transferTime: 36
+    battleType: 2
+    bulletSprite: 6
+    hitSound: 31
+    hitAnimation: 46
+    power: 90
+    damageType: 4
+    vaporColor: 2
+    vaporDensity: 10
+  - delete: STR_DISPLACER_SONIC	
+  - type: STR_DISPLACER_SONIC
+    listOrder: 1700
+    size: 3
+    costSell: 680000
+    transferTime: 72
+    bigSprite: 54
+    fireSound: 36
+    power: 105
+    accuracyAuto: 0 
+    accuracySnap: 80
+    accuracyAimed: 120
+    tuAuto: 0
+    tuSnap: 50
+    tuAimed: 80
+    battleType: 1
+    fixedWeapon: true
+    compatibleAmmo:
+      - STR_SONIC_DISPLACER_AMMO_SWS
+    clipSize: 30
+    invWidth: 2
+    invHeight: 3
+    turretType: 3
+    autoRange: 7
+    snapRange: 15
+  - type: STR_SONIC_DISPLACER_AMMO_SWS
+    recover: true
+    listOrder: 1750
+    size: 0.01
+    clipSize: 1
+    costSell: 600
+    transferTime: 36
+    battleType: 2
+    bulletSprite: 8
+    hitSound: 31
+    hitAnimation: 46
+    power: 110
+    damageType: 5
+    vaporColor: 3
+    vaporDensity: 30
+  - type: STR_DISPLACER_PWT # removed underwater only restriction
+    size: 3
+    costSell: 743000
+    transferTime: 72
+    accuracyAimed: 200
+    tuAimed: 90
+    fixedWeapon: true
+    waypoint: true
+    underwaterOnly: false
+  - type: STR_HWP_DISPLACER_PWT
+    size: 0.3
+    recover: true
+    costSell: 31500
+    transferTime: 36
+    power: 210 # changed from 140
+    clipSize: 8 
+# ************************* weapons begin *********************
+  - type: STR_DART_PISTOL
+    size: 0.1
+    weight: 3
+    accuracySnap: 75
+    accuracyAimed: 0
+    tuSnap: 20
+    tuAimed: 0
+    fireSound: 20
+    autoRange: 7
+    snapRange: 15
+  - type: STR_DART_POD  
+    size: 0.02
+    weight: 1
+    power: 35
+  - type: STR_JET_HARPOON
+    size: 0.2
+    weight: 10
+    accuracyAuto: 0
+    accuracySnap: 60
+    accuracyAimed: 110
+    tuAuto: 0
+    tuSnap: 30
+    tuAimed: 45
+    autoRange: 7
+    snapRange: 15
+  - type: STR_HARPOON_POD
+    size: 0.02
+    weight: 1
+    power: 40
+    clipSize: 16
+  - type: STR_GAS_CANNON
+    size: 0.3
+    costBuy: 16400
+    costSell: 14800
+    weight: 20
+    accuracySnap: 70
+    accuracyAimed: 90
+    tuSnap: 40
+    tuAimed: 55
+    autoRange: 7
+    snapRange: 15
+  - type: STR_GC_AP_AMMO
+    size: 0.1
+    weight: 2
+    power: 70
+    clipSize: 8
+    armor: 50
+  - type: STR_GC_HE_AMMO
+    size: 0.1
+    weight: 2
+    power: 60
+    clipSize: 8
+    armor: 50
+  - type: STR_GC_P_AMMO
+    size: 0.1
+    weight: 2
+    power: 70
+    clipSize: 8
+    armor: 50
+  - delete: STR_HYDRO_JET_CANNON # to override & redefine OXC RangeBasedAcc
+  - type: STR_HYDRO_JET_CANNON 
+    listOrder: 2800 
+    size: 0.3
+    costBuy: 13500
+    costSell: 10125
+    weight: 16
+    bigSprite: 7
+    floorSprite: 7
+    handSprite: 32
+    bulletSprite: 3
+    fireSound: 23
+    compatibleAmmo:
+      - STR_HJC_AP_AMMO
+      - STR_HJC_HE_AMMO
+      - STR_HJC_P_AMMO
+    accuracyAuto: 60
+    accuracySnap: 45
+    tuAuto: 40
+    tuSnap: 30
+    autoShots: 3
+    bulletSpeed: 5
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    underwaterOnly: false
+    autoRange: 7
+    snapRange: 15
+  - type: STR_HJC_AP_AMMO
+    size: 0.1
+    weight: 2
+    power: 50
+    clipSize: 18
+    armor: 40
+#   shotgunPellets: 3
+  - type: STR_HJC_HE_AMMO
+    size: 0.1
+    weight: 2
+    power: 40
+    clipSize: 18
+    armor: 40
+    blastRadius: 2
+#   shotgunPellets: 3
+  - type: STR_HJC_P_AMMO
+    size: 0.1
+    weight: 2
+    power: 50
+    damageType: 2
+    clipSize: 18
+    armor: 40
+#   shotgunPellets: 3
+  - delete: STR_TORPEDO_LAUNCHER_XCOM 
+  - type: STR_TORPEDO_LAUNCHER
+    costBuy: 24000
+    costSell: 23000
+    size: 0.4
+    weight: 15
+    bigSprite: 15
+    floorSprite: 15
+    handSprite: 72
+    bulletSprite: 0
+    fireSound: 23
+    compatibleAmmo:
+      - STR_SMALL_TORPEDO
+      - STR_LARGE_TORPEDO
+      - STR_PHOSPHOROUS_TORPEDO
+    accuracySnap: 55
+    accuracyAimed: 115
+    tuSnap: 40
+    tuAimed: 70
+    battleType: 1
+    twoHanded: true
+    invWidth: 2
+    invHeight: 3
+    underwaterOnly: false
+    autoRange: 7
+    snapRange: 15
+  - type: STR_SMALL_TORPEDO 
+    size: 0.2
+    weight: 5
+    power: 75
+    armor: 50
+    bigSprite: 416 # new green bigOb
+    floorSprite: 18 # sprites swapped for Phosphor (green)
+    handSprite: 320 # sprites swapped for Phosphor (green)
+  - type: STR_LARGE_TORPEDO # handObs swapped for Small (red stripes)
+    size: 0.2
+    costBuy: 1800
+    costSell: 1440
+    power: 100
+    armor: 50
+    bigSprite: 417 # new triple stripe bigOb
+    floorSprite: 17 
+    handSprite: 312
+  - type: STR_PHOSPHOROUS_TORPEDO 
+    size: 0.2
+    costBuy: 900
+    costSell: 720
+    weight: 5
+    power: 90
+    armor: 50
+    bigSprite: 418 # new orange bigOb
+    floorSprite: 418 # new orange floorOb
+    handSprite: 420 # new orange handOb
+# ******************** Gauss **************************
+  - type: STR_GAUSS_PISTOL
+    size: 0.1
+    costSell: 10000
+    weight: 5
+    fireSound: 35
+    accuracyAuto: 30
+    accuracySnap: 60
+    accuracyAimed: 80
+    tuAuto: 24
+    tuSnap: 16
+    tuAimed: 32
+    autoRange: 7
+    snapRange: 15
+  - type: STR_GAUSS_PISTOL_CLIP
+    size: 0.02
+    weight: 1
+    hitSound: 31
+    power: 40
+    clipSize: 15
+    armor: 70
+  - type: STR_GAUSS_RIFLE
+    size: 0.2
+    costSell: 26900
+    weight: 15
+    fireSound: 34
+    accuracyAuto: 30
+    accuracySnap: 70
+    accuracyAimed: 100
+    tuAuto: 36
+    tuSnap: 24
+    tuAimed: 48
+    autoRange: 7
+    snapRange: 15
+  - type: STR_GAUSS_RIFLE_CLIP
+    size: 0.02
+    weight: 2
+    hitSound: 31
+    power: 60
+    clipSize: 15
+    armor: 70
+  - type: STR_HEAVY_GAUSS
+    size: 0.3
+    costSell: 51000
+    weight: 25
+    fireSound: 33
+    accuracyAuto: 30
+    accuracySnap: 80
+    accuracyAimed: 120
+    tuAuto: 60
+    tuSnap: 40
+    tuAimed: 80
+    autoRange: 7
+    snapRange: 15
+  - type: STR_HEAVY_GAUSS_CLIP
+    size: 0.02
+    weight: 3
+    hitSound: 31
+    power: 100
+    clipSize: 15
+    armor: 70
+# ********************** Grenades & General Equipment ****************
+  - type: STR_MAGNA_BLAST_GRENADE
+    size: 0.02
+    weight: 3
+    power: 50
+    armor: 150
+    blastRadius: 5
+  - type: STR_DYE_GRENADE
+    size: 0.02
+    weight: 1
+    # Applying Zombie's patch here, because I happen to agree with him.
+    power: 60
+    armor: 110
+    blastRadius: 5
+  - type: STR_PARTICLE_DISTURBANCE_GRENADE
+    size: 0.05
+    weight: 6
+    power: 100
+    armor: 140
+    blastRadius: 5
+  - type: STR_MAGNA_PACK_EXPLOSIVE
+    size: 0.1
+    costBuy: 11500
+    costSell: 11200
+    size: 0.3
+    weight: 8
+    power: 140
+    armor: 140
+#   blastRadius: 5
+    blastRadius: 7
+  - type: STR_PARTICLE_DISTURBANCE_SENSOR
+    size: 0.02
+    listOrder: 4800
+    costBuy: 8800
+    costSell: 6600
+    weight: 1
+    tuUse: 19
+    underwaterOnly: false
+  - type: STR_MEDI_KIT
+    size: 0.02
+    listOrder: 4900
+    costBuy: 12500
+    costSell: 8500
+    weight: 2
+    painKiller: 10
+    heal: 10
+    stimulant: 10
+    woundRecovery: 1
+    healthRecovery: 3
+    stunRecovery: 12 # changed from 4
+    energyRecovery: 30 # chnage from 10
+    tuUse: 19
+    flatRate: false 
+  - type: STR_MC_DISRUPTOR
+    listOrder: 5000
+    size: 0.1
+    costSell: 194700
+    weight: 10
+    tuUse: 36
+    flatRate: false
+    underwaterOnly: false
+  - type: STR_THERMAL_TAZER
+    size: 0.1
+    meleeAnimation: 14
+    listOrder: 4600
+    weight: 3
+    power: 75
+    accuracyMelee: 160
+    tuMelee: 19
+    twoHanded: true
+    skillApplied: false
+#   meleeSound: 60
+#   meleeHitSound: 60
+  - type: STR_CHEMICAL_FLARE
+    listOrder: 4700
+    size: 0.02
+    weight: 1
+    power: 15
+    armor: 40
+# **************** X-Com Corpses **********************
+  - type: STR_CORPSE
+    weight: 35
+    armor: 30
+    bigSprite: 301
+  - type: STR_CORPSE_ARMOR
+    name: STR_CORPSE
+    weight: 35
+    armor: 40
+    bigSprite: 302
+    floorSprite: 303
+  - type: STR_CORPSE_ION
+    name: STR_CORPSE
+    weight: 40
+    armor: 40
+# ******************** Alien Weapons *****************
+  - type: STR_SONIC_CANNON
+    recoveryPoints: 3
+    listOrder: 5800
+    size: 0.3
+    costSell: 85800
+    weight: 20
+    accuracyAuto: 0
+    accuracySnap: 70
+    accuracyAimed: 100
+    tuAuto: 0
+    tuSnap: 60
+    tuAimed: 80
+    attraction: 10
+    armor: 50
+    compatibleAmmo:
+      - STR_CANNON_POWER_CLIP
+    autoRange: 7
+    snapRange: 15
+  - type: STR_CANNON_POWER_CLIP
+    size: 0.02
+    recoveryPoints: 0
+    listOrder: 5900
+    costSell: 4795
+    weight: 4
+    clipSize: 15
+    hitSound: 31
+    hitAnimation: 46
+    power: 130
+    damageType: 5
+    vaporColor: 3
+    vaporDensity: 30
+    attraction: 10
+    armor: 50
+  - type: STR_SONIC_BLASTA_RIFLE
+    recoveryPoints: 2
+    listOrder: 5600
+    size: 0.2
+    costSell: 63250
+    weight: 12
+    accuracyAuto: 0
+    accuracySnap: 60
+    accuracyAimed: 80
+    tuAuto: 0
+    tuSnap: 45
+    tuAimed: 60
+    attraction: 10
+    armor: 50
+    compatibleAmmo:
+      - STR_BLASTA_POWER_CLIP
+    size: 0.02
+    autoRange: 7
+    snapRange: 15
+  - type: STR_BLASTA_POWER_CLIP
+    recoveryPoints: 0
+    listOrder: 5700
+    size: 0.02
+    costSell: 3145
+    weight: 3
+    clipSize: 15
+    hitSound: 31
+    hitAnimation: 46
+    power: 100
+    damageType: 5
+    vaporColor: 3
+    vaporDensity: 30
+    attraction: 10
+    armor: 50
+  - type: STR_SONIC_PISTOL
+    recoveryPoints: 1
+    listOrder: 5400
+    size: 0.1
+    costSell: 42000
+    weight: 4
+    accuracyAuto: 0
+    accuracySnap: 50
+    accuracyAimed: 60
+    tuAuto: 0
+    tuSnap: 30
+    tuAimed: 40
+    attraction: 10
+    armor: 50
+    compatibleAmmo:
+      - STR_PISTOL_POWER_CLIP
+    autoRange: 7
+    snapRange: 15
+  - type: STR_PISTOL_POWER_CLIP
+    recoveryPoints: 0
+    listOrder: 5500
+    size: 0.02
+    costSell: 2220
+    weight: 2
+    clipSize: 15
+    hitSound: 31
+    hitAnimation: 46
+    power: 70
+    damageType: 5
+    vaporColor: 3
+    vaporDensity: 30
+    attraction: 10
+    armor: 50
+  - type: STR_DISRUPTOR_PULSE_LAUNCHER 
+    recoveryPoints: 4
+    size: 0.3
+    costSell: 72000
+    weight: 17
+    accuracyAimed: 300
+    tuAimed: 60
+    attraction: 10
+    underwaterOnly: false
+    armor: 40
+  - type: STR_DISRUPTOR_AMMO
+    recoveryPoints: 0
+    size: 0.2
+    costSell: 8514
+    weight: 8
+    power: 210
+    blastRadius: 11
+    attraction: 10
+    armor: 60
+  - type: STR_THERMAL_SHOK_LAUNCHER
+    recoveryPoints: 2
+    size: 0.2
+    costSell: 60000
+    weight: 12
+    accuracySnap: 65
+    accuracyAimed: 90
+    tuSnap: 30
+    tuAimed: 45
+    attraction: 10
+    armor: 40
+    autoRange: 7
+    snapRange: 15
+  - type: STR_THERMAL_SHOK_BOMB
+    recoveryPoints: 0
+    size: 0.1
+    costSell: 7600
+    weight: 3
+    power: 90
+    attraction: 10
+    armor: 60
+    blastRadius: 3
+    damageAlter:
+      ToHealth: 0.5
+      ToStun: 0.5
+  - type: STR_SONIC_PULSER
+    recoveryPoints: 0
+    size: 0.02
+    costSell: 7425
+    weight: 4
+    power: 90
+    armor: 300
+    blastRadius: 5
+    attraction: 6
+    armor: 150
+  - type: STR_MC_READER
+    listOrder: 6500
+    costSell: 152000
+    weight: 2
+    tuUse: 19
+    attraction: 7
+  - type: STR_ZRBITE
+    listOrder: 6600
+    costSell: 5000
+    weight: 3
+    attraction: 4
+    recoveryPoints: 25 # from 5 (meaning now it's actually 1 point per Elerium, so 25 total)
+  - type: STR_VIBRO_BLADE
+    recoveryPoints: 1
+    listOrder: 6410
+    costSell: 6500
+    size: 0.3
+    weight: 5
+    accuracyMelee: 125
+    tuMelee: 10
+    power: 80
+    bigSprite: 60
+    floorSprite: 75
+    handSprite: 168
+    meleeSound: 16 # thump!
+    meleeHitSound: 60
+    hitAnimation: 0
+    damageType: 7
+    attraction: 10
+  - type: STR_THERMIC_LANCE
+    recoveryPoints: 3
+    listOrder: 6420
+    costSell: 11800
+    size: 0.3
+    weight: 7
+    accuracyMelee: 150
+    tuMelee: 15
+    power: 110
+    bigSprite: 59
+    floorSprite: 74
+    handSprite: 176
+    meleeSound: 16 # thump!
+    meleeHitSound: 60
+    hitAnimation: 0
+    damageType: 7
+    attraction: 10
+  - type: STR_HEAVY_THERMIC_LANCE
+    listOrder: 6430
+    costSell: 22000
+    size: 0.3
+    weight: 10
+    accuracyMelee: 175
+    tuMelee: 20
+    bigSprite: 58
+    floorSprite: 73
+    handSprite: 184
+    meleeSound: 16 # thump!
+    meleeHitSound: 60
+    hitAnimation: 0
+    damageType: 7
+    power: 140
+# *************************** CORPSES ***************
+  - type: STR_AQUATOID_CORPSE
+    listOrder: 7000
+    size: 0.4
+    costSell: 10000
+    weight: 30
+    recoveryPoints: 3
+    armor: 26
+  - type: STR_DEEP_ONE_CORPSE
+    listOrder: 7500
+    bigSprite: 253
+    floorSprite: 254
+    size: 0.4
+    costSell: 10000
+    weight: 35
+    recoveryPoints: 5
+    armor: 26
+  - type: STR_GILLMAN_CORPSE
+    listOrder: 7100
+    size: 0.4
+    costSell: 10000
+    weight: 40
+    recoveryPoints: 3
+    armor: 26
+  - type: STR_TASOTH_CORPSE
+    listOrder: 7200
+    size: 0.4
+    costSell: 10000
+    weight: 40
+    recoveryPoints: 3
+    armor: 26
+    bigSprite: 48
+    floorSprite: 48
+  - type: STR_CALCINITE_CORPSE
+    listOrder: 7700
+    size: 0.4
+    costSell: 10000
+    weight: 30
+    recoveryPoints: 5
+    armor: 26
+  - type: STR_TENTACULAT_CORPSE
+    listOrder: 8000
+    size: 0.4
+    costSell: 10000
+    weight: 40
+    recoveryPoints: 5
+    armor: 26
+  - type: STR_LOBSTERMAN_CORPSE
+    listOrder: 7300
+    size: 0.4
+    costSell: 10000
+    weight: 45
+    bigSprite: 49
+    floorSprite: 45
+    recoveryPoints: 3
+    armor: 26
+  - type: STR_LOBSTERMAN_CORPSE_2 # NEW RED COMMANDER --------------------------------------------------
+    listOrder: 7310
+    size: 0.4
+    costSell: 10000
+    weight: 45
+    bigSprite: 451
+    floorSprite: 451
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 3
+    battleType: 11
+    armor: 26
+  - type: STR_LOBSTERMAN_CORPSE_3 # NEW TOMB GUARD --------------------------------------------------
+    listOrder: 7320
+    size: 0.4
+    costSell: 10000
+    weight: 45
+    bigSprite: 452
+    floorSprite: 452
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+  - type: STR_BIODRONE_CORPSE 
+    listOrder: 7400
+    size: 0.4
+    costSell: 10000
+    weight: 30
+    recoveryPoints: 5
+    battleType: 11
+    armor: 26
+    power: 120
+    blastRadius: 6
+  - type: STR_XARQUID_CORPSE
+    listOrder: 7900
+    size: 1
+    costSell: 10000
+  - type: XARQUID_CORPSE_1
+    name: STR_XARQUID_CORPSE
+    recoveryPoints: 5
+  - type: XARQUID_CORPSE_2
+    recover: false
+  - type: XARQUID_CORPSE_3
+    recover: false
+  - type: XARQUID_CORPSE_4
+    recover: false
+  - type: STR_HALLUCINOID_CORPSE
+    listOrder: 7800
+    size: 1
+    costSell: 10000
+  - type: HALLUCINOID_CORPSE_1
+    name: STR_HALLUCINOID_CORPSE
+    recoveryPoints: 5
+  - type: HALLUCINOID_CORPSE_2
+    recover: false
+  - type: HALLUCINOID_CORPSE_3
+    recover: false
+  - type: HALLUCINOID_CORPSE_4
+    recover: false
+  - type: STR_TRISCENE_CORPSE
+    listOrder: 7600
+    size: 1
+    costSell: 10000
+  - type: TRISCENE_CORPSE_1
+    name: STR_TRISCENE_CORPSE
+    recoveryPoints: 5
+  - type: TRISCENE_CORPSE_2
+    recover: false
+  - type: TRISCENE_CORPSE_3
+    recover: false
+  - type: TRISCENE_CORPSE_4
+    recover: false
+# - type: DISPLACER_CORPSE_1
+# - type: DISPLACER_CORPSE_2
+# - type: DISPLACER_CORPSE_3
+# - type: DISPLACER_CORPSE_4
+# - type: COELACANTH_CORPSE_1
+# - type: COELACANTH_CORPSE_2
+# - type: COELACANTH_CORPSE_3
+# - type: COELACANTH_CORPSE_4
+  - type: COELAGAUSS_CORPSE_1
+    floorSprite: 904
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: COELAGAUSS_CORPSE_2
+    floorSprite: 905
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: COELAGAUSS_CORPSE_3
+    floorSprite: 906
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: COELAGAUSS_CORPSE_4
+    floorSprite: 907
+    invWidth: 0
+    invHeight: 0
+    recover: false
+  - type: CIVM_CORPSE
+    name: STR_CORPSE
+    weight: 30
+    armor: 12
+  - type: CIVF_CORPSE 
+    name: STR_CORPSE
+    weight: 30
+    armor: 12
+# ************************ UFO COMPONENTS ****************
+  - type: STR_ION_BEAM_ACCELERATORS
+    size: 0.7
+    costSell: 125000
+    specialType: 2
+    recoveryPoints: 10 # from 20
+  - type: STR_MAGNETIC_NAVIGATION
+    size: 0.2
+    costSell: 40000
+    specialType: 3
+    recoveryPoints: 3 # from 5
+  - type: STR_ALIEN_SUB_CONSTRUCTION
+    size: 0.1
+    costSell: 10000
+    specialType: 4
+    recoveryPoints: 1
+  - type: STR_ALIEN_CRYOGENICS
+    size: 0.2
+    costSell: 5000
+    specialType: 5
+    recoveryPoints: 1
+  - type: STR_ALIEN_CLONING
+    size: 0.2
+    costSell: 20000
+    specialType: 6
+    recoveryPoints: 1
+  - type: STR_ALIEN_LEARNING_ARRAYS
+    size: 0.2
+    costSell: 10000
+    specialType: 7
+    recoveryPoints: 1
+  - type: STR_ALIEN_IMPLANTER
+    size: 0.2
+    costSell: 19000
+    specialType: 8
+    recoveryPoints: 1
+  - type: STR_EXAMINATION_ROOM
+    size: 0.2
+    costSell: 9000
+    specialType: 9
+    recoveryPoints: 1
+  - type: STR_ALIEN_REANIMATION_ZONE
+    size: 0.1
+    costSell: 5000
+    specialType: 11
+    recoveryPoints: 1
+  - type: STR_AQUA_PLASTICS
+    size: 0.1
+    costSell: 3250
+    specialType: 10
+    recoveryPoints: 1
+# - type: STR_PLASTIC_AQUA_ARMOR
+# - type: STR_ION_ARMOR
+# - type: STR_MAGNETIC_ION_ARMOR
+# ************************** terror unit weapons ****************
+  - type: STR_BIODRONE_MELEE_WEAPON
+    bigSprite: { mod: xcom2, index: 70 }
+    meleeSound: 44 # tap
+    meleeHitSound: 26 # electric
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    flateRate: False
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+  - type: STR_HALLUCINOID_MELEE_WEAPON # ------------------------------------------------ renamed to _MELEE_WEAPON
+    bigSprite: 65
+    meleeSound: 44 # tap
+    meleeHitSound: 26 # electric
+    strengthApplied: true
+    damageType: 8
+    accuracyMelee: 100
+    tuMelee: 15
+    flateRate: False
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+  - type: STR_HALLUCINOID_STUN_WEAPON #------------------------------------------------------ *NEW* 
+    weight: 3
+    bigSprite: { mod: xcom2, index: 69 }
+    floorSprite: 29
+    handSprite: 40
+    fireSound: 41 # borrowed from Thermal Shok Launcher
+    hitSound: 0
+#   hitAnimation: 8 # custom in TFTDExtraExplosions
+    power: 110
+    blastRadius: 5
+    damageType: 6
+    accuracySnap: 75
+    tuSnap: 55
+    flateRate: False
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    bulletSprite: 9 # borrowed from Thermal Shok Launcher, 8 is Sonic
+    recover: false
+    vaporColor: 3
+    vaporDensity: 30
+  - type: STR_LOBSTERMAN_MELEE_WEAPON
+    meleeAnimation: 34
+    bigSprite: { mod: xcom2, index: 67 }
+    meleeSound: 44 # tap
+    meleeHitSound: 42 # whoosh
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    flateRate: False
+    battleType: 3
+    fixedWeapon: true
+#   fixedWeapon: false # this allows weapon to be dropped (also, since this takes up weapon slot 2 I'd have to swap 
+#   those instances of Vibro/Thermic for weapon 2 so they get replaced by Lobster's melee weapon who doesn't need Drills anyway)
+#   floorSprite: 29 # same as above, weapon sprite will now appear (change proxy 29 later)
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+  - type: CALCINITE_WEAPON
+    bigSprite: 63
+    meleeSound: 44 # tap
+    meleeHitSound: 16 # thump!
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    flateRate: False
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+  - type: DEEP_ONE_WEAPON 
+    bigSprite: { mod: xcom2, index: 69 }
+    bulletSprite: 8
+    fireSound: 40 # alt 39
+    hitSound: 41 # alt 32
+    power: 100
+    damageType: 8
+    accuracyAuto: 50
+    accuracySnap: 75
+    accuracyAimed: 110
+    tuAuto: 45
+    tuSnap: 30
+    tuAimed: 55
+    flateRate: False
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+    arcingShot: true
+    hitAnimation: -1
+  - type: STR_TRISCENE_MELEE_WEAPON
+    meleeAnimation: 4
+    bigSprite: { mod: xcom2, index: 66 }
+    handSprite: 41
+#   meleeSound: 42 # whoosh -- 44 # tap -- 16 # thump!
+#   meleeHitSound: 116 # custom
+    meleeSound: 116 # custom
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    flateRate: False
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+  - type: STR_TRIBIO_SONIC_WEAPON
+    weight: 3
+    bigSprite: 64
+    floorSprite: 29
+    handSprite: 40
+    fireSound: 36
+    hitSound: 31
+    hitAnimation: 46
+    power: 110
+    damageType: 5
+    accuracySnap: 85
+    accuracyAimed: 100
+    tuSnap: 30
+    tuAimed: 60
+    flateRate: False
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    bulletSprite: 8
+    recover: false
+    vaporColor: 3
+    vaporDensity: 30
+  - type: STR_XARQUID_WEAPON
+    weight: 3
+    bigSprite: 64
+    floorSprite: 29
+    handSprite: 40
+    fireSound: 37
+    hitSound: 31
+    hitAnimation: 46
+    power: 130
+    damageType: 5
+    accuracySnap: 75
+    accuracyAimed: 100
+    tuSnap: 30
+    tuAimed: 60
+    flateRate: False
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    bulletSprite: 8
+    recover: false
+    vaporColor: 3
+    vaporDensity: 30
+  - type: STR_XARQUID_DYE_WEAPON #------------------------------------------------------ *NEW* unused
+    weight: 3
+    bigSprite: { mod: xcom2, index: 69 }
+    floorSprite: 29
+    handSprite: 40
+    fireSound: 41 # borrowed from Thermal Shok Launcher
+    hitSound: 0
+    hitAnimation: 8
+    power: 50
+    blastRadius: 5
+    damageType: 9 # DYE
+    accuracySnap: 75
+    maxRange: 5
+    dropoff: 50
+    tuSnap: 35
+    flateRate: False
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    bulletSprite: 9 # borrowed from Thermal Shok Launcher, 8 is Sonic
+    recover: false
+    vaporColor: 3
+    vaporDensity: 30
+  - type: TENTACULAT_WEAPON
+    meleeAnimation: 24
+    bigSprite: { mod: xcom2, index: 68 }
+    meleeSound: 44 # tap
+    meleeHitSound: 42 # whoosh
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    flateRate: False
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+    zombieUnit: STR_ZOMBIE
+  - type: ZOMBIE_WEAPON
+    meleeAnimation: 24
+    bigSprite: { mod: xcom2, index: 71 }
+    meleeSound: 44 # tap
+    meleeHitSound: 42 # whoosh
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    flateRate: False
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+# ********************************* new alien ranks added (may need to reduce sale price for everyone later?) *****************
+  - type: STR_AQUATOID_SOLDIER
+    listOrder: 13100
+    costSell: 10000
+  - type: STR_AQUATOID_SQUAD_LEADER
+    listOrder: 13200
+    costSell: 15000
+  - type: STR_AQUATOID_MEDIC
+    listOrder: 13300
+    costSell: 30000
+  - type: STR_AQUATOID_TECHNICIAN
+    listOrder: 13400
+    costSell: 30000
+  - type: STR_AQUATOID_NAVIGATOR
+    listOrder: 13500
+    costSell: 60000
+  - type: STR_AQUATOID_COMMANDER
+    listOrder: 13600
+    costSell: 90000	
+  - type: STR_GILLMAN_SOLDIER
+    listOrder: 13700
+    costSell: 10000
+  - type: STR_GILLMAN_SQUAD_LEADER
+    listOrder: 13800
+    costSell: 15000
+  - type: STR_GILLMAN_MEDIC # NEW RANK
+    listOrder: 13900
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 30000	
+  - type: STR_GILLMAN_TECHNICIAN
+    listOrder: 14000
+    costSell: 30000
+  - type: STR_GILLMAN_NAVIGATOR # NEW RANK
+    listOrder: 14100
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 45000	
+  - type: STR_GILLMAN_COMMANDER
+    listOrder: 14200
+    costSell: 70000
+  - type: STR_TASOTH_SOLDIER
+    listOrder: 14300
+    costSell: 10000
+  - type: STR_TASOTH_SQUAD_LEADER
+    listOrder: 14400
+    costSell: 15000
+  - type: STR_TASOTH_MEDIC # NEW RANK
+    listOrder: 14500
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 30000	
+  - type: STR_TASOTH_TECHNICIAN # NEW RANK
+    listOrder: 14600
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 30000	
+  - type: STR_TASOTH_NAVIGATOR # NEW RANK
+    listOrder: 14700
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 45000	
+  - type: STR_TASOTH_COMMANDER # NEW RANK
+    listOrder: 14800
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 70000
+  - type: STR_LOBSTERMAN_SOLDIER
+    listOrder: 14900
+    costSell: 10000
+  - type: STR_LOBSTERMAN_SQUAD_LEADER
+    listOrder: 15000
+    costSell: 15000
+  - type: STR_LOBSTERMAN_MEDIC # NEW RANK
+    listOrder: 15100
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 30000	
+  - type: STR_LOBSTERMAN_TECHNICIAN
+    listOrder: 15200
+    costSell: 30000
+  - type: STR_LOBSTERMAN_NAVIGATOR
+    listOrder: 15300
+    costSell: 60000
+  - type: STR_LOBSTERMAN_COMMANDER
+    listOrder: 15400
+    costSell: 90000	
+  - type: STR_LOBSTERMAN_GUARD
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 90000
+# ****************************** teror units (same as above) **********
+  - type: STR_HALLUCINOID_TERRORIST
+    listOrder: 15900
+    costSell: 80000
+  - type: STR_CALCINITE_TERRORIST
+    listOrder: 15800
+    costSell: 60000
+  - type: STR_DEEP_ONE_TERRORIST
+    listOrder: 15600
+    costSell: 60000
+  - type: STR_XARQUID_TERRORIST
+    listOrder: 16000
+    costSell: 80000
+  - type: STR_TRISCENE_TERRORIST
+    listOrder: 15700
+    costSell: 80000	
+  - type: STR_BIODRONE_TERRORIST
+    listOrder: 15500
+    costSell: 60000
+  - type: STR_TENTACULAT_TERRORIST
+    listOrder: 16100
+    costSell: 80000
+# Special Psi Weapon for Aliens.
+# Usage of this is hard-coded.
+# DO NOT DELETE!
+  - type: ALIEN_PSI_WEAPON
+    tuUse: 35
+    flatRate: false
+    recover: false

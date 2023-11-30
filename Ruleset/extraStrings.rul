@@ -1,0 +1,134 @@
+extraStrings: 
+  - type: en-US
+    strings:
+# trying to fix weird "underscores (_) that appear besides the name on New Battle mode's drop-down list
+#     STR_FINAL_TLETH_MISSION: FINAL TLETH MISSION
+# Alien Sub Construction
+      STR_ALIEN_SUB_CONSTRUCTION: Alien Sub Scrap Parts
+      STR_ALIEN_SUB_CONSTRUCTION_RESEARCH: Alien Sub Construction
+# Diving Suit UFOpedia
+      STR_DIVING_SUIT_UC: DIVING SUIT
+      STR_DIVING_SUIT_UFOPEDIA: Standard diving suit for underwater operations. 
+# seems these guys still displaying as STR_ in Soldier Diaries
+      MALE_CIVILIAN: Civilian
+      FEMALE_CIVILIAN: Civilian
+# damage type changes
+#     STR_DAMAGE_NONE: "NONE"
+#     STR_DAMAGE_ARMOR_PIERCING: "ARMOR PIERCING"
+#     STR_DAMAGE_INCENDIARY: "PHOSPHOROUS"
+#     STR_DAMAGE_HIGH_EXPLOSIVE: "HIGH EXPLOSIVE"
+#     STR_DAMAGE_LASER_BEAM: "GAUSS"
+#     STR_DAMAGE_PLASMA_BEAM: "SONIC"
+      STR_DAMAGE_STUN: "STUN"
+      STR_DAMAGE_MELEE: "MELEE"
+      STR_DAMAGE_ACID: "ACID" # ELECTRIC
+      STR_DAMAGE_SMOKE: "SMOKE"
+# MAIN MENU
+      STR_OPENXCOM: "X-COM: TFTD Rework"
+      STR_1_BEGINNER: "1> Trainee"
+      STR_2_EXPERIENCED: "2> Cadet"
+      STR_3_VETERAN: "3> Experienced"
+      STR_4_GENIUS: "4> Veteran"
+      STR_5_SUPERHUMAN: "5> Superhuman" 
+      STR_NEW_BATTLE: "Quick Battle"
+# UFO Name Changes & Alien Ranks Added
+      STR_BATTLESHIP: Battlecruiser
+      STR_BATTLESHIP_UFOPEDIA: The Battlecruiser is the most aggressive ship the Aliens possess, it features all the Alien technologies and systems to act as a base of operations for any form of aggressive act the Aliens may want to perform, it carries a wide array of weapons.
+      STR_HEAVY_CRUISER_UFOPEDIA: The Heavy Cruiser is a more powerful ship than the Cruiser, larger weapons and propulsion systems boost its power. This ship is used in interdiction missions to secure large areas in preparation for the next level of alien activity.
+      STR_GILLMAN: Gillman
+      STR_GILLMAN_SOLDIER: Gillman Soldier
+      STR_GILLMAN_SQUAD_LEADER: Gillman Squad Leader
+      STR_GILLMAN_MEDIC: Gillman Medic
+      STR_GILLMAN_TECHNICIAN: Gillman Technician
+      STR_GILLMAN_NAVIGATOR: Gillman Navigator
+      STR_GILLMAN_COMMANDER: Gillman Commander
+      STR_GILLMAN_CORPSE: Gillman Corpse
+      STR_LOBSTERMAN: Lobsterman
+      STR_LOBSTERMAN_SOLDIER: Lobsterman Soldier
+      STR_LOBSTERMAN_SQUAD_LEADER: Lobsterman Squad Leader
+      STR_LOBSTERMAN_MEDIC: Lobsterman Medic
+      STR_LOBSTERMAN_TECHNICIAN: Lobsterman Technician
+      STR_LOBSTERMAN_NAVIGATOR: Lobsterman Navigator
+      STR_LOBSTERMAN_COMMANDER: Lobsterman Commander
+      STR_LOBSTERMAN_CORPSE: Lobsterman Corpse
+      STR_TASOTH_MEDIC: Tasoth Medic
+      STR_TASOTH_TECHNICIAN: Tasoth Technician
+      STR_TASOTH_NAVIGATOR: Tasoth Navigator
+      STR_TASOTH_COMMANDER: Tasoth Commander
+      STR_LOBSTERMAN_GUARD: Lobsterman Tomb Guard
+      STR_LOBSTERMAN_CORPSE_2: Lobsterman Corpse (Commander)
+      STR_LOBSTERMAN_CORPSE_3: Lobsterman Tomb Guard Corpse
+# Weapon changes
+      STR_DART_PISTOL: Dart Gun
+      STR_DART_PISTOL_UFOPEDIA: The X-Com dart gun is a small, accurate, high powered unit with a 12 hollow dart ammo clip. The darts are fired by a gas cartridge in the ammo pod.
+      STR_JET_HARPOON: Jet-Harpoon Rifle
+      STR_JET_HARPOON_UFOPEDIA: This aqua-rifle is accurate and powerful, firing hollow steel harpoons from sealed packs of 18. Each harpoon has its own gas reservoir. 
+# update UFOpedia text to reflect land use
+      STR_HYDRO_JET_CANNON_UFOPEDIA: Hydro-Jet Cannons are a heavy infantry weapon system. The cannon fires magnesium fuelled mini-torpedoes which are rapidly propelled by strong water pressure. Although capable of operating on land with a limited reservoir of H2O in its tank, the Hydro-Jet cannon is a clumsy and unwieldly device.
+      STR_TORPEDO_LAUNCHER_UFOPEDIA: A real heavyweight, this hybrid launcher is capable of operating both underwater as well as on land. It fires three types of torpedo, each with its own propulsion unit. A devastating weapon, with only manual loading being its drawback. Ammunition types available include large or small high explosive and phosohor tipped torpedoes.
+      STR_COELACANTH_AQUA_JET_UFOPEDIA: This submersible weapon system is armed with hybrid torpedo technology, which allows it to function both underwater and above thanks to its fully integrated hydro-pump tank. Ensure stores are well stocked with Aqua-Jet Torpedoes.
+      STR_DISPLACER_PWT_UFOPEDIA: This SWS features Pulse Wave weapons for both aquatic and land use. You must manufacture PWT's to keep them fully armed. To fire, select a number of 'way points' then click on the launch icon.
+      STR_DISRUPTOR_PULSE_LAUNCHER_UFOPEDIA: This is an Alien aquatic/land hybrid guided weapon firing self propelled 'Disruptor Projectiles'. When you click to fire the weapon it will generate 'way points' for the Projectile to follow. When you have positioned enough way points click on the launch icon.
+      STR_MAGNETIC_ION_ARMOR_UFOPEDIA: An enhancement for the ION armor incorporating the Magnetic Array technology to allow full freedom of movement in both aquatic and surface environments.
+# Alien Containment & MC-Lab 10 to 15
+      STR_ALIEN_CONTAINMENT_UFOPEDIA: Live Aliens will require special containment facilities to hold them. These units maintain their life systems and render their combat potential to zero. The containment facility can keep 15 Alien life forms in confinement units. 
+      STR_MC_LAB_UFOPEDIA: The Molecular Control lab can implant and train up to fifteen aquanauts at one time. Implants are surgically installed in the skulls of aquanauts. Extensive training allows them to utilize their implants. Implant skills are used in conjunction with a Molecular Device and can be used for attacks during combat. 
+# new/old Hallucinoid text
+      STR_HALLUCINOID_UFOPEDIA: Having harvested the oceans the aliens have bred these huge Earth creatures as a weapon. Do not be lulled into a false sense of security when facing these harmless looking sailors of the deeps. Possessed of a formidable, ranged, freezing blast and a close combat icy strike, the Hallucinoid is a deadly foe. 
+# Craft Weapons & Armamment
+      STR_CRAFT_GAS_CANNON_UC: CRAFT CANNON
+      STR_CRAFT_GAS_CANNON: Craft Cannon
+      STR_CRAFT_GAS_CANNON_ROUNDS_X50: Cannon Rounds (x50)
+      STR_GAUSS_CANNON: Gauss Cannon
+      STR_GAUSS_CANNON_AMMO: Gauss Cannon Shells
+      STR_SONIC_OSCILLATOR: Sonic Oscillator # (research &  manufacture)
+      STR_SONIC_OSCILLATOR_AMMO: Oscillator Power Cells
+      STR_PWT_CANNON: P.W.T. Cannon # previously P.W.T Cannon
+      STR_PULSE_WAVE_TORPEDOES: Pulse-Wave Torpedoes # previously P.W.T. Ammo 
+# UFO component changes
+#     STR_ALIEN_SUB_CONSTRUCTION: 
+# SWS Changes
+      STR_COELACANTH_GAS_CANNON: Coelacanth/Harpoon
+      STR_COELACANTH_AQUA_JET: Coelacanth/Torpedo
+      STR_DISPLACER_SONIC: Displacer/Sonic 
+      STR_DISPLACER_PWT: Displacer/P.W.T.
+# Renaming SWS "weapon" description
+      STR_COELACANTH_GAS_CANNON_WEAPON: Harpoon Cannon # previously ARMOR PIERCING
+      STR_HWP_SOLID_HARPOON_BOLTS: SWS Harpoon Bolts # previously Solid Harpoon Bolts
+      STR_COELACANTH_AQUA_JET_WEAPON: Torpedo Launcher # unchanged
+      STR_HWP_AQUA_JET_MISSILES: SWS Torpedo Missiles
+# Tank UFOPEDIA Weapons rename
+      STR_COELACANTH_GAUSS_WEAPON: Gauss Cannon # previously GAUSS BEAM
+      STR_GAUSS_CANNON_AMMO_SWS: SWS Gauss Ammo # previously Gauss Cannon
+      STR_DISPLACER_SONIC_WEAPON: Sonic Beam # previously SONIC BEAM
+      STR_SONIC_DISPLACER_AMMO_SWS: SWS Sonic Ammo # previously Sonic Cannon
+      STR_DISPLACER_PWT_WEAPON: P.W.T. Launcher # previously P.W.T. Cannon
+      STR_HWP_DISPLACER_PWT: SWS P.W. Torpedoes # previously P.W. Torpedo
+# Armors
+      STR_PLASTIC_AQUA_ARMOR: Plastic Aqua Armor
+#     STR_PLASTIC_AQUA_ARMOR_UC: PLASTIC AQUA ARMOR
+#     STR_ION_ARMOR: Ion Armor
+#     STR_ION_ARMOR_UC: ION ARMOR
+      STR_MAGNETIC_ION_ARMOR: Magnetic Ion Armor
+#     STR_MAGNETIC_ION_ARMOR_UC: MAGNETIC ION ARMOR
+# Mixed Crews
+      STR_MIXED_CREW: Aquatoid/Gillman
+      STR_MIXED_CREW_2: Aquatoid/Tasoth
+      STR_MIXED_CREW_3: Gillman/Tasoth
+      STR_MIXED_CREW_4: Lobsterman/Aquatoid
+      STR_MIXED_CREW_5: Lobsterman/Cephalid
+      STR_MIXED_CREW_6: Cephalid/Aquatoid
+      STR_TLETH_SIGSBEE: T'leth (Level 1)
+      STR_TLETH_CITY: T'leth (Level 2)
+      STR_TLETH_CRYPT: T'leth (Level 3)
+      STR_ALIEN_TERROR: Mixed Terror
+# MENU CHANGES
+#     STR_XCOM_CRAFT_ARMAMENT:
+#     STR_HEAVY_WEAPONS_PLATFORMS:
+#     STR_WEAPONS_AND_EQUIPMENT: X-COM WEAPONS & EQUIPMENT
+#     STR_ALIEN_ARTIFACTS: AQUATIC AlIEN ARTEFACTS
+#     STR_BASE_FACILITIES: X-COM BASE FACILITIES
+#     STR_ALIEN_LIFE_FORMS: ALIEN CREATURES
+      STR_ALIEN_RESEARCH_UC: ALIEN RESEARCH # (prev. ALIEN TECHNOLOGY)
+      STR_UFO_COMPONENTS: ALIEN SUB TECHNOLOGIES # (prev. NEW SUBMERSIBLE TECHNOLOGIES)
+#     STR_UFOS: ALIEN SUBMARINES

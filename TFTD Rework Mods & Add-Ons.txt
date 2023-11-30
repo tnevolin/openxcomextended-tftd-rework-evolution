@@ -1,0 +1,56 @@
+ALREADY INTEGRATED MODS & OTHER BORROWED RESOURCES 
+
+— TFTD Crafts Reskin v1.1 by Roxis231 (only HAMMERHEAD & LEVIATHAN models used, TRITON was left same as vanilla, HAMMERHEAD got 2 SWS capacity and all craft got more intuitive troop deployment) *NEW* v1.2 by Roxis231 with much needed MCD patches
+— TFTD Combo Patch v1.7 by Civilian (minus Tasoth & Deep One UFOpedia recolors, kept vanilla versions instead)
+— Couple borrowed resources from Xeno Wiper (namely: fixed sprite colors for Diving Suit's boots, Aquatoid bigOb corpse, HJC's phosphor ammo, a few improved floorObs for couple items, and color-fix for 2 stat bars in Aquanauts stat screen; with possible further additions later)
+— No Tritons in Base Defence v1.0 by Liberation 
+— XComUtil: High Explosive Damage (+ larger radius)
+— Aliens Pick Up Weapons 
+— UFO Extender accuracy
+— Battlestar from Blank's Teeming USOs v1.0 mod
+
+NOT RECOMMENDED
+-- XcomUtil: Starting Defensive/Improved Base (gives you Alien Containment)
+
+---------------------------------------------------------------------------------
+ADD-ONS (INCLUDED AS SEPARATE MODS MADE COMPATIBLE WITH TFTD REWORK)
+
+— TFTD Rework: Alien Subs Add-On
+Adds 45 strictly vanilla Alien Sub map/layout variants (+ 7 Predator). Based on Teeming USOs mod.
+
+— TFTD Rework: Extra Facilities Add-On
+Adds Large Living Quarters, Large Stores & 2 Corridor variants. Based on Blank's TFTD Extended Facilities mod.
+
+---------------------------------------------------------------------------------
+ADVANCED OPTIONS
+
+ABSOLUTE MUST ***ALREADY INTEGRATED***
+-- [BATTLESCAPE] UFO Extender accuracy
+
+COMPLIMENTARY/OPTIONAL
+-- [GEOSCAPE] Aggressive retaliation
+-- [GEOSCAPE] Force craft launch
+-- [GEOSCAPE] Psi-Strength Evaluation
+-- [GEOSCAPE] Field promotions
+-- [BATTLESCAPE] Sneaky AI
+-- [BATTLESCAPE] Inventory Stats
+-- [BATTLESCAPE] Enhanced soldier sprites
+-- [BATTLESCAPE] Save pre-primed grenades
+-- [BATTLESCAPE] Explosion height (at least 2)
+-- [BATTLESCAPE] Smooth Bullet Camera
+-- [BATTLESCAPE] Confirm Fire mode
+-- [BATTLESCAPE] Allow psi-capture
+-- [BATTLESCAPE] Allow Psi-Strength Improvement
+-- [BATTLESCAPE] Alternate movement methods
+-- [BATTLESCAPE] Override Line of Fire
+-- [BATTLESCAPE] Suppress panic messages for aliens
+-- [BATTLESCAPE] Alien bleeding
+
+NOT RECOMMENDED
+-- [BATTLESCAPE] Instant grenades
+-- [BATTLESCAPE] Allow weapon self-destruction
+
+---------------------------------------------------------------------------------
+SPECIAL THANKS
+
+Mostly Arthanor, Hobbes, Warboy, SupSuper, xOps, hellrazor and Dioxine for suffering through some/most of my questions when I was just getting started <3

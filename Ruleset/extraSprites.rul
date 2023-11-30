@@ -1,0 +1,388 @@
+extraSprites: 
+  - type: HIT.PCK
+    width: 128
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      4: Resources/Melee/ReapAttack.gif
+  - type: HIT.PCK
+    width: 128
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      14: Resources/Melee/shockmelee.gif
+  - type: HIT.PCK
+    width: 128
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      24: Resources/Melee/Hit_pswd.png
+  - type: HIT.PCK
+    width: 128
+    height: 40
+    subX: 32
+    subY: 40
+    files:
+      34: Resources/Melee/MeleeClaws.gif
+# Diving Suit UFOpedia
+  - type: DIVING_PEDIA.SPK
+    singleImage: true
+    files:
+      0: Resources/Diving _UFOpedia/PROXY.png
+# Alt Chemical Flare
+  - type: UP043.BDY
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/ufopaedia/chemical_flare.gif
+# Alt Torpedo Launcher
+  - type: UP038_ALT.png # also update UFOpedia entry
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Torpedo_Restyle/UP038_ALT.png
+  - type: BIGOBS.PCK
+    files:
+      416: Resources/Torpedo_Restyle/bigob_small_torpedo.png
+      417: Resources/Torpedo_Restyle/bigob_large_torpedo.png
+      418: Resources/Torpedo_Restyle/bigob_inc_torpedo.png
+  - type: FLOOROB.PCK
+    files:
+      418: Resources/Torpedo_Restyle/floorob_inc_torpedo.gif
+  - type: HANDOB.PCK
+    width: 128
+    height: 80
+    subX: 32
+    subY: 40
+    files:
+      420: Resources/Torpedo_Restyle/handob_inc_torpedo.gif
+# Magnetic Ione Armor orange "grav-pack" on land
+  - type: TDXCOM_3.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1520
+    files:
+      0: Resources/Magnetic_Fly_on_Land/TDXCOM_3_FIX.png
+# Diving Armor color change from white vanilla undersuit to blue as it should be
+  - type: BIGOBS.PCK
+    files:
+      301: Resources/Diving/inv_corpse.gif
+# Plastic Aqua Armor color change from white vanilla undersuit and light-green gloves/boots to dark greenish-blue suit with white gloves/boots as it should be
+# Darker Blue Plastic Aqua Armor recolor ----------------------------------------------
+  - type: PLASTICBLUE.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1400
+    files:
+      0: Resources/Plastic/PLASTICBLUE_VANILLA_WHITE_FIX.png
+  - type: BIGOBS.PCK
+    files:
+      302: Resources/Plastic/BIGOB_PLASTIC_BLUE.png
+  - type: FLOOROB.PCK
+    files:
+      303: Resources/Plastic/FLOOROB_PLASTIC_BLUE.png
+# Plastic Aqua Inventory better color  ----------------------------------------------------------------------------------
+  - type: MAN_5F0.SPK 
+    singleImage: true
+    files:
+      0: Resources/Plastic/inv/man_1f0_NEW.png
+  - type: MAN_5F1.SPK
+    singleImage: true
+    files:
+      0: Resources/Plastic/inv/man_1f3_NEW.png
+  - type: MAN_5F2.SPK
+    singleImage: true
+    files:
+      0: Resources/Plastic/inv/man_1f1_NEW.png
+  - type: MAN_5F3.SPK
+    singleImage: true
+    files:
+      0: Resources/Plastic/inv/man_1f2_NEW.png
+  - type: MAN_5M0.SPK
+    singleImage: true
+    files:
+      0: Resources/Plastic/inv/man_1m0_NEW.png
+  - type: MAN_5M1.SPK
+    singleImage: true
+    files:
+      0: Resources/Plastic/inv/man_1m1_NEW.png
+  - type: MAN_5M2.SPK
+    singleImage: true
+    files:
+      0: Resources/Plastic/inv/man_1m3_NEW.png
+  - type: MAN_5M3.SPK
+    singleImage: true
+    files:
+      0: Resources/Plastic/inv/man_1m2_NEW.png
+# Diving Suit boots recolor from black to dark green/blue ---------------------------------------
+  - type: MAN_4F0.SPK
+    singleImage: true
+    files:
+      0: Resources/diving/inv/man_0f0_NEW.png
+  - type: MAN_4F1.SPK
+    singleImage: true
+    files:
+      0: Resources/diving/inv/man_0f3_NEW.png
+  - type: MAN_4F2.SPK
+    singleImage: true
+    files:
+      0: Resources/diving/inv/man_0f1_NEW.png
+  - type: MAN_4F3.SPK
+    singleImage: true
+    files:
+      0: Resources/diving/inv/man_0f2_NEW.png
+  - type: MAN_4M0.SPK
+    singleImage: true
+    files:
+      0: Resources/diving/inv/man_0m0_NEW.png
+  - type: MAN_4M1.SPK
+    singleImage: true
+    files:
+      0: Resources/diving/inv/man_0m1_NEW.png
+  - type: MAN_4M2.SPK
+    singleImage: true
+    files:
+      0: Resources/diving/inv/man_0m3_NEW.png
+  - type: MAN_4M3.SPK
+    singleImage: true
+    files:
+      0: Resources/diving/inv/man_0m2_NEW.png
+# Ion Armor helmet color fix --------------------------------------------------------------------
+  - type: MAN_6F0.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_2F0_fix.png
+  - type: MAN_6F1.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_2F3_fix.png
+  - type: MAN_6F2.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_2F1_fix.png
+  - type: MAN_6F3.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_2F2_fix.png
+  - type: MAN_6M0.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_2M0_fix.png
+  - type: MAN_6M1.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_2M1_fix.png
+  - type: MAN_6M2.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_2M3_fix.png
+  - type: MAN_6M3.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_2M2_fix.png
+# Magnetic Ion Armor helmet color fix --------------------------------------------------------------------
+  - type: MAN_7F0.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_3F0_fix.png
+  - type: MAN_7F1.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_3F3_fix.png
+  - type: MAN_7F2.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_3F1_fix.png
+  - type: MAN_7F3.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_3F2_fix.png
+  - type: MAN_7M0.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_3M0_fix.png
+  - type: MAN_7M1.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_3M1_fix.png
+  - type: MAN_7M2.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_3M3_fix.png
+  - type: MAN_7M3.SPK
+    singleImage: true
+    files:
+      0: Resources/Mag_Ion_Inv/MAN_3M2_fix.png
+# Aquatoid Corpse color fix
+  - type: BIGOBS.PCK
+    files:
+#     48: Resources/other_invs/aliens/tasoth_inv_corpse.gif
+      46: Resources/other_invs/aliens/aquatoid_inv_corpse.gif
+# Tasoth Reskin
+  - type: TASOTH_ALT.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1320
+    files:
+      0: Resources/AliensRecolor/TASOTH_Alt2.png
+  - type: BIGOBS.PCK
+    files:
+      48: Resources/AliensRecolor/bigOb_Tasoth_Alt2.png
+  - type: FLOOROB.PCK
+    files:
+      48: Resources/AliensRecolor/floorOb_Tasoth_Alt2.png
+# Deep One Recolor ----------------------------------------------
+  - type: DEEPONEBLUE.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1320
+    files:
+      0: Resources/AliensRecolor/DEEPONEBLUE.png
+  - type: BIGOBS.PCK
+    files:
+      253: Resources/AliensRecolor/bigOb_DeepOneBlue.png
+  - type: FLOOROB.PCK
+    files:
+      254: Resources/AliensRecolor/floorOb_DeepOneBlue.png
+# Deep One Recolor ----------------------------------------------
+  - type: BIODRON.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 80
+    files:
+      0: Resources/Bidrone_No_Shadow/BIODRONE.png
+# Goela/Gauss recolor
+  - type: COELAGAUSS.PCK
+    width: 256
+    height: 1480
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Coela_Gauss/TANK01_YELLOW.png
+# - type: BIGOBS.PCK
+#   files:
+#     59: Resources/TankRecolors/LASER_BIGOB.png
+  - type: FLOOROB.PCK
+    files:
+      904: Resources/Coela_Gauss/floorob_82W.png
+      905: Resources/Coela_Gauss/floorob_83W.png
+      906: Resources/Coela_Gauss/floorob_84W.png
+      907: Resources/Coela_Gauss/floorob_85W.png
+# Lobsterman Tomb Guard 
+  - type: LOBSTERGUARD.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1320
+    files:
+      0: Resources/LobsterTombGuard/LOBSTER_ALTERED.png
+  - type: BIGOBS.PCK
+    files:
+      452: Resources/LobsterTombGuard/bigOb_LOBSTER_ALTERED3.png
+  - type: FLOOROB.PCK
+    files:
+      452: Resources/LobsterTombGuard/floorOb_LOBSTER_ALTERED3.png
+# Lobsterman Commander
+  - type: LOBSTERCOMM.PCK
+    subX: 32
+    subY: 40
+    width: 256
+    height: 1320
+    files:
+      0: Resources/LobsterTombGuard/LOBSTER_RED.png
+  - type: BIGOBS.PCK
+    files:
+      451: Resources/LobsterTombGuard/bigOb_LOBSTER_RED.png
+  - type: FLOOROB.PCK
+    files:
+      451: Resources/LobsterTombGuard/floorOb_LOBSTER_RED2.png
+# Vanilla Lobster Eye Color Fix
+  - type: BIGOBS.PCK
+    files:
+      49: Resources/LobsterTombGuard/bigOb_LOBSTER_VANILLA_FIX.png
+# shorter Vibroblade BIGOB ----------------
+  - type: BIGOBS.PCK
+    files:
+      159: Resources/Vibroblade/shorter_Vibro.png
+# New Gauss & Sonic weapon/clip combined in 1 + shorter Vibroblade
+  - type: UP031_2.png
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UDOpedia2in1/UP031_2.png
+  - type: UP032_2.png
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UDOpedia2in1/UP032_2.png
+  - type: UP033_2.png
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UDOpedia2in1/UP033_2.png
+  - type: UP049_2.png
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UDOpedia2in1/UP049_2.png
+  - type: UP050_2.png
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UDOpedia2in1/UP050_2.png
+  - type: UP051_2.png
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UDOpedia2in1/UP051_2.png
+  - type: UP047_2.png
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UDOpedia2in1/UP047_2.png
+  - type: UP048_2.png
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/UDOpedia2in1/UP048_2.png
+  - type: UP108-2.png
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Vibroblade/UP108-2.png
+ufopaedia:
+  - id: STR_GAUSS_PISTOL
+    image_id: UP031_2.png
+  - id: STR_GAUSS_RIFLE
+    image_id: UP032_2.png
+  - id: STR_HEAVY_GAUSS
+    image_id: UP033_2.png
+  - id: STR_SONIC_PISTOL
+    image_id: UP049_2.png
+  - id: STR_SONIC_BLASTA_RIFLE
+    image_id: UP050_2.png
+  - id: STR_SONIC_CANNON
+    image_id: UP051_2.png
+  - id: STR_DISRUPTOR_PULSE_LAUNCHER
+    image_id: UP047_2.png
+  - id: STR_THERMAL_SHOK_LAUNCHER
+    image_id: UP048_2.png

@@ -1,0 +1,1544 @@
+research: #done: double check scores and times.
+
+# ==================================================
+# Common group dependencies
+# ==================================================
+
+# Delete unneded dependencies
+
+  - delete: STR_MC_DISRUPTOR_DEP
+  - delete: STR_LEADER_PLUS
+
+# Alien and terrorist corpses
+
+  - name: STR_ALIEN_CORPSE
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_AQUATOID_CORPSE
+      - STR_GILLMAN_CORPSE
+      - STR_TASOTH_CORPSE
+      - STR_LOBSTERMAN_CORPSE
+      - STR_SQUIDFACE_CORPSE
+    unlocks:
+    - STR_CORPSE
+  - name: STR_TERRORIST_CORPSE
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_HALLUCINOID_CORPSE
+      - STR_CALCINITE_CORPSE
+      - STR_CALCINITE_PROTOFORM_CORPSE
+      - STR_XARQUID_CORPSE
+      - STR_DEEP_ONE_CORPSE
+      - STR_TENTACULAT_CORPSE
+      - STR_BIODRONE_CORPSE
+      - STR_TRISCENE_CORPSE
+    unlocks:
+    - STR_CORPSE
+  - name: STR_CORPSE
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_ALIEN_CORPSE
+      - STR_TERRORIST_CORPSE
+
+# Alien races
+  - name: STR_AQUATOID_ANY
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_AQUATOID_SOLDIER
+      - STR_AQUATOID_SQUAD_LEADER
+      - STR_AQUATOID_MEDIC
+      - STR_AQUATOID_TECHNICIAN
+      - STR_AQUATOID_NAVIGATOR
+      - STR_AQUATOID_COMMANDER
+  - name: STR_GILLMAN_ANY
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_GILLMAN_SOLDIER
+      - STR_GILLMAN_SQUAD_LEADER
+      - STR_GILLMAN_MEDIC
+      - STR_GILLMAN_TECHNICIAN
+      - STR_GILLMAN_NAVIGATOR
+      - STR_GILLMAN_COMMANDER
+  - name: STR_TASOTH_ANY
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_TASOTH_SOLDIER
+      - STR_TASOTH_SQUAD_LEADER
+      - STR_TASOTH_MEDIC
+      - STR_TASOTH_TECHNICIAN
+      - STR_TASOTH_NAVIGATOR
+      - STR_TASOTH_COMMANDER
+  - name: STR_LOBSTERMAN_ANY
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_LOBSTERMAN_SOLDIER
+      - STR_LOBSTERMAN_SQUAD_LEADER
+      - STR_LOBSTERMAN_MEDIC
+      - STR_LOBSTERMAN_TECHNICIAN
+      - STR_LOBSTERMAN_NAVIGATOR
+      - STR_LOBSTERMAN_COMMANDER
+  - name: STR_SQUIDFACE_ANY
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_SQUIDFACE_SOLDIER
+      - STR_SQUIDFACE_SQUAD_LEADER
+      - STR_SQUIDFACE_MEDIC
+      - STR_SQUIDFACE_TECHNICIAN
+      - STR_SQUIDFACE_NAVIGATOR
+      - STR_SQUIDFACE_COMMANDER
+      - STR_SQUIDFACE_OVERMIND
+
+# Alien ranks
+
+  - name: STR_ANY_SOLDIER
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_AQUATOID_SOLDIER
+      - STR_GILLMAN_SOLDIER
+      - STR_TASOTH_SOLDIER
+      - STR_LOBSTERMAN_SOLDIER
+      - STR_SQUIDFACE_SOLDIER
+  - name: STR_ANY_SQUAD_LEADER
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_AQUATOID_SQUAD_LEADER
+      - STR_GILLMAN_SQUAD_LEADER
+      - STR_TASOTH_SQUAD_LEADER
+      - STR_LOBSTERMAN_SQUAD_LEADER
+      - STR_SQUIDFACE_SQUAD_LEADER
+  - name: STR_ANY_MEDIC
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_AQUATOID_MEDIC
+      - STR_GILLMAN_MEDIC
+      - STR_TASOTH_MEDIC
+      - STR_LOBSTERMAN_MEDIC
+      - STR_SQUIDFACE_MEDIC
+  - name: STR_ANY_TECHNICIAN
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_AQUATOID_TECHNICIAN
+      - STR_GILLMAN_TECHNICIAN
+      - STR_TASOTH_TECHNICIAN
+      - STR_LOBSTERMAN_TECHNICIAN
+      - STR_SQUIDFACE_TECHNICIAN
+  - name: STR_ANY_NAVIGATOR
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_AQUATOID_NAVIGATOR
+      - STR_GILLMAN_NAVIGATOR
+      - STR_TASOTH_NAVIGATOR
+      - STR_LOBSTERMAN_NAVIGATOR
+      - STR_SQUIDFACE_NAVIGATOR
+  - name: STR_ANY_COMMANDER
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_AQUATOID_COMMANDER
+      - STR_GILLMAN_COMMANDER
+      - STR_TASOTH_COMMANDER
+      - STR_LOBSTERMAN_COMMANDER
+      - STR_SQUIDFACE_COMMANDER
+
+# High ranked psi skilled alien
+
+  - name: STR_HIGH_RANKED_PSI_SKILLED_ALIEN
+    cost: 0
+    # unlocked by following dependencies
+    dependencies:
+      - STR_AQUATOID_NAVIGATOR
+      - STR_AQUATOID_COMMANDER
+      - STR_SQUIDFACE_NAVIGATOR
+      - STR_SQUIDFACE_COMMANDER
+      - STR_SQUIDFACE_OVERMIND
+
+# ==================================================
+# Rest of vanilla tech tree
+# ==================================================
+
+# new tank technologies
+  - name: STR_COELACANTH_GAUSS
+    cost: 500
+    points: 15
+    dependencies:
+      - STR_HEAVY_GAUSS_CLIP
+  - name: STR_DISPLACER_SONIC
+    cost: 800
+    points: 15
+    dependencies:
+      - STR_NEW_FIGHTER_FLYING_SUB
+      - STR_CANNON_POWER_CLIP
+  - name: STR_DISPLACER_PWT
+    cost: 800
+    points: 15
+    dependencies:
+      - STR_NEW_FIGHTER_FLYING_SUB
+      - STR_DISRUPTOR_AMMO
+# melee weapons
+  - name: STR_VIBRO_BLADE
+    cost: 400
+    points: 10
+    needItem: false  
+    dependencies:
+      - STR_AQUA_PLASTICS
+      - STR_ZRBITE
+  - name: STR_THERMIC_LANCE
+    cost: 500
+    points: 10
+    needItem: false  
+    dependencies:
+      - STR_VIBRO_BLADE
+      - STR_TASOTH_CORPSE
+  - name: STR_HEAVY_THERMIC_LANCE
+    cost: 600
+    points: 10
+    needItem: false  
+    dependencies:
+      - STR_THERMIC_LANCE
+      - STR_LOBSTERMAN_CORPSE
+  - delete: STR_GAUSS_TECH
+  - name: STR_GAUSS_PISTOL
+    # cost reduced
+    cost: 50
+    points: 10
+    # dependencies removed
+    dependencies: []
+  - name: STR_GAUSS_PISTOL_CLIP
+    # automatic advancement
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_GAUSS_PISTOL
+  - name: STR_GAUSS_RIFLE
+    # weapon + ammo
+    cost: 450
+    points: 10
+    dependencies:
+      - STR_GAUSS_PISTOL
+  - name: STR_GAUSS_RIFLE_CLIP
+    # automatic advancement
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_GAUSS_RIFLE
+  - name: STR_HEAVY_GAUSS
+    # weapon + ammo
+    cost: 690
+    points: 10
+    dependencies:
+      - STR_GAUSS_RIFLE
+  - name: STR_HEAVY_GAUSS_CLIP
+    # automatic advancement
+    cost: 0
+    points: 10
+    dependencies:
+      - STR_HEAVY_GAUSS
+  - name: STR_GAUSS_CANNON
+    cost: 420
+    points: 15
+    dependencies:
+      - STR_HEAVY_GAUSS_CLIP
+  - name: STR_GAUSS_DEFENSES
+    cost: 510
+    points: 15
+    dependencies:
+      - STR_GAUSS_CANNON
+    # research removed
+  - delete: STR_PARTICLE_DISTURBANCE_SENSOR
+    # research removed
+  - delete: STR_MEDI_KIT
+  - name: STR_AQUA_PLASTICS
+    cost: 400
+    points: 30
+    needItem: true
+    # dependencies removed
+    dependencies: []
+  - name: STR_ALIEN_CRYOGENICS
+    cost: 150
+    points: 30
+    needItem: true
+  - name: STR_ALIEN_CLONING
+    cost: 150
+    points: 30
+    needItem: true
+  - name: STR_ALIEN_LEARNING_ARRAYS
+    cost: 150
+    points: 30
+    needItem: true
+  - name: STR_ALIEN_IMPLANTER
+    cost: 150
+    points: 30
+    needItem: true
+  - name: STR_EXAMINATION_ROOM
+    cost: 150
+    points: 30
+    needItem: true
+  - name: STR_SONIC_PULSER
+    cost: 200
+    points: 20
+    # doesn't need item
+    needItem: false
+    # depends on soldier interrogation
+    dependencies:
+      - STR_ANY_SOLDIER
+  - name: STR_MC_READER
+    cost: 400
+    points: 25
+    # doesn't need item
+    needItem: false
+    # depends on alien learning arrays
+    dependencies:
+      - STR_ALIEN_LEARNING_ARRAYS
+  - name: STR_ALIEN_ORIGINS
+    cost: 300
+    points: 60
+    # Depends of researching all alien races
+    dependencies:
+      - STR_AQUATOID_ANY
+      - STR_GILLMAN_ANY
+      - STR_TASOTH_ANY
+      - STR_LOBSTERMAN_ANY
+      - STR_SQUIDFACE_ANY
+  - name: STR_DISRUPTOR_PULSE_LAUNCHER
+    # weapon + ammo
+    cost: 1200
+    points: 10
+    # doesn't need item
+    needItem: false
+    # depends on Sonic Cannon clip and commander
+    dependencies:
+      - STR_CANNON_POWER_CLIP
+      - STR_ANY_COMMANDER
+  - name: STR_DISRUPTOR_AMMO
+    # automatic advancement
+    cost: 0
+    points: 10
+    # doesn't need item
+    needItem: false
+    dependencies:
+      - STR_DISRUPTOR_PULSE_LAUNCHER
+  - name: STR_PWT_CANNON
+    cost: 880
+    points: 25
+    dependencies:
+      - STR_DISRUPTOR_PULSE_LAUNCHER
+  - name: STR_PWT_DEFENSES
+    cost: 800
+    points: 25
+    dependencies:
+      - STR_PWT_CANNON
+  - name: STR_TLETH_ALIEN_CITY
+    cost: 2500
+    points: 60
+    unlockFinalMission: true
+    # Depends on The Ultimate Threat, squidface navigator+commander interrogation
+    dependencies:
+      - STR_THE_ULTIMATE_THREAT
+      - STR_SQUIDFACE_NAVIGATOR
+      - STR_SQUIDFACE_COMMANDER
+  - name: STR_ZRBITE
+    cost: 450
+    points: 60
+    needItem: true
+  - name: STR_BOMBARDMENT_SHIELD
+    cost: 930
+    points: 25
+    # changed dependencies to new fighter sub instead of last
+    dependencies:
+      - STR_NEW_FIGHTER_FLYING_SUB
+  - name: STR_SONIC_PISTOL
+    # weapon + ammo
+    cost: 1000
+    points: 20
+    # does not need item
+    needItem: false
+    # unlocked by squad leader interrogation
+    dependencies:
+      - STR_ANY_SQUAD_LEADER
+  - name: STR_PISTOL_POWER_CLIP
+    cost: 0
+    points: 5
+    needItem: false
+    # depends on Sonic Pistol
+    dependencies:
+      - STR_SONIC_PISTOL
+  - name: STR_SONIC_BLASTA_RIFLE
+    # weapon + ammo
+    cost: 1500
+    points: 25
+    # does not need item
+    needItem: false
+    # depends on Sonic Pistol clip and technician interrogation
+    dependencies:
+      - STR_PISTOL_POWER_CLIP
+      - STR_ANY_TECHNICIAN
+  - name: STR_BLASTA_POWER_CLIP
+    # automatic advancement
+    cost: 0
+    points: 6
+    needItem: false
+    # depends on Sonic Rifle
+    dependencies:
+      - STR_SONIC_BLASTA_RIFLE
+  - name: STR_SONIC_CANNON
+    # weapon + ammo
+    cost: 2000
+    points: 30
+    # does not need item
+    needItem: false
+    # depends on Sonic Rifle clip and navigator interrogation
+    dependencies:
+    - STR_BLASTA_POWER_CLIP
+    - STR_ANY_NAVIGATOR
+  - name: STR_CANNON_POWER_CLIP
+    # automatic advancement
+    cost: 0
+    points: 7
+    needItem: false
+    # depends on Sonic Cannon
+    dependencies:
+      - STR_SONIC_CANNON
+  - name: STR_SONIC_OSCILLATOR
+    cost: 1500
+    points: 25
+    # depends on Sonic Cannon clip
+    dependencies:
+      - STR_CANNON_POWER_CLIP
+  - name: STR_SONIC_DEFENSES
+    cost: 620
+    points: 25
+    dependencies:
+      - STR_SONIC_OSCILLATOR
+    # not needed anymore
+  - delete: STR_SONIC_OSCILLATOR_DEP1
+    # not needed anymore
+  - delete: STR_SONIC_OSCILLATOR_DEP2
+    # not needed anymore
+  - delete: STR_SONIC_OSCILLATOR_DEP3
+  - name: STR_TRANSMISSION_RESOLVER
+    cost: 1500
+    points: 25
+    # depends on alien sub construction and MC reader
+    dependencies:
+      - STR_ALIEN_SUB_CONSTRUCTION
+      - STR_MC_READER
+  - name: STR_NEW_FIGHTER_FLYING_SUB
+    cost: 1000
+    points: 30
+    # does not depend on magnetic ion armor
+    dependencies:
+      - STR_ALIEN_SUB_CONSTRUCTION
+      - STR_ALIEN_CLONING
+      - STR_ANY_TECHNICIAN
+  - name: STR_NEW_FIGHTER_TRANSPORTER
+    cost: 1500
+    points: 30
+    dependencies:
+      - STR_NEW_FIGHTER_FLYING_SUB
+      - STR_ALIEN_CRYOGENICS
+      - STR_ANY_NAVIGATOR
+  - name: STR_PLASTIC_AQUA_ARMOR
+    # added 200 to cost
+    cost: 380
+    points: 20
+    # also depends on Deep One autopsy
+    dependencies:
+      - STR_AQUA_PLASTICS
+      - STR_DEEP_ONE_CORPSE
+  - name: STR_ION_ARMOR
+    # added 200 to cost
+    cost: 500
+    points: 20
+    # depends on Lobsterman autopsy instead of Deep One interrogation
+    dependencies:
+      - STR_ION_BEAM_ACCELERATORS
+      - STR_PLASTIC_AQUA_ARMOR
+      - STR_LOBSTERMAN_CORPSE
+  - name: STR_MAGNETIC_ION_ARMOR
+    # added 200 to cost
+    cost: 750
+    points: 20
+    # also depends on Displacer Sonic
+    dependencies:
+      - STR_ION_ARMOR
+      - STR_MAGNETIC_NAVIGATION
+      - STR_DISPLACER_SONIC
+    # now researchable
+  - name: STR_ALIEN_CONTAINMENT
+    listOrder: 4910 # listed after MC-Lab
+    cost: 300
+    points: 25
+    # depends on any autopsy
+    dependencies:
+      - STR_CORPSE
+  - name: STR_MC_LAB
+    cost: 600
+    points: 25
+    # depends on MC Reader and medic interrogation
+    dependencies:
+      - STR_MC_READER
+      - STR_ANY_MEDIC
+  - name: STR_MC_DISRUPTOR
+    cost: 1200
+    points: 50
+    # depends on MC Lab, alien implanter, high ranked psi skilled alien interrogation
+    dependencies:
+      - STR_MC_LAB
+      - STR_ALIEN_IMPLANTER
+      - STR_HIGH_RANKED_PSI_SKILLED_ALIEN
+    # not needed anymore
+  - name: STR_MC_GENERATOR
+    cost: 360
+    points: 25
+    dependencies:
+      - STR_MC_DISRUPTOR
+  - name: STR_THERMAL_SHOK_LAUNCHER
+    # weapon + ammo
+    cost: 730
+    points: 30
+    needItem: false
+    # depends on medic interrogation
+    dependencies: 
+      - STR_ANY_MEDIC
+  - name: STR_THERMAL_SHOK_BOMB
+    # automatic advancement
+    cost: 0
+    points: 10
+    needItem: false
+    # depends on Thermal Shock Launcher
+    dependencies:
+      - STR_THERMAL_SHOK_LAUNCHER
+  - name: STR_THE_ULTIMATE_THREAT
+    cost: 1000
+    points: 60
+    # Depends on alien origins, lobsterman navigator+commander interogation
+    dependencies:
+      - STR_ALIEN_ORIGINS
+      - STR_LOBSTERMAN_NAVIGATOR
+      - STR_LOBSTERMAN_COMMANDER
+  - name: STR_ALIEN_SUB_CONSTRUCTION
+    cost: 450
+    points: 30
+    # removed transmission resolver from dependencies
+    dependencies:
+      - STR_ZRBITE
+      - STR_AQUA_PLASTICS
+      - STR_ION_BEAM_ACCELERATORS
+      - STR_MAGNETIC_NAVIGATION
+  - name: STR_MAGNETIC_NAVIGATION
+    cost: 450
+    points: 30
+    needItem: true
+  - name: STR_ION_BEAM_ACCELERATORS
+    cost: 450
+    points: 30
+    needItem: true
+  - name: STR_THE_LATEST_FLYING_SUB
+    cost: 2000
+    points: 30
+    # depends on new fighter transporter sub and alien implanter and commander
+    dependencies:
+      - STR_NEW_FIGHTER_TRANSPORTER
+      - STR_ALIEN_IMPLANTER
+      - STR_ANY_COMMANDER
+# CORPSES ****************************************
+  - name: STR_ZOMBIE_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_ZOMBIE_AUTOPSY
+    needItem: true
+  - name: STR_AQUATOID_CORPSE
+    listOrder: 6000
+    cost: 180
+    points: 50
+    lookup: STR_AQUATOID_AUTOPSY
+    needItem: true
+    unlocks:
+    - STR_ALIEN_CORPSE
+  - name: STR_LOBSTERMAN_CORPSE
+    listOrder: 6300
+    cost: 180
+    points: 50
+    lookup: STR_LOBSTERMAN_AUTOPSY
+    needItem: true
+    unlocks:
+    - STR_ALIEN_CORPSE
+  - name: STR_TASOTH_CORPSE
+    listOrder: 6200
+    cost: 180
+    points: 50
+    lookup: STR_TASOTH_AUTOPSY
+    needItem: true
+    unlocks:
+    - STR_ALIEN_CORPSE
+    # new race corpse
+  - name: STR_SQUIDFACE_CORPSE
+    listOrder: 6350
+    cost: 180
+    points: 50
+    lookup: STR_SQUIDFACE_AUTOPSY
+    needItem: true
+    unlocks:
+    - STR_ALIEN_CORPSE
+  - name: STR_BIODRONE_CORPSE
+    listOrder: 6400
+    cost: 180
+    points: 50
+    lookup: STR_BIODRONE_AUTOPSY
+    needItem: true
+    unlocks:
+    - STR_TERRORIST_CORPSE
+  - name: STR_TENTACULAT_CORPSE
+    listOrder: 7000
+    cost: 180
+    points: 50
+    lookup: STR_TENTACULAT_AUTOPSY
+    needItem: true
+    unlocks:
+    - STR_TERRORIST_CORPSE
+  - name: STR_TRISCENE_CORPSE
+    listOrder: 6600
+    cost: 180
+    points: 50
+    lookup: STR_TRISCENE_AUTOPSY
+    needItem: true
+    unlocks:
+    - STR_TERRORIST_CORPSE
+  - name: STR_HALLUCINOID_CORPSE
+    cost: 180
+    points: 50
+    lookup: STR_HALLUCINOID_AUTOPSY
+    needItem: true
+    unlocks:
+    - STR_TERRORIST_CORPSE
+  - name: STR_XARQUID_CORPSE
+    listOrder: 6900
+    cost: 180
+    points: 50
+    lookup: STR_XARQUID_AUTOPSY
+    needItem: true
+    unlocks:
+    - STR_TERRORIST_CORPSE
+  - name: STR_CALCINITE_CORPSE
+    listOrder: 6700
+    cost: 180
+    points: 50
+    lookup: STR_CALCINITE_AUTOPSY
+    needItem: true
+    unlocks:
+    - STR_TERRORIST_CORPSE
+  - name: STR_CALCINITE_PROTOFORM_CORPSE
+    listOrder: 6750
+    cost: 180
+    points: 50
+    lookup: STR_CALCINITE_AUTOPSY
+    needItem: true
+    unlocks:
+    - STR_TERRORIST_CORPSE
+  - name: STR_GILLMAN_CORPSE
+    listOrder: 6100
+    cost: 180
+    points: 50
+    lookup: STR_GILLMAN_AUTOPSY
+    needItem: true
+    unlocks:
+    - STR_ALIEN_CORPSE
+  - name: STR_DEEP_ONE_CORPSE
+    listOrder: 6500
+    cost: 180
+    points: 50
+    lookup: STR_DEEP_ONE_AUTOPSY
+    needItem: true
+    unlocks:
+    - STR_TERRORIST_CORPSE
+### Aquatoid Ranks ##########*****************************
+  - name: STR_AQUATOID_SOLDIER
+    listOrder: 7100
+    cost: 192
+    points: 50
+    lookup: STR_AQUATOID
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_AQUATOID_ANY
+      - STR_ANY_SOLDIER
+    getOneFree:
+      - STR_ALIEN_PROBE_MISSION
+      - STR_ALIEN_INTERDICTION
+      - STR_ALIEN_RESOURCE_RAID
+      - STR_ALIEN_SURFACE_ATTACK
+      - STR_SURVEY_SHIP
+      - STR_ESCORT
+      - STR_CRUISER
+  - name: STR_AQUATOID_SQUAD_LEADER
+    listOrder: 7200
+    cost: 192
+    points: 50
+    lookup: STR_AQUATOID
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_AQUATOID_ANY
+      - STR_ANY_SQUAD_LEADER
+    getOneFree:
+      - STR_ALIEN_PROBE_MISSION
+      - STR_ALIEN_INTERDICTION
+      - STR_ALIEN_RESOURCE_RAID
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_SURFACE_ATTACK
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_CRUISER
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+  - name: STR_AQUATOID_MEDIC
+    listOrder: 7300
+    cost: 192
+    points: 50
+    lookup: STR_AQUATOID
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_AQUATOID_ANY
+      - STR_ANY_MEDIC
+    getOneFree:
+      - STR_CALCINITE
+      - STR_HALLUCINOID
+      - STR_GILLMAN
+      - STR_DEEP_ONE
+      - STR_XARQUID
+      - STR_TASOTH
+      - STR_TENTACULAT
+      - STR_BIODRONE
+      - STR_TRISCENE
+      - STR_LOBSTERMAN
+      - STR_CALCINITE_AUTOPSY
+      - STR_HALLUCINOID_AUTOPSY
+      - STR_GILLMAN_AUTOPSY
+      - STR_DEEP_ONE_AUTOPSY
+      - STR_XARQUID_AUTOPSY
+      - STR_TASOTH_AUTOPSY
+      - STR_TENTACULAT_AUTOPSY
+      - STR_BIODRONE_AUTOPSY
+      - STR_TRISCENE_AUTOPSY
+      - STR_LOBSTERMAN_AUTOPSY
+      - STR_SQUIDFACE
+      - STR_SQUIDFACE_AUTOPSY
+  - name: STR_AQUATOID_TECHNICIAN
+    listOrder: 7400
+    cost: 192
+    points: 50
+    lookup: STR_AQUATOID
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_AQUATOID_ANY
+      - STR_ANY_TECHNICIAN
+    getOneFree:
+      - STR_SURVEY_SHIP
+      - STR_ESCORT
+      - STR_CRUISER
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+  - name: STR_AQUATOID_NAVIGATOR
+    listOrder: 7500
+    cost: 192
+    points: 50
+    lookup: STR_AQUATOID
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_AQUATOID_ANY
+      - STR_ANY_NAVIGATOR
+      - STR_HIGH_RANKED_PSI_SKILLED_ALIEN
+    getOneFree:
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+  - name: STR_AQUATOID_COMMANDER
+    listOrder: 7600
+    cost: 192
+    points: 50
+    lookup: STR_AQUATOID
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_AQUATOID_ANY
+      - STR_ANY_COMMANDER
+      - STR_HIGH_RANKED_PSI_SKILLED_ALIEN
+    getOneFree:
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+### Gillman Ranks ########### (added Medic & Navigator)
+  - name: STR_GILLMAN_SOLDIER
+    listOrder: 7700
+    cost: 192
+    points: 50
+    lookup: STR_GILLMAN
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_GILLMAN_ANY
+      - STR_ANY_SOLDIER
+    getOneFree:
+      - STR_ALIEN_PROBE_MISSION
+      - STR_ALIEN_INTERDICTION
+      - STR_ALIEN_RESOURCE_RAID
+      - STR_ALIEN_SURFACE_ATTACK
+      - STR_SURVEY_SHIP
+      - STR_ESCORT
+      - STR_CRUISER
+  - name: STR_GILLMAN_SQUAD_LEADER
+    listOrder: 7800
+    cost: 192
+    points: 50
+    lookup: STR_GILLMAN
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_GILLMAN_ANY
+      - STR_ANY_SQUAD_LEADER
+    getOneFree:
+      - STR_ALIEN_PROBE_MISSION
+      - STR_ALIEN_INTERDICTION
+      - STR_ALIEN_RESOURCE_RAID
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_SURFACE_ATTACK
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_CRUISER
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+  - name: STR_GILLMAN_MEDIC 
+    listOrder: 7900
+    cost: 192
+    points: 50
+    lookup: STR_GILLMAN
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_GILLMAN_ANY
+      - STR_ANY_MEDIC
+    getOneFree:
+      - STR_CALCINITE
+      - STR_HALLUCINOID
+      - STR_AQUATOID
+      - STR_DEEP_ONE
+      - STR_XARQUID
+      - STR_TASOTH
+      - STR_TENTACULAT
+      - STR_BIODRONE
+      - STR_TRISCENE
+      - STR_LOBSTERMAN
+      - STR_CALCINITE_AUTOPSY
+      - STR_HALLUCINOID_AUTOPSY
+      - STR_AQUATOID_AUTOPSY
+      - STR_DEEP_ONE_AUTOPSY
+      - STR_XARQUID_AUTOPSY
+      - STR_TASOTH_AUTOPSY
+      - STR_TENTACULAT_AUTOPSY
+      - STR_BIODRONE_AUTOPSY
+      - STR_TRISCENE_AUTOPSY
+      - STR_LOBSTERMAN_AUTOPSY
+      - STR_SQUIDFACE
+      - STR_SQUIDFACE_AUTOPSY
+  - name: STR_GILLMAN_TECHNICIAN
+    listOrder: 7900
+    cost: 192
+    points: 50
+    lookup: STR_GILLMAN
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_GILLMAN_ANY
+      - STR_ANY_TECHNICIAN
+    getOneFree:
+      - STR_SURVEY_SHIP
+      - STR_ESCORT
+      - STR_CRUISER
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+  - name: STR_GILLMAN_NAVIGATOR
+    listOrder: 8100
+    cost: 192
+    points: 50
+    lookup: STR_GILLMAN
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_GILLMAN_ANY
+      - STR_ANY_NAVIGATOR
+    getOneFree:
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+  - name: STR_GILLMAN_COMMANDER
+    listOrder: 8200
+    cost: 192
+    points: 50
+    lookup: STR_GILLMAN
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_GILLMAN_ANY
+      - STR_ANY_COMMANDER
+    getOneFree:
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+### Tasoth Ranks ######### (added Medic, Technician, Navigator & Commander)
+  - name: STR_TASOTH_SOLDIER 
+    listOrder: 8300
+    unlocks:
+      - STR_TASOTH_ANY
+      - STR_ANY_SOLDIER
+    getOneFree:
+      - STR_ALIEN_PROBE_MISSION
+      - STR_ALIEN_INTERDICTION
+      - STR_ALIEN_RESOURCE_RAID
+      - STR_ALIEN_SURFACE_ATTACK
+      - STR_SURVEY_SHIP
+      - STR_ESCORT
+      - STR_CRUISER
+  - name: STR_TASOTH_SQUAD_LEADER
+    listOrder: 8400
+    unlocks:
+      - STR_TASOTH_ANY
+      - STR_ANY_SQUAD_LEADER
+    getOneFree:
+      - STR_ALIEN_PROBE_MISSION
+      - STR_ALIEN_INTERDICTION
+      - STR_ALIEN_RESOURCE_RAID
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_SURFACE_ATTACK
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_CRUISER
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+  - name: STR_TASOTH_MEDIC 
+    listOrder: 8500
+    cost: 192
+    points: 50
+    lookup: STR_TASOTH
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_TASOTH_ANY
+      - STR_ANY_MEDIC
+    getOneFree:
+      - STR_CALCINITE
+      - STR_HALLUCINOID
+      - STR_AQUATOID
+      - STR_DEEP_ONE
+      - STR_XARQUID
+      - STR_LOBSTERMAN
+      - STR_TENTACULAT
+      - STR_BIODRONE
+      - STR_TRISCENE
+      - STR_GILLMAN
+      - STR_CALCINITE_AUTOPSY
+      - STR_HALLUCINOID_AUTOPSY
+      - STR_AQUATOID_AUTOPSY
+      - STR_DEEP_ONE_AUTOPSY
+      - STR_XARQUID_AUTOPSY
+      - STR_LOBSTERMAN_AUTOPSY
+      - STR_TENTACULAT_AUTOPSY
+      - STR_BIODRONE_AUTOPSY
+      - STR_TRISCENE_AUTOPSY
+      - STR_GILLMAN_AUTOPSY
+      - STR_SQUIDFACE
+      - STR_SQUIDFACE_AUTOPSY
+  - name: STR_TASOTH_TECHNICIAN
+    listOrder: 8600
+    cost: 192
+    points: 50
+    lookup: STR_TASOTH
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_TASOTH_ANY
+      - STR_ANY_TECHNICIAN
+    getOneFree:
+      - STR_SURVEY_SHIP
+      - STR_ESCORT
+      - STR_CRUISER
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+  - name: STR_TASOTH_NAVIGATOR
+    listOrder: 8700
+    cost: 192
+    points: 50
+    lookup: STR_TASOTH
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_TASOTH_ANY
+      - STR_ANY_NAVIGATOR
+    getOneFree:
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+  - name: STR_TASOTH_COMMANDER
+    listOrder: 8800
+    cost: 192
+    points: 50
+    lookup: STR_TASOTH
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_TASOTH_ANY
+      - STR_ANY_COMMANDER
+    getOneFree:
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+### Lobsterman Ranks ########### (added Medic)
+  - name: STR_LOBSTERMAN_SOLDIER 
+    listOrder: 8900
+    unlocks:
+      - STR_LOBSTERMAN_ANY
+      - STR_ANY_SOLDIER
+    getOneFree:
+      - STR_ALIEN_PROBE_MISSION
+      - STR_ALIEN_INTERDICTION
+      - STR_ALIEN_RESOURCE_RAID
+      - STR_ALIEN_SURFACE_ATTACK
+      - STR_SURVEY_SHIP
+      - STR_ESCORT
+      - STR_CRUISER
+  - name: STR_LOBSTERMAN_SQUAD_LEADER
+    listOrder: 9000
+    unlocks:
+      - STR_LOBSTERMAN_ANY
+      - STR_ANY_SQUAD_LEADER
+    getOneFree:
+      - STR_ALIEN_PROBE_MISSION
+      - STR_ALIEN_INTERDICTION
+      - STR_ALIEN_RESOURCE_RAID
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_SURFACE_ATTACK
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_CRUISER
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+  - name: STR_LOBSTERMAN_MEDIC
+    listOrder: 9100
+    cost: 192
+    points: 50
+    lookup: STR_LOBSTERMAN
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_LOBSTERMAN_ANY
+      - STR_ANY_MEDIC
+    getOneFree:
+      - STR_CALCINITE
+      - STR_HALLUCINOID
+      - STR_AQUATOID
+      - STR_DEEP_ONE
+      - STR_XARQUID
+      - STR_TASOTH
+      - STR_TENTACULAT
+      - STR_BIODRONE
+      - STR_TRISCENE
+      - STR_GILLMAN
+      - STR_CALCINITE_AUTOPSY
+      - STR_HALLUCINOID_AUTOPSY
+      - STR_AQUATOID_AUTOPSY
+      - STR_DEEP_ONE_AUTOPSY
+      - STR_XARQUID_AUTOPSY
+      - STR_TASOTH_AUTOPSY
+      - STR_TENTACULAT_AUTOPSY
+      - STR_BIODRONE_AUTOPSY
+      - STR_TRISCENE_AUTOPSY
+      - STR_GILLMAN_AUTOPSY
+      - STR_SQUIDFACE
+      - STR_SQUIDFACE_AUTOPSY
+  - name: STR_LOBSTERMAN_TECHNICIAN
+    listOrder: 9200
+    unlocks:
+      - STR_LOBSTERMAN_ANY
+      - STR_ANY_TECHNICIAN
+    getOneFree:
+      - STR_SURVEY_SHIP
+      - STR_ESCORT
+      - STR_CRUISER
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+  - name: STR_LOBSTERMAN_NAVIGATOR
+    listOrder: 9300
+    unlocks:
+      - STR_LOBSTERMAN_ANY
+      - STR_ANY_NAVIGATOR
+    getOneFree:
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+  - name: STR_LOBSTERMAN_COMMANDER
+    listOrder: 9400
+    unlocks:
+      - STR_LOBSTERMAN_ANY
+      - STR_ANY_COMMANDER
+    getOneFree:
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+### Squidface Ranks ######### ----------------------------------------------- ALL NEW
+  - name: STR_SQUIDFACE
+    points: 50
+    needItem: true
+  - name: STR_SQUIDFACE_SOLDIER 
+    listOrder: 9410
+    cost: 192
+    points: 50
+    lookup: STR_SQUIDFACE
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_SQUIDFACE_ANY
+      - STR_ANY_SOLDIER
+    getOneFree:
+      - STR_ALIEN_PROBE_MISSION
+      - STR_ALIEN_INTERDICTION
+      - STR_ALIEN_RESOURCE_RAID
+      - STR_ALIEN_SURFACE_ATTACK
+      - STR_SURVEY_SHIP
+      - STR_ESCORT
+      - STR_CRUISER
+  - name: STR_SQUIDFACE_SQUAD_LEADER
+    listOrder: 9420
+    cost: 192
+    points: 50
+    lookup: STR_SQUIDFACE
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_SQUIDFACE_ANY
+      - STR_ANY_SQUAD_LEADER
+    getOneFree:
+      - STR_ALIEN_PROBE_MISSION
+      - STR_ALIEN_INTERDICTION
+      - STR_ALIEN_RESOURCE_RAID
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_SURFACE_ATTACK
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_CRUISER
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+  - name: STR_SQUIDFACE_MEDIC 
+    listOrder: 9430
+    cost: 192
+    points: 50
+    lookup: STR_SQUIDFACE
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_SQUIDFACE_ANY
+      - STR_ANY_MEDIC
+    getOneFree:
+      - STR_CALCINITE
+      - STR_HALLUCINOID
+      - STR_AQUATOID
+      - STR_DEEP_ONE
+      - STR_XARQUID
+      - STR_LOBSTERMAN
+      - STR_TENTACULAT
+      - STR_BIODRONE
+      - STR_TRISCENE
+      - STR_GILLMAN
+      - STR_TASOTH
+      - STR_CALCINITE_AUTOPSY
+      - STR_HALLUCINOID_AUTOPSY
+      - STR_AQUATOID_AUTOPSY
+      - STR_DEEP_ONE_AUTOPSY
+      - STR_XARQUID_AUTOPSY
+      - STR_LOBSTERMAN_AUTOPSY
+      - STR_TENTACULAT_AUTOPSY
+      - STR_BIODRONE_AUTOPSY
+      - STR_TRISCENE_AUTOPSY
+      - STR_GILLMAN_AUTOPSY
+      - STR_TASOTH_AUTOPSY
+      - STR_SQUIDFACE
+      - STR_SQUIDFACE_AUTOPSY
+  - name: STR_SQUIDFACE_TECHNICIAN
+    listOrder: 9440
+    cost: 192
+    points: 50
+    lookup: STR_SQUIDFACE
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_SQUIDFACE_ANY
+      - STR_ANY_TECHNICIAN
+    getOneFree:
+      - STR_SURVEY_SHIP
+      - STR_ESCORT
+      - STR_CRUISER
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+  - name: STR_SQUIDFACE_NAVIGATOR
+    listOrder: 9450
+    cost: 192
+    points: 50
+    lookup: STR_SQUIDFACE
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_SQUIDFACE_ANY
+      - STR_ANY_NAVIGATOR
+      - STR_HIGH_RANKED_PSI_SKILLED_ALIEN
+    getOneFree:
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_ALIEN_RETALIATION
+      - STR_ALIEN_SUPPLY
+      - STR_HEAVY_CRUISER
+      - STR_HUNTER
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+  - name: STR_SQUIDFACE_COMMANDER
+    listOrder: 9460
+    cost: 192
+    points: 50
+    lookup: STR_SQUIDFACE
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_SQUIDFACE_ANY
+      - STR_ANY_COMMANDER
+      - STR_HIGH_RANKED_PSI_SKILLED_ALIEN
+    getOneFree:
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+  - name: STR_SQUIDFACE_OVERMIND
+    listOrder: 9470
+    cost: 192
+    points: 50
+    lookup: STR_SQUIDFACE
+    needItem: true
+    destroyItem: true
+    unlocks:
+      - STR_SQUIDFACE_ANY
+      - STR_HIGH_RANKED_PSI_SKILLED_ALIEN
+    getOneFree:
+      - STR_ALIEN_INFILTRATION
+      - STR_ALIEN_BASE
+      - STR_BATTLESHIP
+      - STR_DREADNOUGHT
+      - STR_FLEET_SUPPLY_CRUISER
+      - STR_BATTLESTAR
+# UFOpaedia entries
+  - name: STR_AQUATOID
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_LOBSTERMAN
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_TASOTH
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_BIODRONE
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_TENTACULAT
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_TRISCENE
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_HALLUCINOID
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_XARQUID
+    cost: 170
+    points: 50
+    needItem: true
+  - name: STR_DEEP_ONE
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_GILLMAN
+    cost: 170
+    points: 50
+    needItem: true
+  - name: STR_CALCINITE
+    cost: 170
+    points: 50
+    needItem: true
+### Alien Terrorists #########
+  - name: STR_BIODRONE_TERRORIST
+    listOrder: 9500
+    cost: 170
+    points: 50
+    lookup: STR_BIODRONE
+    needItem: true
+    destroyItem: true
+    unlocks: []
+  - name: STR_CALCINITE_TERRORIST
+    listOrder: 9800
+    cost: 170
+    points: 50
+    lookup: STR_CALCINITE
+    needItem: true
+    destroyItem: true
+    unlocks: []
+  - name: STR_CALCINITE_PROTOFORM_TERRORIST
+    listOrder: 9850
+    cost: 192
+    points: 50
+    lookup: STR_CALCINITE
+    needItem: true
+    destroyItem: true
+    unlocks: []
+  - name: STR_DEEP_ONE_TERRORIST
+    listOrder: 9600
+    cost: 170
+    points: 50
+    lookup: STR_DEEP_ONE
+    needItem: true
+    destroyItem: true
+    unlocks: []
+  - name: STR_HALLUCINOID_TERRORIST
+    listOrder: 9900
+    cost: 170
+    points: 50
+    lookup: STR_HALLUCINOID
+    needItem: true
+    destroyItem: true
+    unlocks: []
+  - name: STR_TENTACULAT_TERRORIST
+    listOrder: 10100
+    cost: 170
+    points: 50
+    lookup: STR_TENTACULAT
+    needItem: true
+    destroyItem: true
+    unlocks: []
+  - name: STR_TRISCENE_TERRORIST
+    listOrder: 9700
+    cost: 170
+    points: 50
+    lookup: STR_TRISCENE
+    needItem: true
+    destroyItem: true
+    unlocks: []
+  - name: STR_XARQUID_TERRORIST
+    listOrder: 10000
+    cost: 170
+    points: 50
+    lookup: STR_XARQUID
+    needItem: true
+    destroyItem: true
+    unlocks: []
+# UFOpaedia alien techonologies
+  - name: STR_ALIEN_PROBE_MISSION
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_ALIEN_INTERDICTION
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_ALIEN_RESOURCE_RAID
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_ALIEN_INFILTRATION
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_ALIEN_BASE
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_ALIEN_SURFACE_ATTACK
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_ALIEN_RETALIATION
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_ALIEN_SUPPLY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_SURVEY_SHIP
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_ESCORT
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_CRUISER
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_HEAVY_CRUISER
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_HUNTER
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_BATTLESHIP
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_DREADNOUGHT
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_FLEET_SUPPLY_CRUISER
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_BATTLESTAR
+    listOrder: 12410 # listed after Hunter<< need to double-check
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_AQUATOID_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_LOBSTERMAN_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_TASOTH_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_SQUIDFACE_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_BIODRONE_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_TENTACULAT_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_TRISCENE_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_HALLUCINOID_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_XARQUID_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_CALCINITE_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_GILLMAN_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true
+  - name: STR_DEEP_ONE_AUTOPSY
+    cost: 0
+    points: 50
+    needItem: true

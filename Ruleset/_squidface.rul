@@ -1,0 +1,424 @@
+﻿# 5th TFTD Race: Cephalid (AKA Squiface) # Check
+items: 
+  - type: STR_SQUIDFACE_CORPSE
+    listOrder: 7330 # <<< after lobster Commander
+    size: 0.4
+    costSell: 10000
+    weight: 40
+    bigSprite: 505
+    floorSprite: 505
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 3
+    battleType: 11
+    armor: 26
+  - type: STR_SQUIDFACE_CORPSE_2 # ---------------- Squidface Overmind
+    listOrder: 7340 # <<< after lobster Commander
+    size: 0.4
+    costSell: 10000
+    weight: 40
+    bigSprite: 555 
+    floorSprite: 555 
+    invWidth: 2
+    invHeight: 3
+    recoveryPoints: 3
+    battleType: 11
+    armor: 26
+  - type: SQUIDFACE_WEAPON # ------------------- melee for Commanders or Overminds to make zombies
+    meleeAnimation: 24
+    bigSprite: { mod: xcom2, index: 68 }
+    meleeSound: 44 # tap
+    meleeHitSound: 42 # whoosh
+    strengthApplied: true
+    damageType: 7
+    accuracyMelee: 100
+    tuMelee: 15
+    flateRate: False
+    battleType: 3
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    clipSize: -1
+    recover: false
+    zombieUnit: STR_ZOMBIE
+  - type: STR_SQUIDFACE_SOLDIER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 15000
+    listOrder: 15401
+  - type: STR_SQUIDFACE_SQUAD_LEADER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 30000
+    listOrder: 15402
+  - type: STR_SQUIDFACE_MEDIC
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 50000
+    listOrder: 15403
+  - type: STR_SQUIDFACE_TECHNICIAN
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 50000
+    listOrder: 15404
+  - type: STR_SQUIDFACE_NAVIGATOR
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 75000
+    listOrder: 15405
+  - type: STR_SQUIDFACE_COMMANDER
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 120000
+    listOrder: 15406
+  - type: STR_SQUIDFACE_OVERMIND
+    size: 0.0
+    recover: true
+    liveAlien: true
+    costSell: 120000
+    listOrder: 15407
+armors: # re-review values later
+  - type: SQUIDFACE_ARMOR0
+    spriteSheet: SQUIDFACE.PCK
+    corpseBattle:
+      - STR_SQUIDFACE_CORPSE
+    frontArmor: 36
+    sideArmor: 30
+    rearArmor: 22
+    underArmor: 26
+    movementType: 1
+    drawingRoutine: 1 # (Floater model)
+    damageModifier:
+      - 1.0
+      - 1.0 # AP
+      - 1.0 # Incendiary
+      - 1.0
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 0.5 # Stun
+      - 0.5 # Drill
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ] 
+  - type: SQUIDFACE_ARMOR1 
+    spriteSheet: SQUIDFACE.PCK
+    corpseBattle:
+      - STR_SQUIDFACE_CORPSE
+    frontArmor: 44
+    sideArmor: 38
+    rearArmor: 30
+    underArmor: 34
+    movementType: 1
+    drawingRoutine: 1 # (Floater model)
+    damageModifier:
+      - 1.0
+      - 0.8 # AP
+      - 1.2 # Incendiary
+      - 1.0
+      - 1.0 # Gauss
+      - 0.5 # Sonic
+      - 0.7 # Stun
+      - 0.7 # Drill
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: SQUIDFACE_ARMOR2
+    spriteSheet: SQUIDFACE.PCK
+    corpseBattle:
+      - STR_SQUIDFACE_CORPSE
+    frontArmor: 52
+    sideArmor: 46
+    rearArmor: 38
+    underArmor: 42
+    movementType: 1
+    drawingRoutine: 1 # (Floater model)
+    damageModifier:
+      - 1.0
+      - 0.8 # AP
+      - 1.2 # Incendiary
+      - 1.0
+      - 1.0 # Gauss
+      - 0.5 # Sonic
+      - 0.7 # Stun
+      - 0.7 # Drill
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
+  - type: SQUIDFACE_ARMOR3
+    spriteSheet: SQUIDFACE_OVERMIND.PCK
+    corpseBattle:
+      - STR_SQUIDFACE_CORPSE_2
+    frontArmor: 60
+    sideArmor: 54
+    rearArmor: 46
+    underArmor: 46
+    movementType: 1
+    drawingRoutine: 1 # (Floater model)
+    damageModifier:
+      - 1.0
+      - 0.8 # AP
+      - 1.2 # Incendiary
+      - 1.0
+      - 1.0 # Gauss
+      - 0.5 # Sonic
+      - 0.7 # Stun
+      - 0.7 # Drill
+      - 1.0
+      - 0.0
+    loftempsSet: [ 3 ]
+units: # re-review values later
+  - type: STR_SQUIDFACE_SOLDIER # psiSkill 30
+    race: STR_SQUIDFACE
+    rank: STR_LIVE_SOLDIER
+    stats:
+      tu: 68
+      stamina: 90
+      health: 60
+      bravery: 80
+      reactions: 62
+      firing: 68
+      throwing: 74
+      strength: 52
+      psiStrength: 35
+      psiSkill: 30
+      melee: 85
+    armor: SQUIDFACE_ARMOR0
+    standHeight: 20
+    kneelHeight: 15
+    value: 20
+    deathSound: 505
+    intelligence: 3
+    aggression: 2
+    energyRecovery: 40
+    moveSound: 65 # Xarq/Hall -- 64 Tenta
+  - type: STR_SQUIDFACE_SQUAD_LEADER # psiSkill 30
+    race: STR_SQUIDFACE
+    rank: STR_LIVE_SQUAD_LEADER
+    stats:
+      tu: 68
+      stamina: 90
+      health: 60
+      bravery: 80
+      reactions: 62
+      firing: 68
+      throwing: 74
+      strength: 52
+      psiStrength: 45
+      psiSkill: 30
+      melee: 85
+    armor: SQUIDFACE_ARMOR0
+    standHeight: 20
+    kneelHeight: 15
+    value: 24
+    deathSound: 505
+    intelligence: 4
+    aggression: 2
+    energyRecovery: 40
+    moveSound: 65 # Xarq/Hall -- 64 Tenta
+  - type: STR_SQUIDFACE_MEDIC # psiSkill 30 
+    race: STR_SQUIDFACE
+    rank: STR_LIVE_MEDIC
+    stats:
+      tu: 68
+      stamina: 90
+      health: 60
+      bravery: 80
+      reactions: 62
+      firing: 68
+      throwing: 74
+      strength: 52
+      psiStrength: 45
+      psiSkill: 30
+      melee: 85
+    armor: SQUIDFACE_ARMOR0
+    standHeight: 20
+    kneelHeight: 15
+    value: 24
+    deathSound: 505
+    intelligence: 5
+    aggression: 1
+    energyRecovery: 40
+    moveSound: 65 # Xarq/Hall -- 64 Tenta
+  - type: STR_SQUIDFACE_TECHNICIAN # psiSkill 30 
+    race: STR_SQUIDFACE
+    rank: STR_LIVE_TECHNICIAN
+    stats:
+      tu: 68
+      stamina: 90
+      health: 60
+      bravery: 80
+      reactions: 62
+      firing: 68
+      throwing: 74
+      strength: 52
+      psiStrength: 45
+      psiSkill: 30
+      melee: 85
+    armor: SQUIDFACE_ARMOR0
+    standHeight: 20
+    kneelHeight: 15
+    value: 24
+    deathSound: 505
+    intelligence: 6
+    aggression: 2
+    energyRecovery: 40
+    moveSound: 65 # Xarq/Hall -- 64 Tenta
+  - type: STR_SQUIDFACE_NAVIGATOR # psiSkill 40 
+    race: STR_SQUIDFACE
+    rank: STR_LIVE_NAVIGATOR
+    stats:
+      tu: 76
+      stamina: 100
+      health: 70
+      bravery: 90
+      reactions: 70
+      firing: 76
+      throwing: 74
+      strength: 56
+      psiStrength: 55
+      psiSkill: 40
+      melee: 85
+    armor: SQUIDFACE_ARMOR1
+    standHeight: 20
+    kneelHeight: 15
+    value: 28
+    deathSound: 505
+    intelligence: 7
+    aggression: 2
+    energyRecovery: 40
+    moveSound: 65 # Xarq/Hall -- 64 Tenta
+  - type: STR_SQUIDFACE_COMMANDER # psiSkill 50 
+    race: STR_SQUIDFACE
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 84
+      stamina: 110
+      health: 85
+      bravery: 110
+      reactions: 78
+      firing: 84
+      throwing: 74
+      strength: 64
+      psiStrength: 65
+      psiSkill: 50
+      melee: 85
+    armor: SQUIDFACE_ARMOR2
+    standHeight: 20
+    kneelHeight: 15
+    value: 36
+    deathSound: 505
+    intelligence: 8
+    aggression: 1
+    energyRecovery: 40
+    moveSound: 65 # Xarq/Hall -- 64 Tenta
+  - type: STR_SQUIDFACE_OVERMIND # psiSkill 60 + zombie weapon
+    race: STR_SQUIDFACE
+    rank: STR_LIVE_COMMANDER
+    stats:
+      tu: 92
+      stamina: 120
+      health: 100
+      bravery: 130
+      reactions: 86
+      firing: 92
+      throwing: 74
+      strength: 72
+      psiStrength: 75
+      psiSkill: 60 # ------------------------- way too much mind rape?
+      melee: 85
+    armor: SQUIDFACE_ARMOR3
+    standHeight: 20
+    kneelHeight: 15
+    value: 44
+    deathSound: 505
+    intelligence: 8
+    aggression: 0
+    energyRecovery: 40
+    moveSound: 65 # Xarq/Hall -- 64 Tenta
+    meleeWeapon: SQUIDFACE_WEAPON
+# alienRaces: done in main ruleset
+# alienMissions: same as above
+# Special research item for squidface autopsy. Otherwise, OpenXcom extended fails.
+ufopaedia:
+  - id: STR_SQUIDFACE
+    listOrder: 9460 # after Lobster
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SQUIDFACE
+    image_id: UFOPAEDIA_IMG_SQUIDFACE
+    text: STR_SQUIDFACE_UFOPEDIA
+  - id: STR_SQUIDFACE_AUTOPSY
+    listOrder: 9470 # after Lobster
+    type_id: 10
+    section: STR_ALIEN_LIFE_FORMS
+    requires:
+      - STR_SQUIDFACE_AUTOPSY
+    image_id: UFOPAEDIA_IMG_SQUIDFACE_AUTOPSY
+    text: STR_SQUIDFACE_AUTOPSY_UFOPEDIA
+extraSprites:
+  - type: SQUIDFACE.PCK
+    width: 256
+    height: 520
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Squidface/SQUIDFACE.png
+  - type: SQUIDFACE_OVERMIND.PCK 
+    width: 256
+    height: 520
+    subX: 32
+    subY: 40
+    files:
+      0: Resources/Squidface/SQUIDFACE_Overmind.png
+  - type: BIGOBS.PCK 
+    files:
+      505: Resources/Squidface/SQUIDFACE_BIGOB.png
+      555: Resources/Squidface/SQUIDFACE_BIGOB_2.png
+  - type: FLOOROB.PCK 
+    files:
+      505: Resources/Squidface/SQUIDFACE_FLOOROB.png
+      555: Resources/Squidface/SQUIDFACE_FLOOROB_2.png
+  - type: UFOPAEDIA_IMG_SQUIDFACE # -------------------------- proxy
+    singleImage: true
+    width: 320
+    height: 200
+    files: 
+      0: Resources/Squidface/PROXY_PEDIA.png
+  - type: UFOPAEDIA_IMG_SQUIDFACE_AUTOPSY # ------------------- proxy
+    singleImage: true
+    width: 320
+    height: 200
+    files:
+      0: Resources/Squidface/PROXY_PEDIA.png
+extraStrings:
+  - type: en-US
+    strings:
+      STR_SQUIDFACE: Cephalid
+      STR_SQUIDFACE_SOLDIER: Cephalid Soldier
+      STR_SQUIDFACE_SQUAD_LEADER: Cephalid Squad Leader
+      STR_SQUIDFACE_MEDIC: Cephalid Medic
+      STR_SQUIDFACE_TECHNICIAN: Cephalid Technician
+      STR_SQUIDFACE_NAVIGATOR: Cephalid Navigator
+      STR_SQUIDFACE_COMMANDER: Cephalid Commander
+      STR_SQUIDFACE_OVERMIND: Cephalid Overmind
+# Corpses
+      STR_SQUIDFACE_CORPSE: Cephalid Corpse
+      STR_SQUIDFACE_AUTOPSY: Cephalid autopsy
+      STR_SQUIDFACE_CORPSE_2: Cephalid Overmind Corpse
+# Pedia
+      STR_SQUIDFACE_UFOPEDIA: The Cephalid - or Squidface, as more commonly called - is a true terror from the deep. Masters of molecular control, these dreadful beings are not only capable of manipulating their victims at a distance, but also of lurking both the depths and surface world with practically unimpeded movement. Even more disturbingly, they claim to be direct descendants of an ancestral entity only known as "The Great Dreamer" and, as progeny of this nameless abysmal horror, see themselves as some sort of genetic royalty and righful rulers of the Earth. 
+      STR_SQUIDFACE_AUTOPSY_UFOPEDIA: This monstrous creature is essentially an oversized, upright-standing cephalopod, hence the name. Its most prominent anatomical feature is its large, bulbous head with long, glutinous tentacular appendages dangling from it. Surgical examinations reveal a massive (2,780 cubic centimeters) brain within its cranial cavity - nearly twice a large as the human brain - indicating extremely well-developed senses and mental acuity. We can only begin to guess as to their stupendous level of intelligence. 
+extraSounds: # should I add reverb to UW sound?
+  - type: BATTLE.CAT
+    files:
+      505: Resources/Squidface/death_cephalid.ogg
+  - type: BATTLE2.CAT
+    files:
+      505: Resources/Squidface/death_cephalidUW.ogg
