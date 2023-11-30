@@ -72,7 +72,7 @@ Missile equipped interceptors can attack in group. However, they also can attack
 1B, 2B, 3B, 4B, 1M - toughest USO that can be sunk by simultaneous attack of so many interceptors (Barracuda or Matha). Losses may occur.
 
 | armament | cost | range | 1B | 2B | 3B | 4B | 1M |
-| ---- | ---- | ----:| ---- | ---- | ---- | ---- | ---- | ---- |
+| ---- | ---- | ----:| ---- | ---- | ---- | ---- | ---- |
 | Gas Cannon | near zero | 10 | Cruiser | H.Cruiser | Hunter | Predator | Hunter |
 | Gauss Cannon | low | 20 | H.Cruiser | Predator | Battleship | Dreadnaught | Dreadnaught |
 | Sonic Oscillator | high | 30 | Hunter | F.S.Cruiser | Dreadnaught |  | Dreadnaught |
