@@ -354,13 +354,13 @@ armors:
     spriteSheet: LOBSTER.PCK
     corpseItem: STR_LOBSTERMAN_CORPSE
     frontArmor: 60
-    sideArmor: 60
-    rearArmor: 60
-    underArmor: 40
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 20
     damageModifier:
       - 1.0
-      - 0.5 # Ap
-      - 2.0 # Phs
+      - 1.0 # AP
+      - 2.0 # Fire
       - 0.5 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
@@ -374,13 +374,13 @@ armors:
     spriteSheet: LOBSTER.PCK
     corpseItem: STR_LOBSTERMAN_CORPSE
     frontArmor: 70
-    sideArmor: 70
-    rearArmor: 70
-    underArmor: 50
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 30
     damageModifier:
       - 1.0
-      - 0.5 # Ap
-      - 2.0 # Phs
+      - 1.0 # AP
+      - 2.0 # Fire
       - 0.5 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
@@ -394,13 +394,13 @@ armors:
     spriteSheet: LOBSTERCOMM.PCK
     corpseItem: STR_LOBSTERMAN_CORPSE_2
     frontArmor: 80
-    sideArmor: 80
-    rearArmor: 80
-    underArmor: 60
+    sideArmor: 70
+    rearArmor: 60
+    underArmor: 40
     damageModifier:
       - 1.0
-      - 0.5 # Ap
-      - 2.0 # Phs
+      - 1.0 # AP
+      - 2.0 # Fire
       - 0.5 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
@@ -414,13 +414,13 @@ armors:
     spriteSheet: LOBSTERGUARD.PCK
     corpseItem: STR_LOBSTERMAN_CORPSE_3
     frontArmor: 90
-    sideArmor: 90
-    rearArmor: 90
-    underArmor: 70
+    sideArmor: 80
+    rearArmor: 70
+    underArmor: 50
     damageModifier:
       - 1.0
-      - 0.5 # Ap
-      - 2.0 # Phs
+      - 1.0 # AP
+      - 2.0 # Fire
       - 0.5 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
@@ -442,19 +442,19 @@ armors:
     frontArmor: 35
     sideArmor: 50
     rearArmor: 50
-    underArmor: 50
+    underArmor: 30
     movementType: 1
     size: 2
     damageModifier:
       - 1.0
       - 1.0 # AP
-      - 1.0 # Fire
+      - 2.0 # Fire
       - 0.5 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Stun
       - 1.5 # Melee
-      - 0.3 # Electr
+      - 0.5 # Electr
       - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 21
@@ -471,14 +471,14 @@ armors:
     damageModifier:
       - 1.0
       - 1.0 # AP
-      - 1.0 # Fire
+      - 2.0 # Fire
       - 0.5 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
-      - 0.5 # Stun
+      - 1.0 # Stun
       - 1.5 # Melee
-      - 0.7 # Electr
-      - 1.0 # Smoke
+      - 0.5 # Electr
+      - 0.0 # Smoke
     loftemps: 2
     drawingRoutine: 16
     constantAnimation: true
@@ -523,12 +523,12 @@ armors:
     frontArmor: 90
     sideArmor: 80
     rearArmor: 70
-    underArmor: 40
+    underArmor: 50
     size: 2
     damageModifier:
       - 1.0
       - 1.0 # AP
-      - 1.0 # Fire
+      - 2.0 # Fire
       - 1.0 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
@@ -550,7 +550,7 @@ armors:
     frontArmor: 70
     sideArmor: 60
     rearArmor: 50
-    underArmor: 60
+    underArmor: 50
     size: 2
     damageModifier:
       - 1.0 
@@ -559,7 +559,7 @@ armors:
       - 1.0 # HE
       - 0.5 # Gauss
       - 1.0 # Sonic
-      - 0.5 # Stun
+      - 1.0 # Stun
       - 1.0 # Melee
       - 1.0 # Electr
       - 0.0 # Smoke
@@ -586,7 +586,7 @@ armors:
       - 1.0 # HE
       - 0.5 # Gauss
       - 1.0 # Sonic
-      - 0.5 # Stun
+      - 1.0 # Stun
       - 1.0 # Melee
       - 1.0 # Electr
       - 0.0 # Smoke

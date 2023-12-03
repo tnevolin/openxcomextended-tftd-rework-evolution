@@ -7,87 +7,87 @@ ufos:
     damageMax: 200
     speedMax: 2000
     accel: 12
-    power: 5
+    power: 10
     range: 60
     score: 100
-    reload: 32
+    reload: 24
     breakOffTime: 500
   - type: STR_ESCORT
     size: STR_SMALL
     sprite: 1
-    damageMax: 500
+    damageMax: 400
     speedMax: 2600
     accel: 9
-    power: 10
+    power: 15
     range: 60
     score: 200
-    reload: 32
+    reload: 24
     breakOffTime: 600
   - type: STR_CRUISER
     size: STR_SMALL
     sprite: 2
-    damageMax: 1000
+    damageMax: 600
     speedMax: 2400
     accel: 8
     power: 20
     range: 60
     score: 300
-    reload: 32
+    reload: 24
     breakOffTime: 800
   - type: STR_HEAVY_CRUISER
     size: STR_MEDIUM_UC
     sprite: 4
-    damageMax: 1500
+    damageMax: 800
     speedMax: 3800
     accel: 7
     power: 30
     range: 60
     score: 400
-    reload: 32
+    reload: 24
     breakOffTime: 1000
   - type: STR_HUNTER
     size: STR_MEDIUM_UC
     sprite: 3
-    damageMax: 2000
+    damageMax: 1000
     speedMax: 4400
     accel: 7
     power: 40
     range: 60
     score: 500
-    reload: 32
+    reload: 24
     breakOffTime: 1500
   - type: STR_FLEET_SUPPLY_CRUISER
     size: STR_LARGE
     sprite: 7 # previously 5
     sprite: 5
-    damageMax: 5000
+    damageMax: 2500
     speedMax: 3200
     accel: 6
     power: 70
     range: 60
     score: 700
-    reload: 32
+    reload: 24
     breakOffTime: 2000
   - type: STR_BATTLESHIP
     size: STR_LARGE
     sprite: 5 # previously 7
     sprite: 7
-    damageMax: 4000
+    damageMax: 2000
     speedMax: 4200
     accel: 7
     power: 100
     range: 60
     score: 800
-    reload: 32
+    reload: 24
     breakOffTime: 3000
   - type: STR_DREADNOUGHT
     size: STR_VERY_LARGE
     sprite: 6
-    damageMax: 8000
+    damageMax: 4000
     speedMax: 4800
     accel: 5
-    power: 90
+    power: 80
     range: 60
     score: 900
-    reload: 32
+    reload: 24
     breakOffTime: 4000

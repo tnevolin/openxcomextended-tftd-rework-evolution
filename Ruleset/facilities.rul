@@ -117,10 +117,10 @@ facilities:
     listOrder: 1200
     spriteShape: 2
     spriteFacility: 23
-    buildCost: 500000
+    buildCost: 250000
     buildTime: 10
-    monthlyCost: 750000
-    defense: 8000
+    monthlyCost: 700000
+    defense: 4000
     hitRatio: 100
     fireSound: 12
     hitSound: 10
@@ -131,10 +131,10 @@ facilities:
       - STR_GAUSS_DEFENSES
     spriteShape: 3
     spriteFacility: 26
-    buildCost: 1000000
+    buildCost: 500000
     buildTime: 15
-    monthlyCost: 500000
-    defense: 8000
+    monthlyCost: 600000
+    defense: 4000
     hitRatio: 100
     fireSound: 13
     hitSound: 10
@@ -145,10 +145,10 @@ facilities:
       - STR_SONIC_DEFENSES
     spriteShape: 3
     spriteFacility: 27
-    buildCost: 1500000
+    buildCost: 1000000
     buildTime: 20
-    monthlyCost: 250000
-    defense: 8000
+    monthlyCost: 400000
+    defense: 4000
     hitRatio: 100
     fireSound: 14
     hitSound: 10
@@ -162,7 +162,7 @@ facilities:
     buildCost: 2000000
     buildTime: 25
     monthlyCost: 0
-    defense: 8000
+    defense: 4000
     hitRatio: 100
     fireSound: 15
     hitSound: 10

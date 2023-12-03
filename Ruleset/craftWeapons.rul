@@ -6,27 +6,27 @@ craftWeapons:
     reloadCautious: 3
     reloadStandard: 3
     reloadAggressive: 3
-    ammoMax: 200
+    ammoMax: 100
     rearmRate: 50
     underwaterOnly: false
   - type: STR_AJAX
-    damage: 100
+    damage: 60
     range: 40
     accuracy: 70
-    reloadCautious: 40
-    reloadStandard: 40
-    reloadAggressive: 40
-    ammoMax: 8
+    reloadCautious: 30
+    reloadStandard: 30
+    reloadAggressive: 30
+    ammoMax: 6
     rearmRate: 2
     underwaterOnly: true
   - type: STR_DUP_HEAD
-    damage: 200
+    damage: 110
     range: 50
     accuracy: 80
     reloadCautious: 40
     reloadStandard: 40
     reloadAggressive: 40
-    ammoMax: 6
+    ammoMax: 3
     rearmRate: 1
     underwaterOnly: true
   - type: STR_GAUSS_CANNON_UC
@@ -36,7 +36,7 @@ craftWeapons:
     reloadCautious: 6
     reloadStandard: 6
     reloadAggressive: 6
-    ammoMax: 100
+    ammoMax: 50
     rearmRate: 10
     underwaterOnly: true
   - type: STR_SONIC_OSCILLATOR_UC
@@ -46,17 +46,17 @@ craftWeapons:
     reloadCautious: 10
     reloadStandard: 10
     reloadAggressive: 10
-    ammoMax: 50
+    ammoMax: 30
     rearmRate: 5
     clip: STR_SONIC_OSCILLATOR_AMMO
     underwaterOnly: true
   - type: STR_PWT_CANNON_UC
-    damage: 400
+    damage: 200
     range: 60
     accuracy: 100
-    reloadCautious: 40
-    reloadStandard: 40
-    reloadAggressive: 40
-    ammoMax: 4
+    reloadCautious: 50
+    reloadStandard: 50
+    reloadAggressive: 50
+    ammoMax: 2
     rearmRate: 1
     underwaterOnly: true

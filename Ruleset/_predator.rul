@@ -3,13 +3,13 @@ ufos:
     listOrder: 100
     size: STR_LARGE
     modSprite: InterceptionBattlestar
-    damageMax: 3000
+    damageMax: 1500
     speedMax: 4000
     accel: 6
-    power: 60
+    power: 50
     range: 60
     score: 600
-    reload: 32
+    reload: 24
     breakOffTime: 2500
     battlescapeTerrainData:
       name: UFO13

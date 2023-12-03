@@ -74,6 +74,7 @@ items: #
     power: 60
     clipSize: 1
   - type: STR_COELACANTH_AQUA_JET 
+    size: 3
     transferTime: 72
     costBuy: 380000
     costSell: 260000
@@ -107,7 +108,7 @@ items: #
     # how many rounds it adds.
     compatibleAmmo:
       - STR_GAUSS_CANNON_AMMO_SWS
-    clipSize: 30
+    clipSize: 50
     costSell: 494000
     autoRange: 7
     snapRange: 15
@@ -646,13 +647,13 @@ items: #
     armor: 60
     blastRadius: 3
     damageAlter:
-      ToHealth: 0.5
-      ToStun: 0.5
+      ToHealth: 1.0
+      ToStun: 1.0
   - type: STR_SONIC_PULSER
     recoveryPoints: 0
     size: 0.02
     costSell: 7425
-    weight: 4
+    weight: 3
     power: 90
     armor: 300
     blastRadius: 5
