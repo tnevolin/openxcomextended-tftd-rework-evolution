@@ -150,7 +150,6 @@ A lot of alient technology depends on further alien interrogation.
 | Sonic Pistol | Squad Leader |
 | Sonic Rifle | Technician |
 | Sonic Cannon | Sonic Rifle, Navigator |
-| Transmission Resolver | Sonic Cannon, Commander |
 | Disruptor Pulse Launcher | Sonic Cannon, Commander |
 | Manta | Alien Sub Construction, Alien Cloning, Technician |
 | Hammerhead | Manta, Alien Cryogenics, Navigator |
