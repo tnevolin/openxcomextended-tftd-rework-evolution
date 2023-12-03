@@ -53,7 +53,7 @@ Below table shows toughest USO that can be easily sinked by simultaneous attack 
 
 ## Craft armament comparison
 
-Projectiles are cheap and carry sufficient payload to down a Dreadnaught. Their weak side is higher interseptor damage and risk of casualties. Useless against Battleship.
+Projectiles are cheap and carry sufficient payload to down a Dreadnaught. Their weak side is higher interceptor damage and risk of casualties. Useless against Battleship.
 
 Torpedoes are safer to interceptor due to their shorter approach time. They are much more expensive and their payload is insufficient to sink large USO with a single interceptor. Large group (3-4) of Barracudas with D.U.P. can take Battleship with minimal casualties. P.W.T. is even better.
 
