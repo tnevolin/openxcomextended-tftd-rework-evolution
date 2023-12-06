@@ -8,19 +8,42 @@ Based on TFTD Rework by R Kallisti (aka Orz, Illamasqua)
 
 https://openxcom.org/forum/index.php/topic,4265.0.html
 
+Runs on Brual-OXCE by Xilmi
+
+https://openxcom.org/forum/index.php/topic,10967.0.html
 
 # Mod idea
 
-* Steady progress. Acquire more advanced artifacts and capture higher ranked alien to research better equipment and face more dangerous encounters.
-* All weapons (both hand and craft) are usable at least in their respective time. Gauss weapons should not be skipped.
+Promote old fashion strategic game steady progress. Advanced research -> advanced equipment -> more dangerous events -> more advanced alien items and higher ranking officers -> even more advanced research -> and on and on.
 
-Conventional crafts and armament does not allow intercepting large USOs on regular basis. Develop more advanced armament to fight more and more dangerous opponents.
+All items (craft armament, gauss weapon, tank, armor, etc.) should have their game niche and be an essetial part of the game.
 
-Untrained squad with conventional weaponry without armor should not be able to recover medium USOs and above even with Aquatoids and Gillmen. One need to develop armor and good Gauss weapons for that. Larger USOs are even more deadly. More difficult base/ship missions require even better preparation and equipment. Better (alien) equipment, in turn, requires capturing live aliens of higher ranks from progressively larger USOs. This is normal strategy development paradigm.
+# Interception
+
+Conventional crafts and armament are economically unfeasible for intercepting larger USOs. Develop more advanced armament to face more dangerous opponents and reduce expenses.
+
+Below table shows approximate toughest USO that can be easily sinked by simultaneous attack of that many interceptors armed with this weapon. Superhuman difficulty.
+
+| armament | 1B | 2B | 3B | 4B | 1M |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+| Gas Cannon | Escort | Cruiser | H.Cruiser |  | Hunter |
+| Gauss Cannon | Cruiser | H.Cruiser | Hunter |  | Dreadnaught |
+| Sonic Oscillator | Hunter | Predator |  |  | Dreadnaught |
+| AJAX | Cruiser | H.Cruiser | Hunter |  | H.Cruiser |
+| D.U.P. | H.Cruiser | Hunter | Predator | F.S.Cruiser | H.Cruiser |
+| P.W.T. | Hunter | Predator | Battleship | Dreadnaught | Hunter |
+
+Projectiles are cheap and carry enormous payload but short ranged causing higher interceptor damage and risk of casualties. Barracudas with projectiles are useless against Battleship.
+
+Torpedoes are expensive and have limited payload but long ranged preserving Barracudas. Large group of Barracudas with D.U.P. can take Battleship with minimal casualties. P.W.T. is even better.
+
+# Combat
+
+Untrained squad with conventional weaponry and without armor should not be able to recover medium USOs and above even with Aquatoids and Gillmen. One need to develop armor and good Gauss weapons for that. Larger USOs are even more deadly. More difficult base/ship missions require even better preparation and equipment. Better (alien) equipment, in turn, requires capturing live aliens of higher ranks from progressively larger USOs.
 
 Note: first terror mission with Gillmen and Deep Ones should be barely passable with conventional equipment. However, it can also be skipped (landed and abort) to avoid grinding and heavy losses.
 
-# Hand weapons (Gauss and Sonic series)
+## Hand weapons (Gauss and Sonic series)
 
 Gauss and Sonic weapon series powers are overlapping. Gauss Rifle is about as strong as Sonic Pistol and Heavy Gauss is about as strong as Sonic Rifle. That allows fighting Lobstermen and Tashots with Heavy Gauss should they pop up before Sonic Cannon is discovered.
 
@@ -36,32 +59,33 @@ Sonic weaponry uses advanced alien power technology and lightweight alloys.
 
 Within the series heavier versions are more accurate but slower. Same as in vanilla.
 
-# Intecept
+## Damage modifiers
 
-Intercept parameters are carefully reworked to ensure combat and economical balance.
+The main problem with damage modifier is that they are NOT VISIBLE to player nor they are satisfactory referenced in description. Besides, same effect can be achieved by modifying armor value directly. With the above in mind damage modifiers were changed like that.
 
-Below table shows toughest USO that can be easily sinked by simultaneous attack of that many interceptors armed with this weapon. Superhuman difficulty.
+* All Gauss and Sonic damage modifier values are 1.0 for all creatures. These damages are most common and should be used as benchmark.
+* Armor values of top level creatures (toughest Lobstermen) are increased to compensate for Gauss/Sonic DM modification.
+* The mod is trying to avoid altering damage modifiers if same can be achieved by visible parameters instead (armor and weapon power).
+* All damage modifier values are standardized to use below values for simplicity of description and to make effect noticeable to player.
 
-| armament | 1B | 2B | 3B | 4B | 1M |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-| Gas Cannon | Escort | Cruiser | H.Cruiser |  | Hunter |
-| Gauss Cannon | Cruiser | H.Cruiser | Hunter |  | Dreadnaught |
-| Sonic Oscillator | Hunter | Predator |  |  | Dreadnaught |
-| AJAX | Cruiser | H.Cruiser | Hunter |  | H.Cruiser |
-| D.U.P. | H.Cruiser | Hunter | Predator | F.S.Cruiser | H.Cruiser |
-| P.W.T. | Hunter | Predator | Battleship | Dreadnaught | Hunter |
+| damage modifier | term |
+| ----:| ---- |
+| 0.0 | immune |
+| 0.7 | resistant |
+| 1.0 | normal |
+| 1.5 | sensitive |
+| 2.0 | vulnerable |
 
-## Craft armament comparison
+## Thermal shock bomb damage
 
-Projectiles are cheap and carry sufficient payload to down a Dreadnaught. Their weak side is higher interceptor damage and risk of casualties. Useless against Battleship.
+Modified thermal shock bomb to make it more threatening to aquanaughts as well as more difficult to capture live aliens. Thermal shock is an explosive damage also delivering stun effect.
 
-Torpedoes are safer to interceptor due to their shorter approach time. They are much more expensive and their payload is insufficient to sink large USO with a single interceptor. Large group (3-4) of Barracudas with D.U.P. can take Battleship with minimal casualties. P.W.T. is even better.
+## Brutal AI related changes
 
-## Tactics
+Brutal AI is very effective in general and with grenades in particular. Therefore, few changes are made to account for that.
 
-Use Barracudas with projectiles against smaller targets to save money. Group attack slightly larger targets to minimze casualties.
-Use Barracudas with torpedoes against dangerous targets. Group attack is safer.
-Use Manta with projectiles against most dangerous targets. It is capable to survive approach to any USO.
+* Aquanaught stats are increased to make them closer to alien ones.
+* Explosives power, resistance and armor are reworked to make them not that insanely effective.
 
 # Facilities
 
@@ -75,54 +99,14 @@ I don't see much point in USO defense combat randomization. It doesn't serve any
 
 * All defenses have 100% hit ratio and their damage is equal to Dreadnaught damage capacity. With that one defense facility shot sinks Dreadnaught with 50% probability and two shots guarantees Dreadnaught destruction. Player can either build two facilities or one with Bombardment Shield which is a little cheaper.
 * Defenses maintenance becomes very high and comparable to interceptor maintenance since it serves about same purpose.
-* More advanced defenses are more expensive to build but require lower maintenance. That gives player incentive to upgrade them. Every one level upgrade pays off in 5 months in reduced maintenance or even faster if jumping over levels.
+* More advanced defenses are more expensive to build but require lower maintenance. That gives player incentive to upgrade them. Every one level upgrade pays off in 4 months in reduced maintenance or even faster if jumping over levels.
 
 | defense facility | build time, days | build cost, thousands | maintenance, thousands |
 | ---- | ----:| ----:| ----:|
-| Torpedo Defenses | 10 | 250 | 700 |
-| Gauss Defenses | 15 | 500 | 600 |
-| Sonic Defenses | 20 | 1000 | 400 |
+| Torpedo Defenses | 10 | 250 | 875 |
+| Gauss Defenses | 15 | 500 | 750 |
+| Sonic Defenses | 20 | 1000 | 500 |
 | P.W.T. Defenses | 25 | 2000 | 0 |
-
-# Unit stats and armors
-
-TFTD Rework set Tashoth health to 90. I think it is a mistake. Reset it to about vanilla values.
-
-Reduced Deep One armor and health slightly. I understand Orz wanted some more challenge with them. However, they appear at first terror mission at the end of January and players absolutely rookie weaklings should fight them with conventional weapons or gauss pistols at best. I'd say it is too much of a challenge.
-
-Reduced Coelacanth armor a little. Otherwise, it is impenetrable for Sonic Pistols.
-
-Reduced Ion and Mag-Ion armour values a little. It is overprotective in vanilla.
-
-Swapped Ion and Mag-Ion armour side and rear values. I never could understand this "brilliant" innovation in TFTD.
-
-Increased soldiers' initial health to 30-50 and health cap to 80. This is in conjunction with their armor value decrease to make them wounded instead of instantly dying more often.
-
-# Alien damage modifiers
-
-The main problem with damage modifier is that they are NOT VISIBLE to player nor they are satisfactory referenced in description. Besides, same effect can be achieved by modifying armor value directly. With the above in mind damage modifiers were changed like that.
-
-* All Gauss and Sonic damage modifier values are 1.0 for all creatures. These damages are most common and should be used as benchmark.
-* All damage modifier values are standardized to use below values for simplicity of description and to make effect noticeable to player.
-* Armor values of top level creatures (toughest Lobstermen) are increased to compensate for Gauss/Sonic DM modification.
-
-| damage modifier | description |
-| ----:| ---- |
-| 0.0 | immune |
-| 0.5 | resistant |
-| 1.0 | normal |
-| 1.5 | sensitive |
-| 2.0 | vulnerable |
-
-Some sample damage modifiers
-
-* Ion armor and magnetic ion armor are immune to fire and smoke.
-* All alien soldiers, Tentaculat, Hallucinoid are vulnerable to fire.
-* Tentaculat is sensitive to HE.
-* Lobsterman is resistant to AP and HE but vulnerable to drill.
-* Xarquid and Biodrone are resistant to HE but sensitive to drill.
-* Hallucinoid is resistant to AP, HE, freeze, drill. Looks like fire is the best way to kill it.
-* Coelacanth/Displaceur is resistant to AP, HE, Gauss and immune to stun and smoke (obviously).
 
 # Research
 
@@ -158,13 +142,6 @@ A lot of alient technology depends on further alien interrogation.
 | Alien Origins | interrogate all five alien races |
 | Ultimate Threat | Alien Origins, Lobsterman Navigator, Lobsterman Commander |
 | T'Leth Alien City | Ultimate Threat, Squidface Navigator, Squidface Commander |
-
-# Thermal shock damage
-
-Modified thermal shock to make it more threatening to aquanaughts as well as more difficult to capture live aliens.
-
-* Thermal shock applies part of its damage to health stunning and injuring target at the same time.
-* Tanks are resistant to stun but not immune, thus receiving some small damage from shock.
 
 # Changelog
 

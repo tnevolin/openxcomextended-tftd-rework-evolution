@@ -119,7 +119,7 @@ facilities:
     spriteFacility: 23
     buildCost: 250000
     buildTime: 10
-    monthlyCost: 700000
+    monthlyCost: 875000
     defense: 4000
     hitRatio: 100
     fireSound: 12
@@ -133,7 +133,7 @@ facilities:
     spriteFacility: 26
     buildCost: 500000
     buildTime: 15
-    monthlyCost: 600000
+    monthlyCost: 750000
     defense: 4000
     hitRatio: 100
     fireSound: 13
@@ -147,7 +147,7 @@ facilities:
     spriteFacility: 27
     buildCost: 1000000
     buildTime: 20
-    monthlyCost: 400000
+    monthlyCost: 500000
     defense: 4000
     hitRatio: 100
     fireSound: 14

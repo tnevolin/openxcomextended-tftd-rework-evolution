@@ -414,7 +414,7 @@ items: #
   - type: STR_MAGNA_BLAST_GRENADE
     size: 0.02
     weight: 3
-    power: 50
+    power: 40
     armor: 150
     blastRadius: 5
   - type: STR_DYE_GRENADE
@@ -646,8 +646,8 @@ items: #
     attraction: 10
     armor: 60
     blastRadius: 3
+    damageType: 3
     damageAlter:
-      ToHealth: 1.0
       ToStun: 1.0
   - type: STR_SONIC_PULSER
     recoveryPoints: 0
