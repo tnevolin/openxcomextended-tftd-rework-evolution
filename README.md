@@ -71,10 +71,22 @@ The main problem with damage modifier is that they are NOT VISIBLE to player nor
 | damage modifier | term |
 | ----:| ---- |
 | 0.0 | immune |
-| 0.7 | resistant |
+| 0.5 | resistant |
 | 1.0 | normal |
 | 1.5 | sensitive |
 | 2.0 | vulnerable |
+
+| armor | immune | resistant | sensitive | vulnerable |
+| ---- | ---- |
+| all large units |  | HE |  |  |
+| all aliens and terrorists |  |  |  | fire |
+| (Mag) Ion Armour | smoke fire |  |  |  |
+| Coelacanth / Displaceur | smoke fire |
+| Lobsterman |  | HE |  | melee |
+| Calcinite | smoke |  |  |  |
+| Tentaculat |  |  | HE |  |
+| Biodrone / Xarquid | smoke | HE | melee |  |
+| Hallucinoid |  | AP HE stun melee |
 
 ## Thermal shock bomb damage
 

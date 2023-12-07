@@ -877,13 +877,13 @@ units:
       strength: 60
       psiStrength: 100
       psiSkill: 0
-#    armor: COELACANTH_ARMOR2
+    armor: COELACANTH_ARMOR2
 #    standHeight: 16
 #    kneelHeight: 16
 #    value: 20
 #    deathSound: 57
 #    moveSound: 12
-    energyRecovery: 50
+#    energyRecovery: 50
 # - type: STR_DISPLACER_SONIC
   - type: STR_DISPLACER_PWT
     race: STR_DISPLACER_PWT

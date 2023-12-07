@@ -7,10 +7,10 @@ armors:
     spriteInv: MAN_4
     storeItem: STR_NONE
     corpseItem: STR_CORPSE
-    frontArmor: 12
-    sideArmor: 8
-    rearArmor: 5
-    underArmor: 2
+    frontArmor: 20
+    sideArmor: 16
+    rearArmor: 12
+    underArmor: 8
     damageModifier:
       - 1.0
       - 1.0
@@ -19,9 +19,9 @@ armors:
       - 1.0
       - 1.0
       - 1.0
-      - 1.2 # Melee
-      - 1.6 # Electr
-      - 1.0
+      - 1.0 # Melee
+      - 1.0 # Elect
+      - 1.0 # Smoke
     loftemps: 3
     drawingRoutine: 13
     spriteFaceGroup: 14
@@ -47,8 +47,8 @@ armors:
       - 1.0
       - 1.0 # Freeze
       - 1.0 # Melee
-      - 1.0 # Electr
-      - 1.0
+      - 1.0 # Elect
+      - 1.0 # Smoke
     loftemps: 3
     drawingRoutine: 13
     spriteFaceGroup: 14
@@ -184,7 +184,7 @@ armors:
       - 1.0
       - 1.0
       - 1.0
-      - 0.3 # Electr
+      - 1.0 # Electr
       - 1.0
     loftemps: 3
     drawingRoutine: 14
@@ -204,7 +204,7 @@ armors:
       - 1.0 # Sonic
       - 1.0
       - 1.0
-      - 0.6 # Electr
+      - 1.0 # Electr
       - 1.0
     loftemps: 3
     drawingRoutine: 14
@@ -224,7 +224,7 @@ armors:
       - 1.0 # Sonic
       - 1.0
       - 1.0
-      - 0.6 # Electr
+      - 1.0 # Electr
       - 1.0
     loftemps: 3
     drawingRoutine: 14
@@ -244,7 +244,7 @@ armors:
       - 1.0 # Sonic
       - 1.0
       - 1.0
-      - 0.6 # Electr
+      - 1.0 # Electr
       - 1.0
     loftemps: 3
     drawingRoutine: 14
@@ -264,7 +264,7 @@ armors:
       - 1.0 # Sonic
       - 1.0 # Stun
       - 1.0 # Melee
-      - 0.6 # Electr
+      - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 3
     drawingRoutine: 14
@@ -284,7 +284,7 @@ armors:
       - 1.0 # Sonic
       - 1.0 # Stun
       - 1.0 # Melee
-      - 0.6 # Electr
+      - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 3
     drawingRoutine: 14
@@ -304,7 +304,7 @@ armors:
       - 1.0 # Sonic
       - 1.0 # Stun
       - 1.0 # Melee
-      - 0.6 # Electr
+      - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 3
     drawingRoutine: 14
@@ -319,13 +319,13 @@ armors:
     damageModifier:
       - 1.0
       - 1.0 # AP
-      - 1.0 # Fire
+      - 2.0 # Fire
       - 1.0 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Stun
       - 1.0 # Melee
-      - 0.0 # Electr
+      - 1.0 # Electr
       - 0.0 # Smoke
     loftemps: 3
     drawingRoutine: 14
@@ -346,7 +346,7 @@ armors:
       - 1.0 # Sonic
       - 1.0 # Freeze
       - 1.0 # Melee
-      - 0.7 # Electr
+      - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 2
     drawingRoutine: 19
@@ -366,7 +366,7 @@ armors:
       - 1.0 # Sonic
       - 1.0 # Freeze
       - 2.0 # Melee
-      - 0.3 # Electr
+      - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 4
     drawingRoutine: 14
@@ -406,7 +406,7 @@ armors:
       - 1.0 # Sonic
       - 1.0 # Freeze
       - 2.0 # Melee
-      - 0.3 # Electr
+      - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 4
     drawingRoutine: 14
@@ -426,7 +426,7 @@ armors:
       - 1.0 # Sonic
       - 1.0 # Freeze
       - 2.0 # Melee
-      - 0.1 # Electr
+      - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 4
     drawingRoutine: 14
@@ -454,7 +454,7 @@ armors:
       - 1.0 # Sonic
       - 1.0 # Stun
       - 1.5 # Melee
-      - 0.5 # Electr
+      - 1.0 # Electr
       - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 21
@@ -477,7 +477,7 @@ armors:
       - 1.0 # Sonic
       - 1.0 # Stun
       - 1.5 # Melee
-      - 0.5 # Electr
+      - 1.0 # Electr
       - 0.0 # Smoke
     loftemps: 2
     drawingRoutine: 16
@@ -506,7 +506,7 @@ armors:
       - 1.0 # Sonic
       - 0.5 # Freeze
       - 0.5 # Melee
-      - 0.0 # Electr
+      - 1.0 # Electr
       - 1.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 12
@@ -534,7 +534,7 @@ armors:
       - 1.0 # Sonic
       - 1.0 # Stun
       - 1.0 # Melee
-      - 0.6 # Electr
+      - 1.0 # Electr
       - 1.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 20
@@ -555,9 +555,35 @@ armors:
     damageModifier:
       - 1.0 
       - 1.0 # AP
-      - 0.5 # Fire
+      - 0.0 # Fire
       - 1.0 # HE
-      - 0.5 # Gauss
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 1.0 # Stun
+      - 1.0 # Melee
+      - 1.0 # Electr
+      - 0.0 # Smoke
+    loftempsSet: [ 92, 89, 90, 91 ]
+    drawingRoutine: 11
+  - type: COELACANTH_ARMOR2 # Coelacanth Gauss
+    spriteSheet: TANK01.PCK
+    allowInv: false
+    corpseBattle:
+      - COELACANTH_CORPSE_1
+      - COELACANTH_CORPSE_2
+      - COELACANTH_CORPSE_3
+      - COELACANTH_CORPSE_4
+    frontArmor: 90
+    sideArmor: 75
+    rearArmor: 60
+    underArmor: 60
+    size: 2
+    damageModifier:
+      - 1.0 
+      - 1.0 # AP
+      - 0.0 # Fire
+      - 1.0 # HE
+      - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Stun
       - 1.0 # Melee
@@ -582,9 +608,9 @@ armors:
     damageModifier:
       - 1.0
       - 1.0 # AP
-      - 0.5 # Fire
+      - 0.0 # Fire
       - 1.0 # HE
-      - 0.5 # Gauss
+      - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Stun
       - 1.0 # Melee
@@ -610,7 +636,7 @@ armors:
       - 1.0
       - 1.0
       - 1.0
-      - 0.0
+      - 1.0
       - 1.0
     loftemps: 2
     drawingRoutine: 17
