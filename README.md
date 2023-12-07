@@ -80,7 +80,8 @@ The main problem with damage modifier is that they are NOT VISIBLE to player nor
 | ---- | ---- | ---- | ---- | ---- |
 | all large units |  | HE |  |  |
 | all aliens and terrorists |  |  |  | fire |
-| (Mag) Ion Armour | smoke \\ fire |  |  |  |
+| (Mag) Ion Armour | smoke\ |  |  |  |
+|                  | fire |  |  |  |
 | Coelacanth / Displaceur | smoke fire |
 | Lobsterman |  | HE |  | melee |
 | Calcinite | smoke |  |  |  |
