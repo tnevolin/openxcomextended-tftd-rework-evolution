@@ -71,21 +71,20 @@ The main problem with damage modifier is that they are NOT VISIBLE to player nor
 | damage modifier | term |
 | ----:| ---- |
 | 0.0 | immune |
-| 0.5 | resistant |
+| 0.7 | resistant |
 | 1.0 | normal |
 | 1.5 | sensitive |
 | 2.0 | vulnerable |
 
 | armor | immune | resistant | sensitive | vulnerable |
 | ---- | ---- | ---- | ---- | ---- |
-| all large units |  | HE |  |  |
-| all aliens and terrorists |  |  |  | fire |
 | (Mag) Ion Armour <br/> Coelacanth / Displaceur | smoke <br/> fire |  |  |  |
+| all aliens and terrorists |  |  |  | fire |
 | Lobsterman |  | HE |  | melee |
 | Calcinite | smoke |  |  |  |
-| Tentaculat |  |  | HE |  |
+| Hallucinoid |  | HE <br/> stun <br/> melee |
 | Biodrone / Xarquid | smoke | HE | melee |  |
-| Hallucinoid |  | AP <br/> HE <br/> stun <br/> melee |
+| Tentaculat |  |  | HE |  |
 
 ## Thermal shock bomb damage
 
@@ -118,6 +117,12 @@ I don't see much point in USO defense combat randomization. It doesn't serve any
 | Gauss Defenses | 15 | 500 | 750 |
 | Sonic Defenses | 20 | 1000 | 500 |
 | P.W.T. Defenses | 25 | 2000 | 0 |
+
+## Workshop
+
+Removed workshop space requirement per project. 50 engineers can work in one workshop.
+
+I never understood strategic use for manufacturing *project* taking space, not the manufactured item themselves. Why one item takes same amount of additional space as ten? In my mind both laboratory and workshop are places where 50 specialists can do their work regardless of what they are working on. The rest of the supplies and ready items should reside in storage.
 
 # Research
 

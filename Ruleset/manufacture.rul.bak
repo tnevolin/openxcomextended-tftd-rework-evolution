@@ -72,53 +72,36 @@ manufacture:
     time: 30
     cost: 1200
   - name: STR_DISPLACER_PWT    #Displacer/P.W.T. #
+    cost: 600000 
     space: 26 
     requires:
-     - STR_ISPLACER_PWT
-    space: 0
-    time: 1400
-    cost: 600000
+     - STR_DISPLACER_PWT
+    space: 
+    time: 400
+    cost: 15000
     requiredItems:
       STR_AQUA_PLASTICS: 24
       STR_ZRBITE: 6
   - name: STR_HWP_DISPLACER_PWT    #Displacer P.W.T. Ammo #
     requires:
-     - STR_DISPLACR_PWT
-    space: 0
-    time: 400
-    cost: 15000
+     - STR_DISPLACER_PWT
+    space: 6 
     requiredItems:
       STR_ZRBITE: 3
-  - name: STR_GAUSS_PISTOL    #Gauss Pistol #
-    space: 0
-    time: 300
-    cost: 8000
+# - name: STR_GAUSS_PISTOL    #Gauss Pistol #
   - name: STR_GAUSS_PISTOL_CLIP    #Gauss Pistol Clip #
-    space: 0
-    time: 20
-    cost: 1000
     requires:
 #    - STR_GAUSS_PISTOL_CLIP
      - STR_GAUSS_PISTOL
-  - name: STR_GAUSS_RIFLE    #Gauss Rifle #
-    space: 0
-    time: 400
-    cost: 20000
+# - name: STR_GAUSS_RIFLE    #Gauss Rifle #
   - name: STR_GAUSS_RIFLE_CLIP    #Gauss Rifle Clip #
-    space: 0
-    time: 45
-    cost: 2000
+    space: 3
     requires:
 #    - STR_GAUSS_RIFLE_CLIP
      - STR_GAUSS_RIFLE
   - name: STR_HEAVY_GAUSS    #Heavy Gauss #
-    space: 0
-    time: 700
-    cost: 32000
+    time: 600
   - name: STR_HEAVY_GAUSS_CLIP    #Heavy Gauss Clip #
-    space: 0
-    time: 70
-    cost: 4000
     requires:
 #    - STR_HEAVY_GAUSS_CLIP
      - STR_HEAVY_GAUSS
@@ -129,9 +112,9 @@ manufacture:
     category: STR_EQUIPMENT
     requires:
      - STR_MC_DISRUPTOR
-    space: 0
+    space: 4 
     time: 500
-    cost: 160000
+    cost: 160000 
     requiredItems:
       STR_ZRBITE: 1
       STR_AQUA_PLASTICS: 1
@@ -140,9 +123,9 @@ manufacture:
     listOrder: 2300
     requires:
      - STR_SONIC_CANNON
-    space: 0
-    time: 1000
-    cost: 122000
+    space: 4 
+    time: 1000 
+    cost: 122000 
     requiredItems:
       STR_AQUA_PLASTICS: 3
   - name: STR_CANNON_POWER_CLIP    #Cannon Power Clip #
@@ -150,18 +133,18 @@ manufacture:
     requires:
 #    - STR_CANNON_POWER_CLIP
      - STR_SONIC_CANNON
-    space: 0
-    time: 80
-    cost: 6000
+    space: 4 
+    time: 80 
+    cost: 6000 
     requiredItems:
       STR_ZRBITE: 1
   - name: STR_SONIC_BLASTA_RIFLE    #Sonic-Blasta Rifle #
     listOrder: 2100
     requires:
      - STR_SONIC_BLASTA_RIFLE
-    space: 0
-    time: 820
-    cost: 88000
+    space: 4 
+    time: 820 
+    cost: 88000 
     requiredItems:
       STR_AQUA_PLASTICS: 2
   - name: STR_BLASTA_POWER_CLIP    #Blasta Power Clip #
@@ -169,18 +152,15 @@ manufacture:
     requires:
 #    - STR_BLASTA_POWER_CLIP
      - STR_SONIC_BLASTA_RIFLE
-    space: 0
-    time: 80
-    cost: 3000
+    space: 4 
+    time: 80 
+    cost: 3000 
     requiredItems:
       STR_ZRBITE: 1
   - name: STR_SONIC_PISTOL    #Sonic Pistol #
     listOrder: 1900
     requires:
      - STR_SONIC_PISTOL
-    space: 0
-    time: 600
-    cost: 56000
     requiredItems:
       STR_AQUA_PLASTICS: 1
   - name: STR_PISTOL_POWER_CLIP    #Pistol Power Clip #
@@ -188,17 +168,14 @@ manufacture:
     requires:
 #    - STR_BLASTA_POWER_CLIP
      - STR_SONIC_PISTOL
-    space: 0
-    time: 60
-    cost: 2000
     requiredItems:
       STR_ZRBITE: 1
   - name: STR_DISRUPTOR_PULSE_LAUNCHER    #Disruptor Pulse Launcher #
+    space: 5 
+    time: 1200 
+    cost: 90000 
     requires:
       - STR_DISRUPTOR_PULSE_LAUNCHER
-    space: 0
-    time: 1200
-    cost: 90000
     requiredItems:
       STR_AQUA_PLASTICS: 3
       STR_ZRBITE: 1
@@ -206,17 +183,16 @@ manufacture:
     requires:
 #    - STR_DISRUPTOR_AMMO
      - STR_DISRUPTOR_PULSE_LAUNCHER
-    space: 0
-    time: 220
-    cost: 8000
   - name: STR_THERMAL_SHOK_LAUNCHER    #Thermal Shok Launcher #
+    space: 3 
+    time: 900 
+    cost: 78000 
     requires:
      - STR_THERMAL_SHOK_LAUNCHER
-    space: 0
-    time: 900
-    cost: 78000
     requiredItems:
       STR_AQUA_PLASTICS: 2
+    requires:
+     - STR_THERMAL_SHOK_LAUNCHER
   - name: STR_THERMAL_SHOK_BOMB    #Thermal Shok Bomb #
     space: 2 
     time: 200 
@@ -224,75 +200,70 @@ manufacture:
     requires:
 #    - STR_THERMAL_SHOK_BOMB
      - STR_THERMAL_SHOK_LAUNCHER
-    space: 0
-    time: 200
-    cost: 7000
     requiredItems:
       STR_ZRBITE: 1
   - name: STR_SONIC_PULSER    #Sonic Pulser #
-    space: 0
-    time: 200
-    cost: 6700
+    space: 2 
+    time: 200 
+    cost: 6700 
     requiredItems:
       STR_ZRBITE: 2
   - name: STR_MC_READER    #M.C. Reader #
-    space: 0
+    space: 4 
     time: 1200
-    cost: 100000
+    cost: 62000 
     requiredItems:
       STR_AQUA_PLASTICS: 1
       STR_ZRBITE: 1
   - name: STR_PLASTIC_AQUA_ARMOR    #Plastic Aqua-Armour #
-    space: 0
-    time: 800
-    cost: 22000
+    space: 12 
+    time: 800 
+    cost: 22000 
     requiredItems:
       STR_AQUA_PLASTICS: 6
   - name: STR_ION_ARMOR    #Ion Armour #
-    space: 0
-    time: 1000
-    cost: 42000
+    space: 16 
+    time: 1000 
+    cost: 42000 
     requiredItems:
       STR_AQUA_PLASTICS: 10
       STR_ZRBITE: 4
   - name: STR_MAGNETIC_ION_ARMOR    #Mag. Ion Armour #
-    space: 0
-    time: 1400
-    cost: 58000
+    space: 16 
+    time: 1400 
+    cost: 58000 
     requiredItems:
       STR_AQUA_PLASTICS: 12
       STR_ZRBITE: 16
   - name: STR_AQUA_PLASTICS    #Aqua Plastics
-    space: 10
-    time: 100
-    cost: 1000
+    cost: 1000 
   - name: STR_ION_BEAM_ACCELERATORS    #Ion-Beam Accelerators #
-    space: 0
-    time: 1400
-    cost: 130000
+    space: 22 
+    time: 1400 
+    cost: 130000 
     requiredItems:
       STR_AQUA_PLASTICS: 12
       STR_ZRBITE: 6
   - name: STR_MAGNETIC_NAVIGATION    #Magnetic Navigation #
-    space: 0
-    time: 1600
-    cost: 150000
+    space: 18 
+    time: 1600 
+    cost: 150000 
     requiredItems:
       STR_AQUA_PLASTICS: 6
       STR_ZRBITE: 3
   - name: STR_MANTA    #MANTA #
-    space: 0
-    time: 14000
-    cost: 400000
+    space: 30 
+    time: 14000 
+    cost: 400000 
     requiredItems:
       STR_AQUA_PLASTICS: 65
       STR_ION_BEAM_ACCELERATORS: 1
       STR_MAGNETIC_NAVIGATION: 1
       STR_ALIEN_LEARNING_ARRAYS: 2
   - name: STR_HAMMERHEAD    #HAMMERHEAD #
-    space: 0
-    time: 18000
-    cost: 600000
+    space: 34 
+    time: 18000 
+    cost: 600000 
     requiredItems:
       STR_AQUA_PLASTICS: 85
       STR_ION_BEAM_ACCELERATORS: 2
@@ -300,9 +271,9 @@ manufacture:
       STR_ALIEN_LEARNING_ARRAYS: 4
       STR_ALIEN_CLONING: 4
   - name: STR_LEVIATHAN    #LEVIATHAN #
-    space: 0
-    time: 34000
-    cost: 900000
+    space: 38
+    time: 34000 
+    cost: 900000 
     requiredItems:
       STR_AQUA_PLASTICS: 120
       STR_ION_BEAM_ACCELERATORS: 3
@@ -312,25 +283,25 @@ manufacture:
       STR_ALIEN_CRYOGENICS: 6
   - name: STR_VIBRO_BLADE    #Vibro Blade #
     listOrder: 2910
-    space: 0
-    time: 150
-    cost: 7000
+    space: 3 
+    time: 150 
+    cost: 7000 
     requiredItems:
       STR_AQUA_PLASTICS: 1
       STR_ZRBITE: 1
   - name: STR_THERMIC_LANCE    #Thermic Lance #
     listOrder: 2920
-    space: 0
-    time: 220
-    cost: 12000
+    space: 3 
+    time: 220 
+    cost: 12000 
     requiredItems:
       STR_AQUA_PLASTICS: 2
       STR_ZRBITE: 1
   - name: STR_HEAVY_THERMIC_LANCE    #Heavy Thermic Lance #
     listOrder: 2930
-    space: 0
-    time: 300
-    cost: 20000
+    space: 3 
+    time: 300 
+    cost: 20000 
     requiredItems:
       STR_AQUA_PLASTICS: 3
       STR_ZRBITE: 1
