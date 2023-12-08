@@ -126,13 +126,11 @@ I never understood strategic use for manufacturing *project* taking space, not t
 
 # Research
 
-## Hand weapons
+General approach is to make more advanced alien technologies dependent on more rarely found items and officers so they require assaulting more dangerous encounters to get them. This way gradual discovery of progressively more advanced equipment leads to more dangerous missions, to more rare items, to more advanced technologies, and to more advanced equipment, and so on.
 
-Gauss Pistol research cost is reduced to 50. This is the first and weakest manufactured weapon. Need to shorten the research to load technicians with something right away.
+## Weapons and ammunition
 
-Gauss Rifle and Heavy Gauss research costs are reverted to their vanilla values. TFTD Rework added some extra cost on top. I don't think this is really needed. Their costs are adequate to very beginning of the game when player don't have too many scientists.
-
-Sonic hand weapon research costs are progressively increased. Vanilla Sonic Cannon research cost was about the same as Sonic Pistol. Now it is twice bigger.
+All ammunition research are removed from the tree. Researching weapon immediately unlocks this weapon/ammo use and manufacturing.
 
 ## Aliens
 
