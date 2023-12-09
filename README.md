@@ -80,10 +80,10 @@ The main problem with damage modifier is that they are NOT VISIBLE to player nor
 | ---- | ---- | ---- | ---- | ---- |
 | (Mag) Ion Armour <br/> Coelacanth / Displaceur | smoke <br/> fire |  |  |  |
 | all aliens and terrorists |  |  |  | fire |
-| Lobsterman |  | HE |  | melee |
+| Lobsterman |  |  |  | melee |
 | Calcinite | smoke |  |  |  |
-| Hallucinoid |  | HE <br/> stun <br/> melee |
-| Biodrone / Xarquid | smoke | HE | melee |  |
+| Hallucinoid |  | stun <br/> melee |  |  |
+| Biodrone / Xarquid | smoke |  | melee |  |
 | Tentaculat |  |  | HE |  |
 
 ## Thermal shock bomb damage
@@ -241,4 +241,10 @@ Carrying item weights modified. I don't like how heaviest weapon weights same as
 * (Experimental) Coelacanth and Displaceur are resistant to stun but not immune to it. Thermal shock bomb can stun/injure them.
 * Reduces Xharquid under armor a little to make it killable with explosives. Still need like 4-6 grenades/rockets to deal with it.
 * Increased Triscene under armor a little as it is NOT HE resistant.
+
+## 16
+
+* Adapted to Brutal-AI engine.
+* Decreased explosives power to make more gradual progression.
+* Adjusted HE damage modifiers and under armors to make more gradual progression.
 

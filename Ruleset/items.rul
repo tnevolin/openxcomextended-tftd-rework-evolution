@@ -91,7 +91,7 @@ items: #
     recover: true
     size: 0.2
     transferTime: 36
-    power: 100
+    power: 80
     clipSize: 15
   - type: STR_COELACANTH_GAUSS 
     fireSound: 34
@@ -182,7 +182,7 @@ items: #
     recover: true
     costSell: 31500
     transferTime: 36
-    power: 210 # changed from 140
+    power: 100 # changed from 140
     clipSize: 8 
 # ************************* weapons begin *********************
   - type: STR_DART_PISTOL
@@ -286,7 +286,6 @@ items: #
     power: 40
     clipSize: 18
     armor: 40
-    blastRadius: 2
 #   shotgunPellets: 3
   - type: STR_HJC_P_AMMO
     size: 0.1
@@ -417,6 +416,8 @@ items: #
     power: 40
     armor: 150
     blastRadius: 5
+    throwRange: 20
+    underwaterThrowRange: 20
   - type: STR_DYE_GRENADE
     size: 0.02
     weight: 1
@@ -427,19 +428,22 @@ items: #
   - type: STR_PARTICLE_DISTURBANCE_GRENADE
     size: 0.05
     weight: 6
-    power: 100
+    power: 80
     armor: 140
-    blastRadius: 5
+    blastRadius: 6
+    throwRange: 15
+    underwaterThrowRange: 15
   - type: STR_MAGNA_PACK_EXPLOSIVE
     size: 0.1
     costBuy: 11500
     costSell: 11200
     size: 0.3
     weight: 8
-    power: 140
+    power: 100
     armor: 140
-#   blastRadius: 5
     blastRadius: 7
+    throwRange: 10
+    underwaterThrowRange: 10
   - type: STR_PARTICLE_DISTURBANCE_SENSOR
     size: 0.02
     listOrder: 4800
@@ -620,7 +624,7 @@ items: #
     size: 0.2
     costSell: 8514
     weight: 8
-    power: 210
+    power: 140
     blastRadius: 11
     attraction: 10
     armor: 60
@@ -648,15 +652,18 @@ items: #
     blastRadius: 3
     damageType: 3
     damageAlter:
+      ToHealth: 0.5
       ToStun: 1.0
   - type: STR_SONIC_PULSER
     recoveryPoints: 0
     size: 0.02
     costSell: 7425
     weight: 3
-    power: 90
+    power: 60
     armor: 300
     blastRadius: 5
+    throwRange: 20
+    underwaterThrowRange: 20
     attraction: 6
     armor: 150
   - type: STR_MC_READER

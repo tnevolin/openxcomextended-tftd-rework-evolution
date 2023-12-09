@@ -8,9 +8,9 @@ armors:
     storeItem: STR_NONE
     corpseItem: STR_CORPSE
     frontArmor: 20
-    sideArmor: 16
-    rearArmor: 12
-    underArmor: 8
+    sideArmor: 15
+    rearArmor: 10
+    underArmor: 10
     damageModifier:
       - 1.0
       - 1.0
@@ -34,10 +34,10 @@ armors:
     spriteSheet: PLASTICBLUE.PCK
 #   spriteInv: MAN_1
     spriteInv: MAN_5
-    frontArmor: 60
-    sideArmor: 50
-    rearArmor: 40
-    underArmor: 30
+    frontArmor: 50
+    sideArmor: 40
+    rearArmor: 30
+    underArmor: 20
     damageModifier:
       - 1.0
       - 1.0
@@ -61,9 +61,9 @@ armors:
 #   spriteInv: MAN_2
     spriteInv: MAN_6
     frontArmor: 80
-    sideArmor: 65
-    rearArmor: 50
-    underArmor: 40
+    sideArmor: 60
+    rearArmor: 40
+    underArmor: 30
     damageModifier:
       - 1.0
       - 1.0
@@ -85,10 +85,10 @@ armors:
 #   spriteInv: MAN_3
     spriteInv: MAN_7
     spriteSheet: TDXCOM_3.PCK
-    frontArmor: 100
+    frontArmor: 110
     sideArmor: 80
-    rearArmor: 60
-    underArmor: 50
+    rearArmor: 50
+    underArmor: 40
     movementType: 1
     damageModifier:
       - 1.0
@@ -111,9 +111,9 @@ armors:
     spriteSheet: AQUA.PCK
     corpseItem: STR_AQUATOID_CORPSE
     frontArmor: 10
-    sideArmor: 8
-    rearArmor: 6
-    underArmor: 6
+    sideArmor: 5
+    rearArmor: 0
+    underArmor: 0
     damageModifier:
       - 1.0
       - 1.0
@@ -131,9 +131,9 @@ armors:
     spriteSheet: AQUA.PCK
     corpseItem: STR_AQUATOID_CORPSE
     frontArmor: 20
-    sideArmor: 16
-    rearArmor: 12
-    underArmor: 12
+    sideArmor: 15
+    rearArmor: 10
+    underArmor: 10
     damageModifier:
       - 1.0
       - 1.0
@@ -151,9 +151,9 @@ armors:
     spriteSheet: AQUA.PCK
     corpseItem: STR_AQUATOID_CORPSE
     frontArmor: 30
-    sideArmor: 24
-    rearArmor: 18
-    underArmor: 18
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 20
     damageModifier:
       - 1.0
       - 1.0
@@ -174,7 +174,7 @@ armors:
     frontArmor: 20
     sideArmor: 20
     rearArmor: 20
-    underArmor: 16
+    underArmor: 20
     damageModifier:
       - 1.0
       - 1.0 
@@ -192,9 +192,9 @@ armors:
     spriteSheet: GILLMAN.PCK
     corpseItem: STR_GILLMAN_CORPSE
     frontArmor: 20
-    sideArmor: 16
-    rearArmor: 12
-    underArmor: 12
+    sideArmor: 15
+    rearArmor: 10
+    underArmor: 10
     damageModifier:
       - 1.0
       - 1.0 
@@ -212,9 +212,9 @@ armors:
     spriteSheet: GILLMAN.PCK
     corpseItem: STR_GILLMAN_CORPSE
     frontArmor: 30
-    sideArmor: 24
-    rearArmor: 18
-    underArmor: 18
+    sideArmor: 25
+    rearArmor: 20
+    underArmor: 20
     damageModifier:
       - 1.0
       - 1.0 
@@ -232,9 +232,9 @@ armors:
     spriteSheet: GILLMAN.PCK
     corpseItem: STR_GILLMAN_CORPSE
     frontArmor: 40
-    sideArmor: 32
-    rearArmor: 24
-    underArmor: 24
+    sideArmor: 35
+    rearArmor: 30
+    underArmor: 30
     damageModifier:
       - 1.0
       - 1.0 
@@ -252,8 +252,8 @@ armors:
     spriteSheet: TASOTH_ALT.PCK
     corpseItem: STR_TASOTH_CORPSE
     frontArmor: 30
-    sideArmor: 30
-    rearArmor: 30
+    sideArmor: 25
+    rearArmor: 20
     underArmor: 20
     damageModifier:
       - 1.0
@@ -272,8 +272,8 @@ armors:
     spriteSheet: TASOTH_ALT.PCK
     corpseItem: STR_TASOTH_CORPSE
     frontArmor: 40
-    sideArmor: 40
-    rearArmor: 40
+    sideArmor: 35
+    rearArmor: 30
     underArmor: 30
     damageModifier:
       - 1.0
@@ -292,8 +292,8 @@ armors:
     spriteSheet: TASOTH_ALT.PCK
     corpseItem: STR_TASOTH_CORPSE
     frontArmor: 50
-    sideArmor: 50
-    rearArmor: 50
+    sideArmor: 45
+    rearArmor: 40
     underArmor: 40
     damageModifier:
       - 1.0
@@ -356,12 +356,12 @@ armors:
     frontArmor: 60
     sideArmor: 50
     rearArmor: 40
-    underArmor: 40
+    underArmor: 30
     damageModifier:
       - 1.0
       - 1.0 # AP
       - 2.0 # Fire
-      - 0.7 # HE
+      - 1.0 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Freeze
@@ -376,12 +376,12 @@ armors:
     frontArmor: 70
     sideArmor: 60
     rearArmor: 50
-    underArmor: 50
+    underArmor: 40
     damageModifier:
       - 1.0
       - 1.0 # AP
       - 2.0 # Fire
-      - 0.7 # HE
+      - 1.0 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Freeze
@@ -396,12 +396,12 @@ armors:
     frontArmor: 80
     sideArmor: 70
     rearArmor: 60
-    underArmor: 60
+    underArmor: 50
     damageModifier:
       - 1.0
       - 1.0 # AP
       - 2.0 # Fire
-      - 0.7 # HE
+      - 1.0 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Freeze
@@ -416,12 +416,12 @@ armors:
     frontArmor: 90
     sideArmor: 80
     rearArmor: 70
-    underArmor: 70
+    underArmor: 60
     damageModifier:
       - 1.0
       - 1.0 # AP
       - 2.0 # Fire
-      - 0.7 # HE
+      - 1.0 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Freeze
@@ -442,14 +442,14 @@ armors:
     frontArmor: 35
     sideArmor: 50
     rearArmor: 50
-    underArmor: 30
+    underArmor: 40
     movementType: 1
     size: 2
     damageModifier:
       - 1.0
       - 1.0 # AP
       - 2.0 # Fire
-      - 0.7 # HE
+      - 1.0 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Stun
@@ -472,7 +472,7 @@ armors:
       - 1.0
       - 1.0 # AP
       - 2.0 # Fire
-      - 0.7 # HE
+      - 1.0 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Stun
@@ -501,7 +501,7 @@ armors:
       - 1.0
       - 1.0 # AP
       - 2.0 # Fire
-      - 0.7 # HE
+      - 1.0 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 0.7 # Freeze
@@ -523,7 +523,7 @@ armors:
     frontArmor: 90
     sideArmor: 80
     rearArmor: 70
-    underArmor: 70
+    underArmor: 60
     size: 2
     damageModifier:
       - 1.0
@@ -550,13 +550,13 @@ armors:
     frontArmor: 70
     sideArmor: 60
     rearArmor: 50
-    underArmor: 50
+    underArmor: 40
     size: 2
     damageModifier:
       - 1.0 
       - 1.0 # AP
       - 0.0 # Fire
-      - 0.7 # HE
+      - 1.0 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Stun
@@ -576,13 +576,13 @@ armors:
     frontArmor: 80
     sideArmor: 70
     rearArmor: 60
-    underArmor: 60
+    underArmor: 50
     size: 2
     damageModifier:
       - 1.0 
       - 1.0 # AP
       - 0.0 # Fire
-      - 0.7 # HE
+      - 1.0 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Stun
@@ -609,7 +609,7 @@ armors:
       - 1.0
       - 1.0 # AP
       - 0.0 # Fire
-      - 0.7 # HE
+      - 1.0 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Stun

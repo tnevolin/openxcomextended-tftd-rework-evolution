@@ -88,89 +88,89 @@ armors: # re-review values later
     spriteSheet: SQUIDFACE.PCK
     corpseBattle:
       - STR_SQUIDFACE_CORPSE
-    frontArmor: 36
+    frontArmor: 40
     sideArmor: 30
-    rearArmor: 22
-    underArmor: 26
+    rearArmor: 20
+    underArmor: 20
     movementType: 1
     drawingRoutine: 1 # (Floater model)
     damageModifier:
       - 1.0
       - 1.0 # AP
-      - 1.0 # Incendiary
+      - 2.0 # Incendiary
       - 1.0
       - 1.0 # Gauss
       - 1.0 # Sonic
-      - 0.5 # Stun
-      - 0.5 # Drill
+      - 1.0 # Stun
+      - 1.0 # Drill
       - 1.0
-      - 0.0
+      - 1.0
     loftempsSet: [ 3 ] 
   - type: SQUIDFACE_ARMOR1 
     spriteSheet: SQUIDFACE.PCK
     corpseBattle:
       - STR_SQUIDFACE_CORPSE
-    frontArmor: 44
-    sideArmor: 38
+    frontArmor: 50
+    sideArmor: 40
     rearArmor: 30
-    underArmor: 34
+    underArmor: 30
     movementType: 1
     drawingRoutine: 1 # (Floater model)
     damageModifier:
       - 1.0
-      - 0.8 # AP
-      - 1.2 # Incendiary
+      - 1.0 # AP
+      - 2.0 # Incendiary
       - 1.0
       - 1.0 # Gauss
-      - 0.5 # Sonic
-      - 0.7 # Stun
-      - 0.7 # Drill
+      - 1.0 # Sonic
+      - 1.0 # Stun
+      - 1.0 # Drill
       - 1.0
-      - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
   - type: SQUIDFACE_ARMOR2
     spriteSheet: SQUIDFACE.PCK
     corpseBattle:
       - STR_SQUIDFACE_CORPSE
-    frontArmor: 52
-    sideArmor: 46
-    rearArmor: 38
-    underArmor: 42
+    frontArmor: 60
+    sideArmor: 50
+    rearArmor: 40
+    underArmor: 40
     movementType: 1
     drawingRoutine: 1 # (Floater model)
     damageModifier:
       - 1.0
-      - 0.8 # AP
-      - 1.2 # Incendiary
+      - 1.0 # AP
+      - 2.0 # Incendiary
       - 1.0
       - 1.0 # Gauss
-      - 0.5 # Sonic
-      - 0.7 # Stun
-      - 0.7 # Drill
+      - 1.0 # Sonic
+      - 1.0 # Stun
+      - 1.0 # Drill
       - 1.0
-      - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
   - type: SQUIDFACE_ARMOR3
     spriteSheet: SQUIDFACE_OVERMIND.PCK
     corpseBattle:
       - STR_SQUIDFACE_CORPSE_2
-    frontArmor: 60
-    sideArmor: 54
-    rearArmor: 46
-    underArmor: 46
+    frontArmor: 70
+    sideArmor: 60
+    rearArmor: 50
+    underArmor: 50
     movementType: 1
     drawingRoutine: 1 # (Floater model)
     damageModifier:
       - 1.0
-      - 0.8 # AP
-      - 1.2 # Incendiary
+      - 1.0 # AP
+      - 2.0 # Incendiary
       - 1.0
       - 1.0 # Gauss
-      - 0.5 # Sonic
-      - 0.7 # Stun
-      - 0.7 # Drill
+      - 1.0 # Sonic
+      - 1.0 # Stun
+      - 1.0 # Drill
       - 1.0
-      - 0.0
+      - 1.0
     loftempsSet: [ 3 ]
 units: # re-review values later
   - type: STR_SQUIDFACE_SOLDIER # psiSkill 30

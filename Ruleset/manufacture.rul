@@ -74,7 +74,7 @@ manufacture:
   - name: STR_DISPLACER_PWT    #Displacer/P.W.T. #
     space: 26 
     requires:
-     - STR_ISPLACER_PWT
+     - STR_DISPLACER_PWT
     space: 0
     time: 1400
     cost: 600000
@@ -83,7 +83,7 @@ manufacture:
       STR_ZRBITE: 6
   - name: STR_HWP_DISPLACER_PWT    #Displacer P.W.T. Ammo #
     requires:
-     - STR_DISPLACR_PWT
+     - STR_DISPLACER_PWT
     space: 0
     time: 400
     cost: 15000
