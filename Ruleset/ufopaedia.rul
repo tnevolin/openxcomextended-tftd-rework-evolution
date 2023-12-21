@@ -1,10 +1,10 @@
 ufopaedia: 
-  - id: STR_DIVING_SUIT_UC
-    listOrder: 1650
-    type_id: 15
-    section: STR_WEAPONS_AND_EQUIPMENT
-    text: STR_DIVING_SUIT_UFOPEDIA
-    image_id: DIVING_PEDIA.SPK
+#  - id: STR_DIVING_SUIT_UC
+#    listOrder: 1650
+#    type_id: 15
+#    section: STR_WEAPONS_AND_EQUIPMENT
+#    text: STR_DIVING_SUIT_UFOPEDIA
+#    image_id: DIVING_PEDIA.SPK
 # ---------------------------
 # - id: STR_TRITON
   - id: STR_BARRACUDA
@@ -164,34 +164,241 @@ ufopaedia:
     listOrder: 9400
   - id: STR_LOBSTERMAN_AUTOPSY
     listOrder: 9450
-  - id: STR_BIODRONE
+  - id: STR_CALCINITE
     listOrder: 9500
-  - id: STR_BIODRONE_AUTOPSY
+  - id: STR_CALCINITE_AUTOPSY
     listOrder: 9550
   - id: STR_DEEP_ONE
     listOrder: 9600
   - id: STR_DEEP_ONE_AUTOPSY
     listOrder: 9650
-  - id: STR_TRISCENE
+  - id: STR_BIODRONE
     listOrder: 9700
-  - id: STR_TRISCENE_AUTOPSY
+  - id: STR_BIODRONE_AUTOPSY
     listOrder: 9750
-  - id: STR_CALCINITE
-    listOrder: 9800
-  - id: STR_CALCINITE_AUTOPSY
-    listOrder: 9850
-  - id: STR_HALLUCINOID
-    listOrder: 9900
-  - id: STR_HALLUCINOID_AUTOPSY
-    listOrder: 9950
-  - id: STR_XARQUID
-    listOrder: 10000
-  - id: STR_XARQUID_AUTOPSY
-    listOrder: 10050
   - id: STR_TENTACULAT
-    listOrder: 10100
+    listOrder: 9800
   - id: STR_TENTACULAT_AUTOPSY
+    listOrder: 9850
+  - id: STR_TRISCENE
+    listOrder: 9900
+  - id: STR_TRISCENE_AUTOPSY
+    listOrder: 9950
+  - id: STR_HALLUCINOID
+    listOrder: 10000
+  - id: STR_HALLUCINOID_AUTOPSY
+    listOrder: 10050
+  - id: STR_XARQUID
+    listOrder: 10100
+  - id: STR_XARQUID_AUTOPSY
     listOrder: 10150
+
+# alien armors
+
+# AQUATOID armors
+  - id: AQUATOID_ARMOR0
+    listOrder: 10200
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_AQUATOID_AUTOPSY
+    title: STR_AQUATOID_SOLDIER
+    image_id: UP006.BDY
+  - id: AQUATOID_ARMOR1
+    listOrder: 10201
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_AQUATOID_AUTOPSY
+    title: STR_AQUATOID_NAVIGATOR
+    image_id: UP006.BDY
+  - id: AQUATOID_ARMOR2
+    listOrder: 10202
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_AQUATOID_AUTOPSY
+    title: STR_AQUATOID_COMMANDER
+    image_id: UP006.BDY
+
+# GILLMAN armors
+  - id: GILLMAN_ARMOR0
+    listOrder: 10210
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_GILLMAN_AUTOPSY
+    title: STR_GILLMAN_SOLDIER
+    image_id: UP008.BDY
+  - id: GILLMAN_ARMOR1
+    listOrder: 10211
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_GILLMAN_AUTOPSY
+    title: STR_GILLMAN_NAVIGATOR
+    image_id: UP008.BDY
+  - id: GILLMAN_ARMOR2
+    listOrder: 10212
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_GILLMAN_AUTOPSY
+    title: STR_GILLMAN_COMMANDER
+    image_id: UP008.BDY
+
+# TASOTH armors
+  - id: TASOTH_ARMOR0
+    listOrder: 10220
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_TASOTH_AUTOPSY
+    title: STR_TASOTH_SOLDIER
+    image_id: UP012.BDY
+  - id: TASOTH_ARMOR1
+    listOrder: 10221
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_TASOTH_AUTOPSY
+    title: STR_TASOTH_NAVIGATOR
+    image_id: UP012.BDY
+  - id: TASOTH_ARMOR2
+    listOrder: 10222
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_TASOTH_AUTOPSY
+    title: STR_TASOTH_COMMANDER
+    image_id: UP012.BDY
+
+# LOBSTERMAN armors
+  - id: LOBSTERMAN_ARMOR0
+    listOrder: 10230
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_LOBSTERMAN_AUTOPSY
+    title: STR_LOBSTERMAN_SOLDIER
+    image_id: UP010.BDY
+  - id: LOBSTERMAN_ARMOR1
+    listOrder: 10231
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_LOBSTERMAN_AUTOPSY
+    title: STR_LOBSTERMAN_NAVIGATOR
+    image_id: UP010.BDY
+  - id: LOBSTERMAN_ARMOR2
+    listOrder: 10232
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_LOBSTERMAN_AUTOPSY
+    title: STR_LOBSTERMAN_COMMANDER
+    image_id: UP010.BDY
+  - id: LOBSTERMAN_ARMOR_GUARD
+    listOrder: 10233
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_LOBSTERMAN_AUTOPSY
+    title: STR_LOBSTERMAN_GUARD
+    image_id: UP010.BDY
+
+# SQUIDFACE armors
+  - id: SQUIDFACE_ARMOR0
+    listOrder: 10240
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_SQUIDFACE_AUTOPSY
+    title: STR_SQUIDFACE_SOLDIER
+    image_id: UFOPAEDIA_IMG_SQUIDFACE
+  - id: SQUIDFACE_ARMOR1
+    listOrder: 10241
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_SQUIDFACE_AUTOPSY
+    title: STR_SQUIDFACE_NAVIGATOR
+    image_id: UFOPAEDIA_IMG_SQUIDFACE
+  - id: SQUIDFACE_ARMOR2
+    listOrder: 10242
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_SQUIDFACE_AUTOPSY
+    title: STR_SQUIDFACE_COMMANDER
+    image_id: UFOPAEDIA_IMG_SQUIDFACE
+  - id: SQUIDFACE_ARMOR3
+    listOrder: 10243
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_SQUIDFACE_AUTOPSY
+    title: STR_SQUIDFACE_OVERMIND
+    image_id: UFOPAEDIA_IMG_SQUIDFACE
+
+# terrorist armors
+  - id: CALCINITE_ARMOR0
+    listOrder: 11100
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_CALCINITE_AUTOPSY
+    title: STR_CALCINITE_TERRORIST
+    image_id: UP025.BDY
+  - id: DEEP_ONE_ARMOR0
+    listOrder: 11110
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_DEEP_ONE_AUTOPSY
+    title: STR_DEEP_ONE_TERRORIST
+    image_id: UP013.BDY
+  - id: BIODRONE_ARMOR0
+    listOrder: 11120
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_BIODRONE_AUTOPSY
+    title: STR_BIODRONE_TERRORIST
+    image_id: UP070.BDY
+  - id: TENTACULAT_ARMOR0
+    listOrder: 11130
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_TENTACULAT_AUTOPSY
+    title: STR_TENTACULAT_TERRORIST
+    image_id: UP015.BDY
+  - id: TRISCENE_ARMOR0
+    listOrder: 11140
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_TRISCENE_AUTOPSY
+    title: STR_TRISCENE_TERRORIST
+    image_id: UP017.BDY
+  - id: HALLUCINOID_ARMOR0
+    listOrder: 11150
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_HALLUCINOID_AUTOPSY
+    title: STR_HALLUCINOID_TERRORIST
+    image_id: UP018.BDY
+  - id: XARQUID_ARMOR0
+    listOrder: 11160
+    type_id: 15
+    section: STR_ALIEN_ARMORS
+    requires:
+      - STR_XARQUID_AUTOPSY
+    title: STR_XARQUID_TERRORIST
+    image_id: UP020.BDY
+
 # UFO components
   - id: STR_ION_BEAM_ACCELERATORS
     type_id: 10
@@ -324,6 +531,7 @@ ufopaedia:
     image_id: UP100.BDY
 # alien missions
   - id: STR_ALIEN_ORIGINS
+    listOrder: 10600
     type_id: 10
     section: STR_ALIEN_RESEARCH_UC
     requires:
@@ -416,3 +624,19 @@ ufopaedia:
     text: STR_ALIEN_SUPPLY_UFOPEDIA
     image_id: UP105.BDY
     text_width: 308
+  - id: STR_TRITON1
+    type_id: 10
+    section: STR_XCOM_CRAFT_ARMAMENT
+    image_id: UP001.BDY
+    text: STR_TRITON_UFOPEDIA
+    pages:
+      - title: STR_GAUSS_PISTOL
+        text: STR_PISTOL_PISTOL_UFOPEDIA
+      - title: STR_GAUSS_RIFLE
+        text: STR_PISTOL_RIFLE_UFOPEDIA
+
+extraStrings:
+  - type: en-US
+    strings:
+      STR_ALIEN_ARMORS: ALIEN ARMORS
+

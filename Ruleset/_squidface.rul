@@ -362,6 +362,7 @@ ufopaedia:
       - STR_SQUIDFACE_AUTOPSY
     image_id: UFOPAEDIA_IMG_SQUIDFACE_AUTOPSY
     text: STR_SQUIDFACE_AUTOPSY_UFOPEDIA
+    armor: SQUIDFACE_AUTOPSY
 extraSprites:
   - type: SQUIDFACE.PCK
     width: 256

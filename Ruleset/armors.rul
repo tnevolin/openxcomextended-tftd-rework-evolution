@@ -1,35 +1,35 @@
 armors: 
 #  - delete: STR_NONE_UC
 #  - type: STR_NONE_UC # cuz needed for Crafts where "NONE" is assigned
-  - type: STR_DIVING_SUIT_UC
-    spriteSheet: TDXCOM_0.PCK
-#   spriteInv: MAN_0
-    spriteInv: MAN_4
-    storeItem: STR_NONE
-    corpseItem: STR_CORPSE
-    frontArmor: 20
-    sideArmor: 15
-    rearArmor: 10
-    underArmor: 10
-    damageModifier:
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0 # Melee
-      - 1.0 # Elect
-      - 1.0 # Smoke
-    loftemps: 3
-    drawingRoutine: 13
-    spriteFaceGroup: 14
-#   spriteFaceColor: [160, 160, 64, 160, 160, 64, 160, 160] #M0 F0 M1 F1 M2 F2 M3 F3
-    spriteFaceColor: [160, 160, 64, 160, 160, 160, 160, 64] #M0 F1 M2 F3 M3 F0 M1 F2
-    spriteHairGroup: 4
-#   spriteHairColor: [130, 160, 201, 130, 64, 198, 160, 64] #M0 F0 M1 F1 M2 F2 M3 F3
-    spriteHairColor: [130, 160, 201, 64, 160, 130, 64, 198] #M0 F1 M2 F3 M3 F0 M1 F2
+#  - type: STR_DIVING_SUIT_UC
+#    spriteSheet: TDXCOM_0.PCK
+##   spriteInv: MAN_0
+#    spriteInv: MAN_4
+#    storeItem: STR_NONE
+#    corpseItem: STR_CORPSE
+#    frontArmor: 20
+#    sideArmor: 15
+#    rearArmor: 10
+#    underArmor: 10
+#    damageModifier:
+#      - 1.0
+#      - 1.0
+#      - 1.0
+#      - 1.0
+#      - 1.0
+#      - 1.0
+#      - 1.0
+#      - 1.0 # Melee
+#      - 1.0 # Elect
+#      - 1.0 # Smoke
+#    loftemps: 3
+#    drawingRoutine: 13
+#    spriteFaceGroup: 14
+##   spriteFaceColor: [160, 160, 64, 160, 160, 64, 160, 160] #M0 F0 M1 F1 M2 F2 M3 F3
+#    spriteFaceColor: [160, 160, 64, 160, 160, 160, 160, 64] #M0 F1 M2 F3 M3 F0 M1 F2
+#    spriteHairGroup: 4
+##   spriteHairColor: [130, 160, 201, 130, 64, 198, 160, 64] #M0 F0 M1 F1 M2 F2 M3 F3
+#    spriteHairColor: [130, 160, 201, 64, 160, 130, 64, 198] #M0 F1 M2 F3 M3 F0 M1 F2
   - type: STR_PLASTIC_AQUA_ARMOR_UC
     spriteSheet: PLASTICBLUE.PCK
 #   spriteInv: MAN_1
@@ -40,11 +40,11 @@ armors:
     underArmor: 20
     damageModifier:
       - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0
+      - 1.0 # AP
+      - 1.0 # Fire
+      - 1.0 # HE
+      - 0.8 # Gauss
+      - 1.0 # Sonic
       - 1.0 # Freeze
       - 1.0 # Melee
       - 1.0 # Elect
@@ -66,15 +66,15 @@ armors:
     underArmor: 30
     damageModifier:
       - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
+      - 0.8 # AP
+      - 0.0 # Fire
+      - 0.8 # HE
+      - 0.7 # Gauss
+      - 1.0 # Sonic
       - 1.0 # Freeze
       - 1.0 # Melee
-      - 1.0
-      - 0.0
+      - 1.0 # Electric
+      - 0.0 # Smoke
     spriteFaceGroup: 14
 #   spriteFaceColor: [160, 160, 64, 160, 160, 64, 160, 160] #M0 F0 M1 F1 M2 F2 M3 F3
     spriteFaceColor: [160, 160, 64, 160, 160, 160, 160, 64] #M0 F1 M2 F3 M3 F0 M1 F2
@@ -92,15 +92,15 @@ armors:
     movementType: 1
     damageModifier:
       - 1.0
-      - 1.0
-      - 0.0
-      - 1.0
-      - 1.0
-      - 1.0
+      - 0.8 # AP
+      - 0.0 # Fire
+      - 0.8 # HE
+      - 0.7 # Gauss
+      - 1.0 # Sonic
       - 1.0 # Freeze
       - 1.0 # Melee
-      - 1.0
-      - 0.0
+      - 1.0 # Electric
+      - 0.0 # Smoke
     spriteFaceGroup: 14
 #   spriteFaceColor: [160, 160, 64, 160, 160, 64, 160, 160] #M0 F0 M1 F1 M2 F2 M3 F3
     spriteFaceColor: [160, 160, 64, 160, 160, 160, 160, 64] #M0 F1 M2 F3 M3 F0 M1 F2
@@ -110,10 +110,10 @@ armors:
   - type: AQUATOID_ARMOR0
     spriteSheet: AQUA.PCK
     corpseItem: STR_AQUATOID_CORPSE
-    frontArmor: 10
+    frontArmor: 5
     sideArmor: 5
-    rearArmor: 0
-    underArmor: 0
+    rearArmor: 5
+    underArmor: 5
     damageModifier:
       - 1.0
       - 1.0
@@ -122,18 +122,19 @@ armors:
       - 1.0
       - 1.0
       - 1.0
-      - 1.0 # Melee
+      - 1.6 # Melee
       - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 2
     drawingRoutine: 15
+    ufopediaType: AQUATOID_ARMOR0
   - type: AQUATOID_ARMOR1
     spriteSheet: AQUA.PCK
     corpseItem: STR_AQUATOID_CORPSE
-    frontArmor: 20
+    frontArmor: 15
     sideArmor: 15
-    rearArmor: 10
-    underArmor: 10
+    rearArmor: 15
+    underArmor: 15
     damageModifier:
       - 1.0
       - 1.0
@@ -142,18 +143,19 @@ armors:
       - 1.0
       - 1.0
       - 1.0
-      - 1.0 # Melee
+      - 1.6 # Melee
       - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 2
     drawingRoutine: 15
+    ufopediaType: AQUATOID_ARMOR1
   - type: AQUATOID_ARMOR2
     spriteSheet: AQUA.PCK
     corpseItem: STR_AQUATOID_CORPSE
-    frontArmor: 30
+    frontArmor: 25
     sideArmor: 25
-    rearArmor: 20
-    underArmor: 20
+    rearArmor: 25
+    underArmor: 25
     damageModifier:
       - 1.0
       - 1.0
@@ -162,152 +164,160 @@ armors:
       - 1.0
       - 1.0
       - 1.0
-      - 1.0 # Melee
+      - 1.6 # Melee
       - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 2
     drawingRoutine: 15
+    ufopediaType: AQUATOID_ARMOR2
   - type: DEEP_ONE_ARMOR0
     spriteSheet: DEEPONEBLUE.PCK
     allowInv: false
     corpseItem: STR_DEEP_ONE_CORPSE
     frontArmor: 20
-    sideArmor: 20
-    rearArmor: 20
-    underArmor: 20
-    damageModifier:
-      - 1.0
-      - 1.0 
-      - 1.0
-      - 1.0
-      - 1.0 # Gauss
-      - 1.0
-      - 1.0
-      - 1.0
-      - 1.0 # Electr
-      - 1.0
-    loftemps: 3
-    drawingRoutine: 14
-  - type: GILLMAN_ARMOR0
-    spriteSheet: GILLMAN.PCK
-    corpseItem: STR_GILLMAN_CORPSE
-    frontArmor: 20
     sideArmor: 15
     rearArmor: 10
     underArmor: 10
     damageModifier:
       - 1.0
-      - 1.0 
+      - 1.0 # AP
       - 2.0 # Fire
-      - 1.0
-      - 1.0
+      - 0.8 # HE
+      - 1.0 # Gauss
       - 1.0 # Sonic
-      - 1.0
-      - 1.0
+      - 1.0 # Stun
+      - 1.2 # Melee
       - 1.0 # Electr
-      - 1.0
+      - 1.0 # Smoke
     loftemps: 3
     drawingRoutine: 14
+    ufopediaType: DEEP_ONE_ARMOR0
+  - type: GILLMAN_ARMOR0
+    spriteSheet: GILLMAN.PCK
+    corpseItem: STR_GILLMAN_CORPSE
+    frontArmor: 15
+    sideArmor: 10
+    rearArmor: 5
+    underArmor: 5
+    damageModifier:
+      - 1.0
+      - 1.0 # AP
+      - 2.0 # Fire
+      - 1.0 # HE
+      - 1.0 # Gauss
+      - 1.0 # Sonic
+      - 1.0 # Stun
+      - 1.2 # Melee
+      - 1.0 # Electr
+      - 1.0 # Smoke
+    loftemps: 3
+    drawingRoutine: 14
+    ufopediaType: GILLMAN_ARMOR0
   - type: GILLMAN_ARMOR1
     spriteSheet: GILLMAN.PCK
     corpseItem: STR_GILLMAN_CORPSE
-    frontArmor: 30
-    sideArmor: 25
-    rearArmor: 20
-    underArmor: 20
+    frontArmor: 25
+    sideArmor: 20
+    rearArmor: 15
+    underArmor: 15
     damageModifier:
       - 1.0
-      - 1.0 
+      - 1.0 # AP
       - 2.0 # Fire
-      - 1.0
-      - 1.0
+      - 1.0 # HE
+      - 1.0 # Gauss
       - 1.0 # Sonic
-      - 1.0
-      - 1.0
+      - 1.0 # Stun
+      - 1.2 # Melee
       - 1.0 # Electr
-      - 1.0
+      - 1.0 # Smoke
     loftemps: 3
     drawingRoutine: 14
+    ufopediaType: GILLMAN_ARMOR1
   - type: GILLMAN_ARMOR2
     spriteSheet: GILLMAN.PCK
     corpseItem: STR_GILLMAN_CORPSE
-    frontArmor: 40
-    sideArmor: 35
-    rearArmor: 30
-    underArmor: 30
+    frontArmor: 35
+    sideArmor: 30
+    rearArmor: 25
+    underArmor: 25
     damageModifier:
       - 1.0
-      - 1.0 
+      - 1.0 # AP
       - 2.0 # Fire
-      - 1.0
-      - 1.0
+      - 1.0 # HE
+      - 1.0 # Gauss
       - 1.0 # Sonic
-      - 1.0
-      - 1.0
+      - 1.0 # Stun
+      - 1.2 # Melee
       - 1.0 # Electr
-      - 1.0
+      - 1.0 # Smoke
     loftemps: 3
     drawingRoutine: 14
+    ufopediaType: GILLMAN_ARMOR2
   - type: TASOTH_ARMOR0
     spriteSheet: TASOTH_ALT.PCK
     corpseItem: STR_TASOTH_CORPSE
-    frontArmor: 30
-    sideArmor: 25
-    rearArmor: 20
-    underArmor: 20
+    frontArmor: 25
+    sideArmor: 20
+    rearArmor: 15
+    underArmor: 10
     damageModifier:
       - 1.0
-      - 1.0 # AP
+      - 0.8 # AP
       - 2.0 # Fire
-      - 1.0 # HE
-      - 1.0 # Gauss
-      - 1.0 # Sonic
+      - 0.8 # HE
+      - 0.8 # Gauss
+      - 1.2 # Sonic
       - 1.0 # Stun
       - 1.0 # Melee
       - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 3
     drawingRoutine: 14
+    ufopediaType: TASOTH_ARMOR0
   - type: TASOTH_ARMOR1
     spriteSheet: TASOTH_ALT.PCK
     corpseItem: STR_TASOTH_CORPSE
-    frontArmor: 40
-    sideArmor: 35
-    rearArmor: 30
-    underArmor: 30
+    frontArmor: 35
+    sideArmor: 30
+    rearArmor: 25
+    underArmor: 20
     damageModifier:
       - 1.0
-      - 1.0 # AP
+      - 0.8 # AP
       - 2.0 # Fire
       - 1.0 # HE
-      - 1.0 # Gauss
-      - 1.0 # Sonic
+      - 0.8 # Gauss
+      - 1.2 # Sonic
       - 1.0 # Stun
       - 1.0 # Melee
       - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 3
     drawingRoutine: 14
+    ufopediaType: TASOTH_ARMOR1
   - type: TASOTH_ARMOR2
     spriteSheet: TASOTH_ALT.PCK
     corpseItem: STR_TASOTH_CORPSE
-    frontArmor: 50
-    sideArmor: 45
-    rearArmor: 40
-    underArmor: 40
+    frontArmor: 45
+    sideArmor: 40
+    rearArmor: 35
+    underArmor: 30
     damageModifier:
       - 1.0
-      - 1.0 # AP
+      - 0.8 # AP
       - 2.0 # Fire
       - 1.0 # HE
-      - 1.0 # Gauss
-      - 1.0 # Sonic
+      - 0.8 # Gauss
+      - 1.2 # Sonic
       - 1.0 # Stun
       - 1.0 # Melee
       - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 3
     drawingRoutine: 14
+    ufopediaType: TASOTH_ARMOR2
   - type: CALCINITE_ARMOR0
 #   spriteSheet: CALCIN.PCK
     allowInv: false
@@ -324,11 +334,12 @@ armors:
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Stun
-      - 1.0 # Melee
+      - 0.8 # Melee
       - 1.0 # Electr
       - 0.0 # Smoke
     loftemps: 3
     drawingRoutine: 14
+    ufopediaType: CALCINITE_ARMOR0
   - type: TENTACULAT_ARMOR0
     spriteSheet: TENTAC.PCK
     allowInv: false
@@ -339,8 +350,8 @@ armors:
     underArmor: 15
     damageModifier:
       - 1.0
-      - 1.0
-      - 2.0 # Phs
+      - 0.8 # AP
+      - 2.0 # Fire
       - 1.5 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
@@ -350,86 +361,91 @@ armors:
       - 1.0 # Smoke
     loftemps: 2
     drawingRoutine: 19
+    ufopediaType: TENTACULAT_ARMOR0
   - type: LOBSTERMAN_ARMOR0
     spriteSheet: LOBSTER.PCK
     corpseItem: STR_LOBSTERMAN_CORPSE
-    frontArmor: 60
-    sideArmor: 50
-    rearArmor: 40
-    underArmor: 30
+    frontArmor: 25
+    sideArmor: 20
+    rearArmor: 15
+    underArmor: 10
     damageModifier:
       - 1.0
-      - 1.0 # AP
+      - 0.5 # AP
       - 2.0 # Fire
-      - 1.0 # HE
-      - 1.0 # Gauss
-      - 1.0 # Sonic
+      - 0.5 # HE
+      - 0.5 # Gauss
+      - 0.5 # Sonic
       - 1.0 # Freeze
       - 2.0 # Melee
       - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 4
     drawingRoutine: 14
+    ufopediaType: LOBSTERMAN_ARMOR0
   - type: LOBSTERMAN_ARMOR1
     spriteSheet: LOBSTER.PCK
     corpseItem: STR_LOBSTERMAN_CORPSE
-    frontArmor: 70
-    sideArmor: 60
-    rearArmor: 50
-    underArmor: 40
+    frontArmor: 35
+    sideArmor: 30
+    rearArmor: 25
+    underArmor: 20
     damageModifier:
       - 1.0
-      - 1.0 # AP
+      - 0.5 # AP
       - 2.0 # Fire
-      - 1.0 # HE
-      - 1.0 # Gauss
-      - 1.0 # Sonic
+      - 0.5 # HE
+      - 0.5 # Gauss
+      - 0.5 # Sonic
       - 1.0 # Freeze
       - 2.0 # Melee
-      - 0.3 # Electr
+      - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 4
     drawingRoutine: 14
+    ufopediaType: LOBSTERMAN_ARMOR1
   - type: LOBSTERMAN_ARMOR2
     spriteSheet: LOBSTERCOMM.PCK
     corpseItem: STR_LOBSTERMAN_CORPSE_2
-    frontArmor: 80
-    sideArmor: 70
-    rearArmor: 60
-    underArmor: 50
+    frontArmor: 45
+    sideArmor: 40
+    rearArmor: 35
+    underArmor: 30
     damageModifier:
       - 1.0
-      - 1.0 # AP
+      - 0.5 # AP
       - 2.0 # Fire
-      - 1.0 # HE
-      - 1.0 # Gauss
-      - 1.0 # Sonic
+      - 0.5 # HE
+      - 0.5 # Gauss
+      - 0.5 # Sonic
       - 1.0 # Freeze
       - 2.0 # Melee
       - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 4
     drawingRoutine: 14
+    ufopediaType: LOBSTERMAN_ARMOR0
   - type: LOBSTERMAN_ARMOR_GUARD
     spriteSheet: LOBSTERGUARD.PCK
     corpseItem: STR_LOBSTERMAN_CORPSE_3
-    frontArmor: 90
-    sideArmor: 80
-    rearArmor: 70
-    underArmor: 60
+    frontArmor: 55
+    sideArmor: 50
+    rearArmor: 45
+    underArmor: 40
     damageModifier:
       - 1.0
-      - 1.0 # AP
+      - 0.5 # AP
       - 2.0 # Fire
-      - 1.0 # HE
-      - 1.0 # Gauss
-      - 1.0 # Sonic
+      - 0.5 # HE
+      - 0.5 # Gauss
+      - 0.5 # Sonic
       - 1.0 # Freeze
       - 2.0 # Melee
       - 1.0 # Electr
       - 1.0 # Smoke
     loftemps: 4
     drawingRoutine: 14
+    ufopediaType: LOBSTERMAN_ARMOR_GUARD
   - type: XARQUID_ARMOR0
     spriteSheet: XARQUID.PCK
     allowInv: false
@@ -449,16 +465,17 @@ armors:
       - 1.0
       - 1.0 # AP
       - 2.0 # Fire
-      - 1.0 # HE
+      - 0.6 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Stun
       - 1.5 # Melee
       - 1.0 # Electr
-      - 0.0 # Smoke
+      - 1.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 21
     constantAnimation: true
+    ufopediaType: XARQUID_ARMOR0
   - type: BIODRONE_ARMOR0
     spriteSheet: BIODRON.PCK
     allowInv: false
@@ -472,16 +489,17 @@ armors:
       - 1.0
       - 1.0 # AP
       - 2.0 # Fire
-      - 1.0 # HE
+      - 0.6 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
       - 1.0 # Stun
       - 1.5 # Melee
       - 1.0 # Electr
-      - 0.0 # Smoke
+      - 1.0 # Smoke
     loftemps: 2
     drawingRoutine: 16
     constantAnimation: true
+    ufopediaType: BIODRONE_ARMOR0
   - type: HALLUCINOID_ARMOR0
     spriteSheet: HALLUCIN.PCK
     allowInv: false
@@ -499,18 +517,19 @@ armors:
     movementType: 1
     damageModifier:
       - 1.0
-      - 1.0 # AP
-      - 2.0 # Fire
-      - 1.0 # HE
+      - 0.6 # AP
+      - 3.0 # Fire
+      - 0.7 # HE
       - 1.0 # Gauss
       - 1.0 # Sonic
-      - 0.7 # Freeze
-      - 0.7 # Melee
+      - 1.0 # Freeze
+      - 0.6 # Melee
       - 1.0 # Electr
       - 1.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 12
     constantAnimation: true
+    ufopediaType: HALLUCINOID_ARMOR0
   - type: TRISCENE_ARMOR0
     spriteSheet: TRISCEN.PCK
     allowInv: false
@@ -538,6 +557,7 @@ armors:
       - 1.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
     drawingRoutine: 20
+    ufopediaType: TRISCENE_ARMOR0
   - type: COELACANTH_ARMOR # changed for new Coela/Gauss YELLOW recolor
 #   spriteSheet: TANK01.PCK
     spriteSheet: COELAGAUSS.PCK
@@ -553,14 +573,14 @@ armors:
     underArmor: 40
     size: 2
     damageModifier:
-      - 1.0 
+      - 1.0
       - 1.0 # AP
-      - 0.0 # Fire
-      - 1.0 # HE
-      - 1.0 # Gauss
+      - 0.4 # Fire
+      - 0.6 # HE
+      - 0.6 # Gauss
       - 1.0 # Sonic
-      - 1.0 # Stun
-      - 1.0 # Melee
+      - 0.0 # Stun
+      - 0.8 # Melee
       - 1.0 # Electr
       - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
@@ -581,12 +601,12 @@ armors:
     damageModifier:
       - 1.0 
       - 1.0 # AP
-      - 0.0 # Fire
-      - 1.0 # HE
-      - 1.0 # Gauss
+      - 0.4 # Fire
+      - 0.6 # HE
+      - 0.6 # Gauss
       - 1.0 # Sonic
-      - 1.0 # Stun
-      - 1.0 # Melee
+      - 0.0 # Stun
+      - 0.8 # Melee
       - 1.0 # Electr
       - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]
@@ -606,14 +626,14 @@ armors:
     movementType: 1
     size: 2
     damageModifier:
-      - 1.0
+      - 1.0 
       - 1.0 # AP
-      - 0.0 # Fire
-      - 1.0 # HE
-      - 1.0 # Gauss
+      - 0.4 # Fire
+      - 0.6 # HE
+      - 0.6 # Gauss
       - 1.0 # Sonic
-      - 1.0 # Stun
-      - 1.0 # Melee
+      - 0.0 # Stun
+      - 0.8 # Melee
       - 1.0 # Electr
       - 0.0 # Smoke
     loftempsSet: [ 92, 89, 90, 91 ]

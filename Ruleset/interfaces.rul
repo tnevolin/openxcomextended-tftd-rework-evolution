@@ -1,0 +1,12 @@
+# Enables alternative armor article list style.
+# - List occupies whole height if info text is ommitted.
+# - List numbers are right aligned.
+# - Scrollbar is inside the page and visible when appears.
+interfaces:
+  - type: articleArmorTFTD
+    elements:
+      - id: list
+        color: 2       # light grey
+        color2: 244    # blue
+        custom: 1
+

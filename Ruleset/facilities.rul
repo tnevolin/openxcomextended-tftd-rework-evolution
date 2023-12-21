@@ -81,22 +81,28 @@ facilities:
     listOrder: 900
     spriteShape: 2
     spriteFacility: 21
-    buildCost: 300000
+#   buildCost: 500000
+    buildCost: 100000
     buildTime: 8
+#   monthlyCost: 10000
     monthlyCost: 5000
 #   radarRange: 1500
-    radarRange: 1695
+    radarRange: 2500
+#   radarChance: 10
     radarChance: 10
     mapName: XBASES04
   - type: STR_WIDE_ARRAY_SONAR
     listOrder: 1000
     spriteShape: 1
     spriteFacility: 22
-    buildCost: 700000
+#   buildCost: 800000
+    buildCost: 800000
     buildTime: 18
-    monthlyCost: 15000
+#   monthlyCost: 15000
+    monthlyCost: 40000
 #   radarRange: 2250
-    radarRange: 2577
+    radarRange: 2750
+#   radarChance: 20
     radarChance: 20
     mapName: XBASES05
   - type: STR_TRANSMISSION_RESOLVER
@@ -106,12 +112,15 @@ facilities:
     hyper: true
     spriteShape: 2
     spriteFacility: 32
+#   buildCost: 1400000
     buildCost: 1400000
     buildTime: 26
-    monthlyCost: 30000
+#   monthlyCost: 35000
+    monthlyCost: 100000
 #   radarRange: 2400
-    radarRange: 2759
-    radarChance: 100
+    radarRange: 3000
+#   radarChance: 100
+    radarChance: 20
     mapName: XBASES15
   - type: STR_TORPEDO_DEFENSES
     listOrder: 1200

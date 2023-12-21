@@ -144,7 +144,7 @@ units:
       reactions: 54
       firing: 58
       throwing: 62
-      strength: 47
+      strength: 40
       psiStrength: 25
       psiSkill: 0
       melee: 64
@@ -166,7 +166,7 @@ units:
       reactions: 54
       firing: 58
       throwing: 62
-      strength: 47
+      strength: 40
       psiStrength: 35
       psiSkill: 0
       melee: 64
@@ -188,7 +188,7 @@ units:
       reactions: 54
       firing: 58
       throwing: 62
-      strength: 47
+      strength: 40
       psiStrength: 35
       psiSkill: 0
       melee: 64
@@ -210,7 +210,7 @@ units:
       reactions: 54
       firing: 58
       throwing: 62
-      strength: 47
+      strength: 40
       psiStrength: 35
       psiSkill: 0
       melee: 64
@@ -232,7 +232,7 @@ units:
       reactions: 62
       firing: 66
       throwing: 62
-      strength: 47
+      strength: 40
       psiStrength: 45
       psiSkill: 35
       melee: 64
@@ -254,7 +254,7 @@ units:
       reactions: 70
       firing: 74
       throwing: 62
-      strength: 59
+      strength: 50
       psiStrength: 55
       psiSkill: 45
       melee: 64

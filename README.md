@@ -1,4 +1,4 @@
-# TFTD Rework: Evolution by Alpha Centauri Bear
+# TFTD Evolution by Alpha Centauri Bear
 
 Main thread
 
@@ -61,41 +61,32 @@ Within the series heavier versions are more accurate but slower. Same as in vani
 
 ## Damage modifiers
 
-The main problem with damage modifier is that they are NOT VISIBLE to player nor they are satisfactory referenced in description. Besides, same effect can be achieved by modifying armor value directly. With the above in mind damage modifiers were changed like that.
+Alien rank complete armor stats are now in ufopaedia.
 
-* All Gauss and Sonic damage modifier values are 1.0 for all creatures. These damages are most common and should be used as benchmark.
-* Armor values of top level creatures (toughest Lobstermen) are increased to compensate for Gauss/Sonic DM modification.
-* The mod is trying to avoid altering damage modifiers if same can be achieved by visible parameters instead (armor and weapon power).
-* All damage modifier values are standardized to use below values for simplicity of description and to make effect noticeable to player.
+All Electric damage modifiers are set to 1.0. There is no weapon with this damage in TFTD.
 
-| damage modifier | term |
-| ----:| ---- |
-| 0.0 | immune |
-| 0.7 | resistant |
-| 1.0 | normal |
-| 1.5 | sensitive |
-| 2.0 | vulnerable |
+Smoke damage modifiers are set to whole values. The damage is too tiny to multiply it by fractions.
 
-| armor | immune | resistant | sensitive | vulnerable |
-| ---- | ---- | ---- | ---- | ---- |
-| (Mag) Ion Armour <br/> Coelacanth / Displaceur | smoke <br/> fire |  |  |  |
-| all aliens and terrorists |  |  |  | fire |
-| Lobsterman |  |  |  | melee |
-| Calcinite | smoke |  |  |  |
-| Hallucinoid |  | stun <br/> melee |  |  |
-| Biodrone / Xarquid | smoke |  | melee |  |
-| Tentaculat |  |  | HE |  |
+Incindeary damage modifiers are set to whole values. The damage is too tiny to multiply it by fractions.
+
+Values close enough to default (0.9 - 1.1) are converted to 1.0 to avoid displaying mostly useless modifiers.
+
+Gauss and Sonic damage modifers are set to the same values for aliens except Tasoth. There is no need for *all* aliens to be less vulnerable to Gauss. Some are fine.
+
+Incindeary damage is increased for all aliens. This damage itself is very low. That may add some incindeary related tactical play.
+
+Lobsterman lowest damage modifiers are raised to 0.5. Anything lower than that is very difficult to balance across all aliens and weapons.
 
 ## Thermal shock bomb damage
 
 Modified thermal shock bomb to make it more threatening to aquanaughts as well as more difficult to capture live aliens. Thermal shock is an explosive damage also delivering stun effect.
 
-## Brutal AI related changes
+## Brutal AI adaptation
 
-Brutal AI is very effective in general and with grenades in particular. Therefore, few changes are made to account for that.
-
-* Aquanaught stats are increased to make them closer to alien ones.
-* Explosives power, resistance and armor are reworked to make them not that insanely effective.
+* Explosives power is reduced.
+* All weapons have accuracy dropoff for all shot types (auto, snap, aimed) including all alien weapons. Same for all throwable explosives.
+* 80% penalty for shooting not visible target.
+* All projectile weapon accuracy is increased to compensate for above penalties. They are more precise up close but less accurate at far.
 
 # Facilities
 
@@ -103,59 +94,73 @@ Brutal AI is very effective in general and with grenades in particular. Therefor
 
 All item sizes are decreased 2-5 times to fit more into single General Stores facility. It seriously annoys me to not being able to buy a little bit more of equipment in first base right away.
 
-## Defenses
-
-I don't see much point in USO defense combat randomization. It doesn't serve any tactical purpose. I assume player desires to protect base for good when they build defenses. Another thing I cannot understand is the nesessity to build 20 torpedo defenses at base to protect it. It is obviously excessive. It is much more simple to proportionally increase cost and value such facilities to reduce their needed quantities. With that in mind, I modified all defenses as follow.
-
-* All defenses have 100% hit ratio and their damage is equal to Dreadnaught damage capacity. With that one defense facility shot sinks Dreadnaught with 50% probability and two shots guarantees Dreadnaught destruction. Player can either build two facilities or one with Bombardment Shield which is a little cheaper.
-* Defenses maintenance becomes very high and comparable to interceptor maintenance since it serves about same purpose.
-* More advanced defenses are more expensive to build but require lower maintenance. That gives player incentive to upgrade them. Every one level upgrade pays off in 4 months in reduced maintenance or even faster if jumping over levels.
-
-| defense facility | build time, days | build cost, thousands | maintenance, thousands |
-| ---- | ----:| ----:| ----:|
-| Torpedo Defenses | 10 | 250 | 875 |
-| Gauss Defenses | 15 | 500 | 750 |
-| Sonic Defenses | 20 | 1000 | 500 |
-| P.W.T. Defenses | 25 | 2000 | 0 |
-
 ## Workshop
 
 Removed workshop space requirement per project. 50 engineers can work in one workshop.
 
 I never understood strategic use for manufacturing *project* taking space, not the manufactured item themselves. Why one item takes same amount of additional space as ten? In my mind both laboratory and workshop are places where 50 specialists can do their work regardless of what they are working on. The rest of the supplies and ready items should reside in storage.
 
+## Sonars
+
+* All sonar ranges are increased to improve coverage.
+* Sonar detection chances are reduced for long range detection facilities.
+
+This way Short Range Sonar is quite useful from the beginning of the game and is the most economical option. More advanced detection facility versions are better at detection but costlier. Player may still benefit at having many facilities at base even after building Transmission Resolver.
+
+| facility | build cost | maintenance | radar range | detection chance, % |
+| ---- | ----:| ----:| ----:| ----:|
+| Standard Sonar | 100,000 | 5,000 | 2500 | 10 |
+| Wide Array Sonar | 800,000 | 40,000 | 2750 | 20 |
+| Transmission Resolver | 1,400,000 | 100,000 | 3000 | 20 |
+
+## Defenses
+
+I don't see much point in USO defense combat randomization. It doesn't serve any tactical purpose. I assume player desires to protect base for good when they build defenses. Another thing I cannot understand is the nesessity to build 20 torpedo defenses at base to protect it. It is obviously excessive. It is much more simple to proportionally increase cost and value such facilities to reduce their needed quantities. With that in mind, I modified all defenses as follow.
+
+* All defenses have 100% hit ratio and their damage is equal to Dreadnaught damage capacity. With that one defense facility shot sinks Dreadnaught with 50% probability and two shots guarantees Dreadnaught destruction. Player can either build two facilities or one with Bombardment Shield which is a little cheaper.
+* Defenses maintenance becomes very high and comparable to interceptor maintenance since it serves about same purpose.
+* More advanced defenses are more expensive to build but require lower maintenance. That gives player incentive to upgrade them. Every one level upgrade pays off in few months in reduced maintenance or even faster if jumping over levels.
+
+| defense facility | build time, days | build cost | maintenance |
+| ---- | ----:| ----:| ----:|
+| Torpedo Defenses | 10 | 250,000 | 800,000 |
+| Gauss Defenses | 15 | 500,000 | 700,000 |
+| Sonic Defenses | 20 | 1,000,000 | 500,000 |
+| P.W.T. Defenses | 25 | 2,000,000 | 100,000 |
+| Bombardment Shield | 20 | 2,000,000 | 100,000 |
+
 # Research
 
-General approach is to make more advanced alien technologies dependent on more rarely found items and officers so they require assaulting more dangerous encounters to get them. This way gradual discovery of progressively more advanced equipment leads to more dangerous missions, to more rare items, to more advanced technologies, and to more advanced equipment, and so on.
+Manufacturable items are generally easier to reseach allowing player to use them at their discretion. Things like tanks, new subs, new armament, etc. - are beneficial but require time, money, engineers, and materials to produce and maintain/replenish. Their use should be balanced by their cost and effectiveness and not by placing them at the end of the tech tree.
+
+Game milestones (T'Leth) and powerful game changing items (PWT Launcher, MC Disruptor, Transmission Resolver) have explicit difficult to obtain requirements to make hunt for them more interesting.
 
 ## Weapons and ammunition
 
 All ammunition research are removed from the tree. Researching weapon immediately unlocks this weapon/ammo use and manufacturing.
 
-## Aliens
+## Alien technologies
 
-Alien containment is not given at start but is available after any autopsy (alien or terrorist). This way it requires some (logical) reseach to get built.
+Alien technologies depend on USO components and alien interrogations. Rare componentes and officers can be obtained from larger and more dangerous USO.
 
-A lot of alient technology depends on further alien interrogation.
+| component | appearance | leads to |
+| ---- | ---- | ---- |
+| Ion Beam Accelerators | Survey Ship | Manta |
+| Magnetic Navigation | Survey Ship | Manta |
+| Alien Sub Construction | Cruiser | Transmission Resolver |
+| Alien Learning Arrays | Cruiser | MC Reader |
+| Alien Cloning | Fleet Supply Cruiser | Hammerhead |
+| Alien Cryogenics | Battleship | Leviathan |
+| Alien Implanter | Dreadnought | MC Disruptor |
 
-| technology | dependencies |
-| ---- | ---- |
-| Alien Containment | any autopsy |
-| MC Reader | Alien Lerning Arrays (Cruiser and above) |
-| MC Lab | MC Reader, Medic |
-| MC Disruptor | MC Lab, Alien Implanter, high ranked psi skilled alien |
-| Sonic Pulser | Soldier |
-| Sonic Pistol | Squad Leader |
-| Sonic Rifle | Technician |
-| Sonic Cannon | Sonic Rifle, Navigator |
-| Disruptor Pulse Launcher | Sonic Cannon, Commander |
-| Manta | Alien Sub Construction, Alien Cloning, Technician |
-| Hammerhead | Manta, Alien Cryogenics, Navigator |
-| Leviathan | Hammerhead, Alien Implanter, Commander |
-| Transmission Resolver | Alien Sub Construction, MC Reader |
-| Alien Origins | interrogate all five alien races |
-| Ultimate Threat | Alien Origins, Lobsterman Navigator, Lobsterman Commander |
-| T'Leth Alien City | Ultimate Threat, Squidface Navigator, Squidface Commander |
+| rank | appearance | leads to |
+| ---- | ---- | ---- |
+| Soldier | Survey Ship | Sonic Pulser |
+| Squad Leader | Escort | Sonic Pistol |
+| Technician | Cruiser | Sonic Rifle |
+| Medic | Heavy Cruiser | Thermal Shock Launcher |
+| Navigator | Heavy Cruiser | Sonic Cannon |
+| Commander | Dreadnought | PWT Launcher |
 
 # Changelog
 

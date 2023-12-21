@@ -55,9 +55,9 @@ items: #
     size: 3
     bulletSpeed: 3
     transferTime: 72
-    accuracyAuto: 40
-    accuracySnap: 60
-    accuracyAimed: 100
+    accuracyAuto: 50
+    accuracySnap: 70
+    accuracyAimed: 120
     tuAuto: 40
     tuSnap: 30 
     tuAimed: 60
@@ -68,6 +68,7 @@ items: #
     clipSize: 30
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_HWP_SOLID_HARPOON_BOLTS
     recover: true
     size: 0.02
@@ -78,8 +79,8 @@ items: #
     transferTime: 72
     costBuy: 380000
     costSell: 260000
-    accuracySnap: 70
-    accuracyAimed: 125
+    accuracySnap: 80
+    accuracyAimed: 130
     tuSnap: 40
     tuAimed: 80
     underwaterOnly: false
@@ -87,6 +88,7 @@ items: #
     turretType: 0
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_HWP_AQUA_JET_MISSILES
     recover: true
     size: 0.2
@@ -96,9 +98,9 @@ items: #
   - type: STR_COELACANTH_GAUSS 
     fireSound: 34
     transferTime: 72
-    accuracyAuto: 50
-    accuracySnap: 70
-    accuracyAimed: 110
+    accuracyAuto: 60
+    accuracySnap: 80
+    accuracyAimed: 120
     tuAuto: 50
     tuSnap: 40
     tuAimed: 70
@@ -112,6 +114,7 @@ items: #
     costSell: 494000
     autoRange: 7
     snapRange: 15
+    aimRange: 25
 # this one was created so that Craft and Coelacanth/Gauss don't share the same ammo -- changed transfer time to 36 from 48 (as with the rest of SWS ammo) -- also placed list order right under Coelacanth/Gauss in items (UFO's Tank/Laser is 1500, so hopefully it's the same here) -- also dropped power to 100 (from 110--which was the same as Displacer/Sonic)
   - type: STR_GAUSS_CANNON_AMMO_SWS
     recover: true
@@ -153,6 +156,7 @@ items: #
     turretType: 3
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_SONIC_DISPLACER_AMMO_SWS
     recover: true
     listOrder: 1750
@@ -195,6 +199,7 @@ items: #
     fireSound: 20
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_DART_POD  
     size: 0.02
     weight: 1
@@ -210,6 +215,7 @@ items: #
     tuAimed: 45
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_HARPOON_POD
     size: 0.02
     weight: 1
@@ -226,6 +232,7 @@ items: #
     tuAimed: 55
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_GC_AP_AMMO
     size: 0.1
     weight: 2
@@ -273,6 +280,7 @@ items: #
     underwaterOnly: false
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_HJC_AP_AMMO
     size: 0.1
     weight: 2
@@ -321,6 +329,7 @@ items: #
     underwaterOnly: false
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_SMALL_TORPEDO 
     size: 0.2
     weight: 5
@@ -354,14 +363,15 @@ items: #
     costSell: 10000
     weight: 5
     fireSound: 35
-    accuracyAuto: 30
-    accuracySnap: 60
-    accuracyAimed: 80
+    accuracyAuto: 40
+    accuracySnap: 70
+    accuracyAimed: 100
     tuAuto: 24
     tuSnap: 16
     tuAimed: 32
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_GAUSS_PISTOL_CLIP
     size: 0.02
     weight: 1
@@ -374,14 +384,15 @@ items: #
     costSell: 26900
     weight: 15
     fireSound: 34
-    accuracyAuto: 30
-    accuracySnap: 70
-    accuracyAimed: 100
+    accuracyAuto: 40
+    accuracySnap: 80
+    accuracyAimed: 120
     tuAuto: 36
     tuSnap: 24
     tuAimed: 48
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_GAUSS_RIFLE_CLIP
     size: 0.02
     weight: 2
@@ -394,14 +405,15 @@ items: #
     costSell: 51000
     weight: 25
     fireSound: 33
-    accuracyAuto: 30
-    accuracySnap: 80
-    accuracyAimed: 120
+    accuracyAuto: 40
+    accuracySnap: 90
+    accuracyAimed: 140
     tuAuto: 60
     tuSnap: 40
     tuAimed: 80
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_HEAVY_GAUSS_CLIP
     size: 0.02
     weight: 3
@@ -413,11 +425,10 @@ items: #
   - type: STR_MAGNA_BLAST_GRENADE
     size: 0.02
     weight: 3
-    power: 40
+    power: 50
     armor: 150
     blastRadius: 5
-    throwRange: 20
-    underwaterThrowRange: 20
+    aimRange: 10
   - type: STR_DYE_GRENADE
     size: 0.02
     weight: 1
@@ -428,22 +439,20 @@ items: #
   - type: STR_PARTICLE_DISTURBANCE_GRENADE
     size: 0.05
     weight: 6
-    power: 80
+    power: 100
     armor: 140
     blastRadius: 6
-    throwRange: 15
-    underwaterThrowRange: 15
+    aimRange: 10
   - type: STR_MAGNA_PACK_EXPLOSIVE
     size: 0.1
     costBuy: 11500
     costSell: 11200
     size: 0.3
     weight: 8
-    power: 100
+    power: 120
     armor: 140
     blastRadius: 7
-    throwRange: 10
-    underwaterThrowRange: 10
+    aimRange: 10
   - type: STR_PARTICLE_DISTURBANCE_SENSOR
     size: 0.02
     listOrder: 4800
@@ -516,8 +525,8 @@ items: #
     costSell: 85800
     weight: 20
     accuracyAuto: 0
-    accuracySnap: 70
-    accuracyAimed: 100
+    accuracySnap: 80
+    accuracyAimed: 120
     tuAuto: 0
     tuSnap: 60
     tuAimed: 80
@@ -527,6 +536,7 @@ items: #
       - STR_CANNON_POWER_CLIP
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_CANNON_POWER_CLIP
     size: 0.02
     recoveryPoints: 0
@@ -549,8 +559,8 @@ items: #
     costSell: 63250
     weight: 12
     accuracyAuto: 0
-    accuracySnap: 60
-    accuracyAimed: 80
+    accuracySnap: 70
+    accuracyAimed: 100
     tuAuto: 0
     tuSnap: 45
     tuAimed: 60
@@ -561,6 +571,7 @@ items: #
     size: 0.02
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_BLASTA_POWER_CLIP
     recoveryPoints: 0
     listOrder: 5700
@@ -583,8 +594,8 @@ items: #
     costSell: 42000
     weight: 4
     accuracyAuto: 0
-    accuracySnap: 50
-    accuracyAimed: 60
+    accuracySnap: 60
+    accuracyAimed: 80
     tuAuto: 0
     tuSnap: 30
     tuAimed: 40
@@ -594,6 +605,7 @@ items: #
       - STR_PISTOL_POWER_CLIP
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_PISTOL_POWER_CLIP
     recoveryPoints: 0
     listOrder: 5500
@@ -624,7 +636,7 @@ items: #
     size: 0.2
     costSell: 8514
     weight: 8
-    power: 140
+    power: 160
     blastRadius: 11
     attraction: 10
     armor: 60
@@ -641,6 +653,7 @@ items: #
     armor: 40
     autoRange: 7
     snapRange: 15
+    aimRange: 25
   - type: STR_THERMAL_SHOK_BOMB
     recoveryPoints: 0
     size: 0.1
@@ -659,13 +672,12 @@ items: #
     size: 0.02
     costSell: 7425
     weight: 3
-    power: 60
+    power: 80
     armor: 300
     blastRadius: 5
-    throwRange: 20
-    underwaterThrowRange: 20
     attraction: 6
     armor: 150
+    aimRange: 10
   - type: STR_MC_READER
     listOrder: 6500
     costSell: 152000
@@ -1056,6 +1068,9 @@ items: #
     recover: false
     arcingShot: true
     hitAnimation: -1
+    autoRange: 7
+    snapRange: 15
+    aimRange: 25
   - type: STR_TRISCENE_MELEE_WEAPON
     meleeAnimation: 4
     bigSprite: { mod: xcom2, index: 66 }
@@ -1085,7 +1100,7 @@ items: #
     power: 110
     damageType: 5
     accuracySnap: 85
-    accuracyAimed: 100
+    accuracyAimed: 120
     tuSnap: 30
     tuAimed: 60
     flateRate: False
@@ -1098,6 +1113,9 @@ items: #
     recover: false
     vaporColor: 3
     vaporDensity: 30
+    autoRange: 7
+    snapRange: 15
+    aimRange: 25
   - type: STR_XARQUID_WEAPON
     weight: 3
     bigSprite: 64
@@ -1109,7 +1127,7 @@ items: #
     power: 130
     damageType: 5
     accuracySnap: 75
-    accuracyAimed: 100
+    accuracyAimed: 110
     tuSnap: 30
     tuAimed: 60
     flateRate: False
@@ -1122,6 +1140,9 @@ items: #
     recover: false
     vaporColor: 3
     vaporDensity: 30
+    autoRange: 7
+    snapRange: 15
+    aimRange: 25
   - type: STR_XARQUID_DYE_WEAPON #------------------------------------------------------ *NEW* unused
     weight: 3
     bigSprite: { mod: xcom2, index: 69 }
